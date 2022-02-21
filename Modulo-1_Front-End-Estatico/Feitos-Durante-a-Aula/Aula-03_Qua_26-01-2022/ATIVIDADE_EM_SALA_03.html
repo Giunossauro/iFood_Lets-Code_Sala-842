@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"><title>Aula 03 - Formulário e Tags Semânticas</title>
+</head>
+<body style="background-color: black; color: white">
+    <form method="POST">
+        <!-- Foi observado que o Firefox grava dados de formulário quando atualizamos a página de forma simples (F5) -->
+        <div>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" />
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input id="email" type="text" />
+        </div>
+        <div>
+            <input id="aceite" type="checkbox" />
+            <label for="aceite">Aceite os termos</label>
+        </div>
+
+        <div>
+            O que você prefere?
+            
+            <input id="r1" type="radio" name="fruta-preferida" />
+            <label for="r1">Banana</label>
+
+            <input id="r2" type="radio" name="fruta-preferida" />
+            <label for="r2">Maçã</label>
+
+            <input id="r3" type="radio" name="fruta-preferida" />
+            <label for="r3">Morango</label>
+        </div>
+
+        <div>
+            <label for="texto">Sugestões:</label>
+            <input type="textarea" />
+        </div>
+        <input type="submit" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,214 @@
+html, head, meta, link, title{
+	background-color: #FFB761;
+}
+
+head{
+	background-color: #FFB761;
+}
+
+meta{
+	background-color: #FFB761;
+}
+
+link{
+	background-color: #FFB761;
+}
+
+title{
+	background-color: #FFB761;
+}
+
+body{
+	margin: 0;
+	background-color: #F5F0EB;
+	color: #3F3E3E;
+}
+
+#myTopnav{
+	font-size: x-large;
+	justify-content: space-evenly;
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	overflow: hidden;
+	height: 10vh;
+	border-bottom: 0.3vmin solid #FED298;
+}
+
+#myTopnav > nav > a{
+	width: 99.5%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration-line: none;
+	color: #3F3E3E;
+}
+
+#naunha{
+	font-size: xx-large;
+	font-weight: bold;
+	border-right: 0.3vmin solid #FED298;
+}
+
+header{
+	display: inline-block;
+	margin-bottom: 10vh;
+}
+
+header nav nav{
+	display: flex;
+	width: 13%;
+	border-left: 0.1vmin solid #FED298;
+	background-color: #F5E9DA;
+}
+
+.navicon{ 
+	display: none;
+	border: 0;
+	width: 100%;
+}
+
+#icon{
+	width: 10vw;
+}
+
+header nav nav:first-child{
+	border-left: 0;
+	width: 35%;
+}
+
+header nav nav:hover:not(header nav nav nav){
+	background-color: #F5F0EB;
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+
+figure{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.drop:hover .drop-data {
+	display: block;
+}
+
+.drop-data {
+	display: none;
+	top: 10vh;
+	position: fixed;
+	background-color: #F5E9DA;
+	background-image: none;
+	border: 0;
+}
+
+.drop-data a {
+	color: #3F3E3E;
+	padding: 12px 16px;
+	border: 0.1vmin solid #FED298;
+	text-decoration: none;
+	font-weight: normal;
+	display: block;
+	text-align: left;
+}
+
+.drop-data:hover {
+	display: block;
+}
+
+.drop-data a:hover {
+	display: block;
+	background-color: #F5F0EB;
+	font-weight: bold;
+	text-decoration-line: underline;
+}
+
+@media screen and (max-width: 50em) {
+	header nav nav {display: none;}
+	header nav nav.navicon {
+		float: right;
+		display: inherit;
+	}
+}
+
+@media screen and (max-width: 50em) {
+		header nav.responsive {position: relative;}
+		header nav.responsive .navicon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	header nav.responsive nav {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+aside{
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	color: #F5F0EB;
+}
+
+aside a{
+	background-color: #FFB761;
+}
+
+#ad1{
+	width: 80vw;
+}
+
+main{
+	margin: 2em;
+	background-color: #FFDEBB;
+	border: 0.3vmin solid #FFB761;
+}
+
+section{
+	width: 100%;
+}
+
+article{
+	padding-right: 1vw;
+}
+
+h1{
+	font-size: xx-large;
+	text-align: center;
+}
+
+p, h1, h3{
+	padding: 0 3vw 0 3vw;
+}
+
+main p{
+	text-indent: 5vw;
+	text-align: justify;
+}
+
+footer{
+	display: flex;
+	margin: 1em;
+	background-color: #F5E9DA;
+	border: 0.3vmin solid #FFDEBB;
+}
+
+footer nav{
+	width: 50%;
+	text-align: center;
+	align-self: center;
+}
+
+footer nav:first-child{
+	border-right: 0.3vmin solid #FED298;
+}
+
+hr{
+	color: #FFB761;
+	border-style: solid;
+}

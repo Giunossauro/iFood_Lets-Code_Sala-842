@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  article#relatorio {
+    border: 3px solid red;
+  
+    /* 1º pega top - 2º pega right e left - 3ª pega bottom */
+    border-width: 1px 10px 20px 10px;
+    border-style: dashed;
+    border-color: purple;
+  
+    padding-left: 10px;
+    margin: auto;
+    max-width: 500px;
+  }
+  
+  #relatorio section {
+    background-color: rgb(91, 138, 91);
+  }
+  
+  section > span > h1 {
+    color: rgb(148, 68, 54);
+  }
+  
+  #relatorio section p {
+    color: yellow;
+  }
+  
+  /* sempre q tiver top, right, bottom e left
+       é na ordem horário */
+  p,
+  h1 {
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  /* 1º pega top - 2º pega right e left - 3ª pega bottom */
+  h1:hover {
+    color: violet;
+  }

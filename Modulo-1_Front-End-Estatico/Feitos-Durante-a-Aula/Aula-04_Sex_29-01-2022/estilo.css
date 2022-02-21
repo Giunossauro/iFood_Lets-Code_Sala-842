@@ -1,0 +1,36 @@
+/* CSS Externo */
+header{
+    border: 1px solid tomato;
+}
+header, nav, main, article, aside, footer{
+    margin: 10px 0;
+    /*same as
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;*/
+}
+body{
+    color: lightgray;
+    background-color: #101010;
+    text-indent: 20px;
+}
+body:not(li) a , p, h1, h2, h3, h4, h5{
+    margin: 10px 10px;
+}
+nav{
+    border: 1px solid blue;
+}
+nav nav{
+    border: 1px solid blueviolet;
+    margin: 20px 10px;
+}
+article{
+    border: 1px solid yellow;
+}
+aside{
+    border: 1px solid green;
+}
+footer{
+    border: 1px solid pink;
+}

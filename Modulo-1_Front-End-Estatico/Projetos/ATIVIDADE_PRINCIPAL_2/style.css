@@ -1,0 +1,240 @@
+/*--Fonte da página--*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+/*--geral--*/
+
+html {
+  scroll-behavior: smooth;
+  height: auto;
+  width: auto;
+}
+
+body {
+    height: auto;
+    width: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-color: #ece5f0;
+
+}
+
+/*--navbar--*/
+
+.navbar {
+    padding: .8rem;
+    background-color: #e5e9f0 !important;
+    width: 100vw;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+/*-- Carrousel --*/
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    /*top: 50%;*/
+    margin: auto;
+    padding-bottom: 0;
+}
+
+.carousel-caption h1, .carousel-caption h3 {
+    text-shadow: 1px 1px 10px #000;
+}
+
+.seletor{
+    padding: 0 2rem;
+    padding-top: 2rem;
+}
+
+#slides{
+    padding-top: 100px;
+}
+
+/*-- Catálogo --*/
+
+.display-4 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.texto-pequeno {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.preco {
+    font-weight: 600;
+    margin-right: 80px;
+}
+
+/*--Sobre nós--*/
+
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f9f7fa;
+}
+
+.dimensoes{
+    width: 286px;
+    height: 183.96px;
+}
+
+.dimensoes-perfil{
+    width: 286px;
+    height: 286.12px;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+#foto-sobre-nos {
+    border-radius: 10px;
+    height: 65%;
+    float: right;
+    margin-top: 10px;
+}
+
+.rostos {
+    padding: 1rem;
+}
+
+.texto-itravel {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#botao-sobre-nos {
+    margin: 0 auto;
+}
+
+.container-fluid {
+    justify-content: center;
+}
+
+.texto-integrantes {
+    text-align: justify;
+}
+
+/*Formulário*/
+
+.padding-around-20px {
+  padding: 20px;
+}
+
+.box-shadow {
+  box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+}
+
+.border-radius {
+  border-radius: 10px;
+}
+
+.background-image {
+  background-image: url(./imagem/pexels-mia-steinkirch-3894157.jpg);
+  background-size: cover;
+}
+
+.background-white {
+  background-color: #f9f7fa;
+}
+
+.flex-test {
+  display: flex;
+  flex-direction: column;
+}
+
+/*--Tabela--*/
+
+table, th, td {
+    background-color: #f9f7fa;
+    text-align: center;
+}
+
+/*--Botões azuis e hover--*/
+
+.btn-primary {
+  background-color: #2429aa;
+  border: 1px solid #ece5f0;
+}
+
+.btn-primary:hover {
+  background-color: #ece5f0;
+  border: 1px solid #2429aa;
+  color: #2429aa;
+}
+
+/* ---Footer--- */
+
+#Contato {
+    background-color: #e5e9f0;
+    opacity: 0.7;
+}
+
+#Contato p {
+    font-size: 14px;
+}
+
+#Contato h5 {
+    font-size: 16px;
+}
+
+#logo-footer {
+    height: 70px;
+}
+
+/*---Media Queries --*/
+
+/* @media screen and (max-width: 992px) {
+
+  } */
+@media screen and (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 40px;
+    }
+    .carousel-caption h3 {
+      font-size: 18px;
+    }  
+}
+@media screen and (max-width: 576px) {
+    .carousel-caption h1 {
+      font-size: 23px;
+    }
+    .carousel-caption h3 {
+      font-size: 11px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .carousel-caption h1 {
+      font-size: 15px;
+    }
+    .carousel-caption h3 {
+      font-size: 8px;
+    }
+}
+
+/*--Seções  - acertar espaçamento--*/
+.espaco-abaixo {
+  padding: 1.5rem 2rem;
+}

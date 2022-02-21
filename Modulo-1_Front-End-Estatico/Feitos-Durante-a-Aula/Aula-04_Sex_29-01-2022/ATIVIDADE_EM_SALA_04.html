@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Semântica</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--
+        
+    Anotações
+        
+    Hierarquia semantica: header(nav), nav*, main(article**, aside, section, nav), footer(nav)
+    Em geral, costuma ser header, nav, main e footer, nesta sequencia
+    *nav pode aninhar, repetir e ir em qualquer tag
+    **article pode aninhar para conter comentários dentro do article principal
+    todas são "display: block" - que cria a tag como um bloco que pega 100% da tela/linha
+
+    Outra coisa
+    tag de bloco: abre com (<>) e fecha com (</>)
+    tag de linha: abre e fecha sozinha (< />)
+
+    Mais
+    lista de todas as tags semanticas
+    https://www.google.com/search?q=html5+tags+semanticas
+
+    svg é um xml e são ux/editores gráficos que costumam usar
+
+    3 tipos de CSS (em ordem de prioridade-sobrescrição)
+    - inline (dentro de qualquer tag no <body> - inclusive na própria tag <body>)
+    - interno (no <head> com tag <style>)
+    - externo (arquivo CSS)
+
+    -->
+    <header>
+        <h1>Noticias Let</h1>
+        <figure>
+            <img src="smile.bmp" alt="Smile">
+            <figcaption>Semântica da Lets</figcaption>
+        </figure>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.google.com/" target="_blank">Sobre nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <nav>
+            <ul>
+                <h2>Nav aninhada</h2>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.google.com/" target="_blank">Sobre nós</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Como política pode ser um assunto perigoso</h2>
+            <p>blablablabalblabalbalabla blablablbalbalabla blablalbalabla blablablabalblabalbalabla blablablabalblabalbalabla blablablabalblabalbalabla blablablabalblabalbalabla blablablabalblabalbalabla blablablabalblabalabla blablablabalabla </p>
+        </article>
+
+        <aside>
+            <p>PROPAGANDA</p>
+        </aside>
+
+        <footer>
+            a
+        </footer>
+    </main>
+</body>
+</html>

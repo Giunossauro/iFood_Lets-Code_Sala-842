@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 02 - Listas, Tabelas e Formulario</title>
+        <meta charset="UTF-8" />
+        <style>
+            .classe1{
+                background-color: #ffffff;
+                color: #000000;
+                text-align: center;
+            }
+            .classe2{
+                background-color: #F5E9DA;
+                color: #3F3E3E;
+            }
+            .classe3{
+                background-color: #FFDEBB;
+                color: #3F3E3E;
+            }
+            .classe4{
+                background-blend-mode: exclusion;
+                color: #F5E9DA;
+            }
+            .classe5{
+                background-color: #3F3E3E;
+                width: 100%;
+                font-size: xx-large;
+            }
+            ul{
+                list-style-image: url('data:image/bmp;base64,Qk3uAAAAAAAAAHYAAAAoAAAADwAAAA8AAAABAAQAAAAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AP//8AAA///w//AP//8A//D/D/////8P8PD//wAP//Dw8P/w//D/8PAP/w///w//AA////////8AD////////wAP//D/8P//AA//8P/w//8A8P/w//D/8PDw///////w8P8P/////w/w//AP//8A//D///AAAP//8A==');
+                list-style-type: disc;
+                font-size: x-large;
+                list-style-position: inside;
+            }
+            ol{
+                font-size: x-large;
+                list-style-position: inside;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table class="classe5">
+            <thead>
+                <tr class="classe4">
+                    <th colspan="3" abbr="Uma tabela" scope="colgroup" style="text-align: center;">Uma tabela bela com tolos dados quadrados enquadrados em quadrados quadros (colspan)</th>
+                </tr>
+
+                <tr class="classe3">
+                    <th id="nome" colspan="2" abbr="Nome" scope="colgroup" style="text-align: center;">Nome completo</th>
+                    <th id="email" rowspan="2" abbr="Email" scope="col" class="classe2">Email (rowspan)</th>
+                </tr>
+
+                <tr class="classe4">
+                    <th id="pnome" headers="name" abbr="Nome" scope="col" class="classe2">Primeiro nome</th>
+                    <th id="sname" headers="name" abbr="Sobrenome" scope="col" class="classe2">Sobrenome completo</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td headers="pnome" class="classe1">Jacinto</td>
+                    <td headers="sname" class="classe1">Almeida Prado</td>
+                    <td headers="email" class="classe1">jacintoa46@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td headers="pnome" class="classe1">Fujiro</td>
+                    <td headers="sname" class="classe1">Nakkonbi</td>
+                    <td headers="email" class="classe1">fujiromemmo@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td headers="pnome" class="classe1">Wattson</td>
+                    <td headers="sname" class="classe1">Di Yuu</td>
+                    <td headers="email" class="classe1">doisosim@gmail.com</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td class="classe1" colspan="3" style="text-align: center; background-color: #A6A29F;">Este é o fim!</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1>Lista Não Ordenada</h1>
+        <ul>
+            <li>(ok) Colocar ícones para substituir os indicadores de itens duma lista não ordenada</li>
+            <li>(ok) Ver redes sociais</li>
+            <li>Jogar 8 Ball Pool</li>
+            <li>Etc.</li>
+            <li>Estudar</li>
+            <li>(ok) Ver se é possível colocar ícones em lista ordenada</li>
+        </ul>
+
+        <h1>Lista Ordenada</h1>
+        <ol>
+            <li>(ok) Focar muito nas tabelas</li>
+            <li>(ok) Esquecer das listas</li>
+            <li>(ok) Fazer as listas em 12 minutos</li>
+            <li>(ok) Entregar a atividade no prazo (23h59m59s)</li>
+            <li>(ok) Ver que a atividade chegou no servidor do Class fora do prazo porque só faltava 1 segundo na hora que entregou</li>
+            <li>(ok) Colocar ícones para substituir os indicadores de itens duma lista não ordenada</li>
+            <li>(ok) Subir no GitHub</li>
+            <li>(ok) Deixar o repositório organizado fazendo uma bagunça lascada com os commits</li>
+            <li>(ok) Atualizar no GitHub o arquivo da aula 02</li>
+            <li>Estudar </li>
+            <li>Etc.</li>
+        </ol>
+    </body>
+</html>

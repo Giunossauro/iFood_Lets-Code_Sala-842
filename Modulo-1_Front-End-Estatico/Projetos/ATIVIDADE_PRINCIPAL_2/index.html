@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iTravel Viagens</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="style.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+	</script>
+</head>
+
+<body>
+	<header id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+          <figure>
+            <img src="imagem/logo-travel-sem-fundo.png" height="60px" alt="logo do site">
+          </figure>
+        </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#header">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mais-vendidos">Mais vendidos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#agende">Agende</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <figure>
+                      <img id="id-k" src="imagem/plage-et-pirogue.jpg" alt="kribi vila dos pescadores">
+                    </figure>
+                    <div class="carousel-caption">
+                        <h1 class="display-3">Memórias</h1>
+                        <h3>Kribi, Camarões</h3>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Conheça</button>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <figure>
+                      <img id="id-m" src="imagem/maldivas-capa2019-03.jpg" alt="Maafushi Ilhas Maldivas">
+                    </figure>
+                    <div class="carousel-caption">
+                        <h1 class="display-3">Experiências</h1>
+                        <h3>Maafushi, Ilhas Maldivas</h3>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Conheça</button>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <figure>
+                      <img id="id-o" src="imagem/Mostardas.jpg" alt=" foto da Praia de Bocupari">
+                    </figure>
+                    <div class="carousel-caption">
+                        <h1 class="display-3">Liberdade</h1>
+                        <h3>Praia de Bocupari, Mostardas-RS</h3>
+                        <br>
+                        <button type="button" class="btn btn-primary btn-lg">Conheça</button>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" >
+            <div class="row seletor">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+                    <p>Um site onde escolhemos os destinos mais exóticos e os preparamos em pacotes especiais que se
+                        encaixam em cada roteiro de viagem!</p>
+                </div>
+
+                <div class="dropdown col-xs-12 col-sm-9 col-md-6 col-lg-4">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Conheça os destinos
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#id-k">Kribi</a>
+                        <a class="dropdown-item" href="#id-m">Maafushi</a>
+                        <a class="dropdown-item" href="#id-o">Mostardas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr id="destinos">
+        <div class="espaco-abaixo"></div>
+
+        <section>
+            <h2 class="display-4 espaco-abaixo">Conheça nossos destinos</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                <article class="col" style="padding-bottom:1rem;">
+                    <nav class="card h-100" style="width: 18rem;">
+                        <figure>
+                            <img src="imagem/dijon-franca.jpg" class="card-img-top dimensoes"  alt="Imagem de Dijon, na França">
+                        </figure>
+                        <div class="card-body">
+                            <h4 class="card-text">Dijon, França</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">A comuna de Dijon, na França, é famosa por sua rica gastronomia e seu centro histórico, listado como Patrimônio da Humanidade pela UNESCO. Para quem quiser conhecer a cidade, recomendamos a rota da coruja (Parcours de la Chouette), que passa pelos principais pontos turísticos do lugar, demarcados por placas douradas com uma coruja.
+                            </p>
+                            <p class="texto-pequeno">Pacotes a partir de: </p>
+                            <span class="preco"> R$6500 </span>
+                            <a href="#" class="btn btn-outline-secondary">Ver mais</a>
+                        </div>
+                    </nav>
+                </article>
+
+                <article class="col" style="padding-bottom:1rem;">
+                    <nav class="card h-100" style="width: 18rem;">
+                        <figure>
+                            <img src="imagem/damasco-siria.jpg" class="card-img-top dimensoes" style="width:286px;height: 183.96px;" alt="Cidade de Damasco, na Síria">
+                        </figure>
+                        <div class="card-body">
+                            <h4 class="card-text">Damasco, Síria</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Damasco é a capital da Síria, considerada um importante centro comercial. A cidade é considerada Patrimônio da Humanidade pela UNESCO, sendo uma das cidades mais antigas do mundo (existem escavações datadas de 5 mil anos) e é dividida em duas partes, a antiga e a nova. Ainda, é considerada um dos principais centros culturais e religiosos do Levante.</p>
+                            <p class="texto-pequeno">Pacotes a partir de: </p>
+                                <span class="preco"> R$7000 </span>
+                            <a href="#" class="btn btn-outline-secondary">Ver mais</a>
+                        </div>
+                    </nav>
+                </article>
+
+                <article class="col" style="padding-bottom:1rem;">
+                    <nav class="card h-100" style="width: 18rem;">
+                        <figure>
+                            <img src="imagem/beirute-libano.jpg" class="card-img-top dimensoes" alt="Beirute, no Líbano">
+                        </figure>
+                        <div class="card-body">
+                            <h4 class="card-text">Beirute, Líbano</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Beirute é a capital do Líbano, sendo também a maior cidade do país. Pontos turísticos famosos do local incluem Pigeon Rocks, uma formação rochosa com vista para o Mar Mediterrâneo, o National Museum of Beirut e a praça de Martyr. Nela, você pode encontrar o Mausoléu de Rafik, que abriga ruínas romanas, e a Mesquita de Mohammad Al-Amin.
+                            </p>
+                            <p class="texto-pequeno">Pacotes a partir de: </p>
+                                <span class="preco"> R$6500 </span>
+                            <a href="#" class="btn btn-outline-secondary">Ver mais</a>
+                        </div>
+                    </nav>
+                </article>
+
+                <article class="col" style="padding-bottom:1rem;">
+                    <nav class="card h-100" style="width: 18rem;">
+                        <figure>
+                            <img src="imagem/peru.jpg" class="card-img-top dimensoes" alt="Machu Picchu, no Peru">
+                        </figure>
+                        <div class="card-body">
+                            <h4 class="card-text">Tour por Peru</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">O Peru é um país da América do Sul fronteiriço com o Brasil e oferecee atrações diversificadas, para todos os gostos. Entre os destinos imperdíveis, encontram-se Cusco, cidade considerada Patrimônio da Humanidade pela UNESCO e que te transporta diretamente para os tempos dos incas, e Lima, a capital do país, repleta de sítios arqueológicos e com arquitetura colonial. Porém, o grande ponto de atração turística é Machu Picchu, uma cidadela inca que, hoje, é um sítio arqueológico, considerada uma das sete maravilhas do mundo moderno. </p>
+                            <p class="texto-pequeno">Pacotes a partir de: </p>
+                            <span class="preco"> R$4000 </span>
+                            <a href="#" class="btn btn-outline-secondary">Ver mais</a>
+                        </div>
+                    </nav>
+                </article>
+
+                <article class="col" style="padding-bottom:1rem;">
+                    <nav class="card h-100" style="width: 18rem;">
+                        <figure>
+                            <img src="imagem/camaroes.jpg" class="card-img-top dimensoes" alt="Praia na República dos Camarões">
+                        </figure>
+                        <div class="card-body">
+                            <h4 class="card-text">República dos Camarões</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Camarões, como também é conhecida a República dos Camarões, é um país da África Central e possui extensa variedade geológica e cultural, possuindo savanas, desertos, florestas tropicais, praias e montanhas. O país também é conhecido por sua seleção de futebol e seus estilos musicais nativos, como o makossa. Lugares para visitar incluem o Douala, um importante centro comercial e o Monte Camarões, a 4.100 metros de altitude, local ideal para escaladas e curtir a natureza.</p>
+                            <p class="texto-pequeno">Pacotes a partir de: </p>
+                            <span class="preco"> R$6500 </span>
+                            <a href="#" class="btn btn-outline-secondary">Ver mais</a>
+                        </div>
+                    </nav>
+                </article>
+
+                <article class="col" style="padding-bottom:1rem;">
+                    <nav class="card h-100" style="width: 18rem;">
+                        <figure>
+                            <img src="imagem/bolonha.jpeg" class="card-img-top dimensoes" alt="Bolonha, na Itália">
+                        </figure>
+                        <div class="card-body">
+                            <h4 class="card-text">Bolonha, Itália</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Bolonha é uma comuna na Itália, localizada a 80 km de Florença. A cidade é considerada é um polo gastronômico, sendo, inclusive, local de origem da lasanha e do famoso molho bolonhesa. Além disso, o local é repleto de graciosas ruas e estruturas medievais preservadas. Também é uma cidade universitária, sendo referência cultural na Europa por sua universidade, a mais antiga do continente e que teve, entre inúmeras figuras históricas, alunos como Dante Alighieri.</p>
+                            <p class="texto-pequeno">Pacotes a partir de: </p>
+                            <span class="preco"> R$9500 </span> 
+                            <a href="#" class="btn btn-outline-secondary">Ver mais</a>
+                        </div>
+                    </nav>
+                </article>
+            </div>
+        </section>
+
+        <hr id="mais-vendidos">
+        <div class="espaco-abaixo"></div>
+
+        <section>
+            <h2 class="display-4 espaco-abaixo">Pacotes mais vendidos em 2021:</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" id="destino" abbr="Dest.">Destino</th>
+                        <th scope="col" id="diarias" abbr="Diar.">Diárias</th>
+                        <th scope="col" id="pessoas" abbr="Pess.">Pessoas</th>
+                        <th scope="col" id="precos" abbr="BRL">Faixa de preço/pessoa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td headers="destino">Parma, Itália</td>
+                        <td headers="diarias">5</td>
+                        <td headers="pessoas">2</td>
+                        <td headers="precos">R$ 9674</td>
+                    </tr>
+                    <tr>
+                        <td headers="destino">Orlando, EUA</td>
+                        <td headers="diarias">8</td>
+                        <td headers="pessoas">4</td>
+                        <td headers="precos">R$ 3900</td>
+                    </tr>
+                    <tr>
+                        <td headers="destino">Hamburgo, Espanha</td>
+                        <td headers="diarias">6</td>
+                        <td headers="pessoas">2</td>
+                        <td headers="precos">R$ 8562</td>
+                    </tr>
+                    <tr>
+                        <td headers="destino">Champanhe, França</td>
+                        <td headers="diarias">5</td>
+                        <td headers="pessoas">2</td>
+                        <td headers="precos">R$ 9788</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr id="agende">
+        <div class="espaco-abaixo"></div>
+
+        <section class="background-image border-radius flex-test espaco-abaixo">
+            <h2 class="display-4 espaco-abaixo" style="color: #f9f7fa;">Agende sua viagem</h2>
+            <div class="container box-shadow border-radius background-white" style="flex: 2; width: auto;">
+                <div class="row padding-around-20px">
+                    <div class="col col-sm-12 col-md-6">
+                        <label for="origem" class="form-label">De onde você está saindo?</label>
+                        <input type="text" class="form-control" placeholder="Origem" aria-label="origem">
+                    </div>
+                    <div class="col col-md-12 col-md-6">
+                        <label for="destino" class="form-label">Para onde você está indo?</label>
+                        <input type="text" class="form-control" placeholder="Destino" aria-label="destino">
+                    </div>
+                </div>
+                <div class="row padding-around-20px justify-content-center">
+                    <div class="col-12">
+                        <label for="numero-passageiros" class="form-label">Número de Passageiros:</label>
+                        <select class="form-control" aria-label="numero-passageiros">
+                            <option selected>Passageiros</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="muitos">...</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                          <label for="data-ida">Data de ida:</label>
+                          <input type="date" id="data-ida" name="data-ida"
+                              value="2022-02-09"
+                              min="2022-02-09" max="2022-12-31">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                          <label for="data-volta">Data de volta:</label>
+
+                          <input type="date" id="data-volta" name="data-volta"
+                              value="2022-02-09"
+                              min="2022-02-09" max="2022-12-31">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Buscar Pacote</button>
+                </div>
+            </form>
+        </section>
+
+        <hr id="Sobre">
+        <div class="espaco-abaixo"></div>
+
+        <section>
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-md-12 col-lg-6 text-center align-self-center">
+                        <h2 class="texto-itravel">Quem Somos</h2>
+                        <p class="texto-itravel">
+                            Somos uma agência de viagens voltada para lugares exóticos e singulares,
+                            aqui na iTravel deixamos tudo pronto para que cada viagem seja uma experiência única. 
+                            Diversidade, sustentabilidade e inovação são pilares na iTravel.
+                            Nascemos da ideia de que viajar é para todos e é transformador. Venha com a gente!</p>
+                        <br>
+                        <a class="btn btn-primary" href="#" id="botao-sobre-nos">Saiba mais</a>
+                    </div>
+                    <div class="col-md-12 col-lg-6 align-self-center">
+                        <figure>
+                            <img src="imagem/viagem.jpg" alt="avião voando ao pôr-do-sol" class="img-fluid" id="foto-sobre-nos">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            
+            <hr>
+
+            <div class="container-fluid padding">
+                <div class="row welcome text-center">
+                    <div class="col-12">
+                        <h2 class="display-4">Conheça nosso time</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--- Cards -->
+            <div class="container-fluid padding">
+                <div class="row padding justify-content-center display-flex">
+                    
+                    <article class="rostos col-xs-12 col-sm-9 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <figure>
+                                <img class="card-img-top dimensoes-perfil" src="imagem/clara2.jpg" alt="Ana Clara">
+                            </figure>
+                            <div class="card-body">
+                                <h4 class="card-title">Ana Clara</h4>
+                                <p class="texto-integrantes">Engenheira de materiais, bailarina clássica, musicista amadora, agora também busca trilhar seu caminho no desenvolvimento web para buscar novos     desafios.</p>
+                                <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rostos col-xs-12 col-sm-9 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <figure>
+                                <img class="card-img-top dimensoes-perfil" src="imagem/rangel.jpeg" alt="Rodrigo Rangel">
+                            </figure>
+                            <div class="card-body">
+                                <h4 class="card-title">Rodrigo Rangel</h4>
+                                <p class="texto-integrantes">Jovem e apaixonado Cientista de Dados que hoje desafia-se no mundo do Desenvolvimento Web. "A vida é bela, mas só pra quem tem coragem".</p>
+                                <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rostos col-xs-12 col-sm-9 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <figure>
+                                <img class="card-img-top dimensoes-perfil" src="imagem/milan.jpg" alt="Milan">
+                            </figure>
+                            <div class="card-body">
+                                <h4 class="card-title">Milan</h4>
+                                <p class="texto-integrantes">Engenheiro Civil com background em programação Java, entusiasta em carros e amante de viagens agora atuando como Frontend Dev.</p>
+                                <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rostos col-xs-12 col-sm-9 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <figure>
+                                <img class="card-img-top dimensoes-perfil" src="imagem/Giuliano.jpg" alt="Giuliano">
+                            </figure>
+                            <div class="card-body">
+                                <h4 class="card-title">Giuliano</h4>
+                                <p class="texto-integrantes">Formado em Análise e Desenvolvimento de Sistemas, Giuliano quer aprender a <u>programar de verdade</u>, e por isto se esforçou para entrar na Let's Code! Ele gosta de separar o miolo dos caroços da melancia pra comer tudo duma só vez...</p>
+                                <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="rostos col-xs-12 col-sm-9 col-md-6 col-lg-4 col-xl-4">
+                        <div class="card h-100" style="width: 18rem;" >
+                            <figure>
+                                <img class="card-img-top dimensoes-perfil" src="imagem/lincoln-quad.jpeg" alt="Lincoln">
+                            </figure>
+                            <div class="card-body">
+                                <h4 class="card-title">Lincoln</h4>
+                                <p class="texto-integrantes">Estudante de engenharia da computação no Insper, amante e  apreciador de jogos.
+                                    Busca aprender e se aprofundar mais em programação front e back-end. 
+                                    Mais novo desafio é o Desenvolvimento Web</p>
+                                <a href="#" class="btn btn-outline-secondary">Ver perfil</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id='Contato'>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <figure>
+                        <img src="imagem/logo-travel-sem-fundo.png" alt="logo itravel" id="logo-footer">
+                    </figure>
+                    <p>(99)95555-5555</p>
+                    <p>email@itravel.com</p>
+                    <p>Rua das Couves, 747</p>
+                    <p>Aracaju, Sergipe, Brasil</p>
+                </div>
+
+                <div class="col-md-4">
+                    <hr>
+                    <h5>Nossos Horários</h5>
+                    <hr>
+                    <p>Segunda 13h - 17h</p>
+                    <p>Quarta 13h - 17h</p>
+                    <p>Sexta 13h - 17h</p>
+                </div>
+
+                <div class="col-md-4">
+                    <hr>
+                    <h5>Nossos Stands de Vendas</h5>
+                    <hr>
+                    <p>Aracaju, Sergipe</p>
+                    <p>Fortaleza, Ceará</p>
+                    <p>Londrina, Paraná</p>
+                    <p>Rio de Janeiro, Rio de Janeiro</p>
+                    <p>São Paulo, São Paulo</p>
+                </div>
+
+                <div class="col-md-12">
+                    <hr>
+                    <h5>&copy;2022 iTravel. Todos os direitos reservados.</h5>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
