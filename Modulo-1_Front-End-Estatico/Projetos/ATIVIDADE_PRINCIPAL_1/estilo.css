@@ -644,3 +644,17 @@ section > h3{
 *{
     -webkit-tap-highlight-color: transparent;
 }
+
+#sub{
+	width: 10em;
+	height: 4em;
+}
+
+textarea{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+label:last-child{
+	font-size: 1em;
+}

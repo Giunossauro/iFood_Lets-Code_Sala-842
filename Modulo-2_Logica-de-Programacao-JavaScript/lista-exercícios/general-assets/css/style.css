@@ -1,0 +1,27 @@
+@keyframes textAnimation {
+    0%   {color:#9760E6; left:0px; top:0px;}
+    25%  {color:#E6B06C; left:200px; top:0px;}
+    50%  {color:#5569E6; left:200px; top:200px;}
+    75%  {color:#E6E03E; left:0px; top:200px;}
+    100% {color:#49B0E6; left:0px; top:0px;}
+}
+
+@keyframes boxAnimation {
+    0%   {background-color:#E6B06C; left:0px; top:0px;}
+    25%  {background-color:#5569E6; left:200px; top:0px;}
+    50%  {background-color:#E6E03E; left:200px; top:200px;}
+    75%  {background-color:#49B0E6; left:0px; top:200px;}
+    100% {background-color:#9760E6; left:0px; top:0px;}
+}
+
+header{
+    animation-name: boxAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+header h1{
+    animation-name: textAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}

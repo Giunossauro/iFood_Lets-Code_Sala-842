@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../general-assets/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="../general-assets/css/style.css">
+    <title>Questão 4</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-center border-bottom border-primary border-5 p-3">
+            <b>Q.4</b> - Será que o aluno foi bem?
+        </h1>
+    </header>
+    <main class="ms-5 ps-5 me-5 pe-5">
+        <form class="m-5 p-5 text-center">
+            <div class="mb-3">
+                <label for="nota-1" class="form-label fs-4">Nota 1</label>
+                <input type="text" class="form-control fs-5" id="nota-1" required>
+            </div>
+            <div class="mb-3">
+                <label for="nota-2" class="form-label fs-4">Nota 2</label>
+                <input type="text" class="form-control fs-5" id="nota-2" required>
+            </div>
+            <div class="mb-3">
+                <label for="nota-3" class="form-label fs-4">Nota 3</label>
+                <input type="text" class="form-control fs-4" id="nota-3" required>
+            </div>
+            <div class="mb-3">
+                <label for="nota-final" class="form-label fs-4">Nota Final</label>
+                <input type="text" class="form-control fs-4" id="nota-final" readonly>
+            </div>
+            <input type="button" class="btn btn-primary" onclick="calcular()" value="Calcular">
+        </form>
+    </main>
+    <footer class="text-center border-top border-primary border-5 mt-5 pt-5 fs-1">
+        Obrigado!
+    </footer>
+    <script src="../general-assets/libs/js/bootstrap.bundle.js"></script>
+    <script src="./question-4.js"></script>
+</body>
+</html>
