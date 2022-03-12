@@ -7,9 +7,11 @@
 var hasOperator = false;
 var operandValue = 0;
 var symbolValue = "";
+var hasTypedValue = false;
 
 const inputVisor = (input) => {
     const visorText = visor.innerText;
+    hasTypedValue = true;
     if(!visorText.includes(",")){
         if(input == ","){
             visor.innerText = visorText + input;
@@ -23,6 +25,7 @@ const inputVisor = (input) => {
 };
 
 const inputComma = () => {
+    hasTypedValue = true;
     visor.innerText += ",";
 };
 
@@ -73,22 +76,28 @@ const operator = (symbol) => {
     if (!hasOperator){
         if (symbol == "="){
             hasOperator = false;
-            operand.innerText = "0";
             visor.innerText = "0";
+            operand.innerText = "0";
+            operandSymbol.innerText = "";
         }
-        else{
+        else if (hasTypedValue){
             hasOperator = true;
             operand.innerText = visorInput;
             visor.innerText = "0";
             operandValue = toNumber(visorInput);
+            operandSymbol.innerText = symbol;
+            symbolValue = symbol;
+        }
+        else{
+            operandSymbol.innerText = symbol;
             symbolValue = symbol;
         }
     }
-    else{
+    else if(hasTypedValue || symbol == "="){
         calculationHistory.innerHTML += `
             <span class="ps-1">${formatVisor(operandValue)}</span>
         `;
-        switch (symbol != "=" ? symbol : symbolValue) {
+        switch (symbolValue) {
             case "+":
                 operandValue += toNumber(visorInput);
                 break;
@@ -121,24 +130,34 @@ const operator = (symbol) => {
 
         if (symbol == "="){
             operand.innerText = "0";
+            operandSymbol.innerText = "";
             hasOperator = false;
             operandValue = 0;
             symbolValue = "";
         }
         else{
             operand.innerText = formatVisor(operandValue);
+            operandSymbol.innerText = symbol;
             symbolValue = symbol;
         }
     }
+    else{
+        operandSymbol.innerText = symbol;
+        symbolValue = symbol;
+    }
+    hasTypedValue = false;
 };
 
 const clearEntry = () => {
     visor.innerText = "0";
+    hasTypedValue = false;
 };
 
 const clearAll = () => {
     visor.innerText = "0";
     operand.innerText = "0";
+    operandSymbol.innerText = "";
+    hasTypedValue = false;
     hasOperator = false;
     operandValue = 0;
     symbolValue = "";
