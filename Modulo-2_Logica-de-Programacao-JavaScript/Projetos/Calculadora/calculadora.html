@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Projeto Final - Módulo 2</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-center border-bottom border-secondary border-5 p-3">
+            <b>Calculadora</b>
+        </h1>
+    </header>
+    <main class="d-flex">
+        <section class="container text-center w-50 m-5 pe-0 ps-0 fs-3">
+            <div class="row row-cols-4 pe-5 ps-5 justify-content-md-center">
+                <div
+                    id="operand"
+                    title="Operando"
+                    class="fs-6 border col-12 p-0"
+                >0</div>
+                <div
+                    id="visor"
+                    title="Visor"
+                    class="col-12 border text-center pt-3 pe-0 pb-3 ps-0"
+                >0</div>
+                <div onclick="percent()" title="Percent" class="col border text-center pt-3 pe-0 pb-3 ps-0">%</div>
+                <div onclick="clearEntry()" title="Clear Entry" class="col border text-center pt-3 pe-0 pb-3 ps-0">CE</div>
+                <div onclick="clearAll()" title="Clear All" class="col border text-center pt-3 pe-0 pb-3 ps-0">C</div>
+                <div onclick="backspace()" title="Backspace" class="col border text-center pt-3 pe-0 pb-3 ps-0">⌫</div>
+                <div onclick="oneOver()" title="One Over" class="col border text-center pt-3 pe-0 pb-3 ps-0">1/x</div>
+                <div onclick="squareOf()" title="Square Of" class="col border text-center pt-3 pe-0 pb-3 ps-0">x²</div>
+                <div onclick="squareRootOf()" title="Square Root Of" class="col border text-center pt-3 pe-0 pb-3 ps-0">²√x</div>
+                <div onclick="operator('/')" title="Division" class="col border text-center pt-3 pe-0 pb-3 ps-0">÷</div>
+                <div onclick="inputVisor('7')" title="Seven" class="col border text-center pt-3 pe-0 pb-3 ps-0">7</div>
+                <div onclick="inputVisor('8')" title="Eight" class="col border text-center pt-3 pe-0 pb-3 ps-0">8</div>
+                <div onclick="inputVisor('9')" title="Nine" class="col border text-center pt-3 pe-0 pb-3 ps-0">9</div>
+                <div onclick="operator('*')" title="Multiply" class="col border text-center pt-3 pe-0 pb-3 ps-0">*</div>
+                <div onclick="inputVisor('4')" title="Four" class="col border text-center pt-3 pe-0 pb-3 ps-0">4</div>
+                <div onclick="inputVisor('5')" title="Five" class="col border text-center pt-3 pe-0 pb-3 ps-0">5</div>
+                <div onclick="inputVisor('6')" title="Six" class="col border text-center pt-3 pe-0 pb-3 ps-0">6</div>
+                <div onclick="operator('-')" title="Minus" class="col border text-center pt-3 pe-0 pb-3 ps-0">-</div>
+                <div onclick="inputVisor('1')" title="One" class="col border text-center pt-3 pe-0 pb-3 ps-0">1</div>
+                <div onclick="inputVisor('2')" title="Two" class="col border text-center pt-3 pe-0 pb-3 ps-0">2</div>
+                <div onclick="inputVisor('3')" title="Three" class="col border text-center pt-3 pe-0 pb-3 ps-0">3</div>
+                <div onclick="operator('+')" title="Plus" class="col border text-center pt-3 pe-0 pb-3 ps-0">+</div>
+                <div onclick="invertSignal()" title="Invert Signal" class="col border text-center pt-3 pe-0 pb-3 ps-0">+/-</div>
+                <div onclick="inputVisor('0')" title="Zero" class="col border text-center pt-3 pe-0 pb-3 ps-0">0</div>
+                <div onclick="inputVisor(',')" title="Comma" class="col border text-center pt-3 pe-0 pb-3 ps-0">,</div>
+                <div onclick="operator('=')" title="Equal" class="col border text-center pt-3 pe-0 pb-3 ps-0">=</div>
+            </div>
+        </section>
+        <section class="container border w-50 m-5 pe-0 ps-0">
+            <span class="d-flex border-bottom justify-content-between">
+                <h3 class="h3 pb-1 ps-1 mb-1">Histórico</h3>
+                <div id="clear-history" onclick="clearHistory()" title="Clear History" class="pe-1 pb-0 ps-1 mb-0">Limpar</div>
+            </span>
+            <div id="calculationHistory" title="Histórico"></div>
+        </section>
+    </main>
+    <footer class="text-center border-top border-5 pt-5 fs-1 border-secondary">
+        Obrigado!
+    </footer>
+    <script src="./assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/calculadora.js"></script>
+</body>
+</html>
