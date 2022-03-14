@@ -14,9 +14,9 @@
             <b>Calculadora</b>
         </h1>
     </header>
-    <main class="d-flex flex-wrap justify-content-center">
-        <section class="container flex-shrink-0 text-center w-50 m-5 pe-0 ps-0 fs-3">
-            <div class="row row-cols-4 pe-5 ps-5 justify-content-md-center">
+    <main class="d-flex flex-wrap justify-content-evenly">
+        <section class="container flex-shrink-0 mt-5 mb-5 text-center pe-0 ps-0 fs-3" style="width: fit-content;">
+            <div class="row row-cols-4 pe-5 ps-5 justify-content-center">
                 <div
                     id="operand"
                     title="Operando"
@@ -57,13 +57,13 @@
                 <div onclick="inputVisor(',')" title="Comma" class="col border text-center pt-3 pe-0 pb-3 ps-0">,</div>
                 <div onclick="operator('=')" title="Equal" class="col border text-center pt-3 pe-0 pb-3 ps-0">=</div>
             </div>
-        </section>
-        <section class="container border w-50 m-5 pe-0 ps-0">
+     </section>
+        <section class="container border mt-5 mb-5 pe-0 ps-0" style="width: fit-content;">
             <span class="d-flex border-bottom justify-content-between">
-                <h3 class="h3 pb-1 ps-1 mb-1">Histórico</h3>
+                <h3 class="h3 me-5 mb-1 pe-5 pb-1 ps-1">Histórico</h3>
                 <div id="clear-history" onclick="clearHistory()" title="Clear History" class="pe-1 pb-0 ps-1 mb-0">Limpar</div>
             </span>
-            <div id="calculationHistory" title="Histórico"></div>
+            <div class="column" id="calculationHistory" title="Histórico"></div>
         </section>
     </main>
     <footer class="text-center border-top border-5 pt-5 fs-1 border-secondary">

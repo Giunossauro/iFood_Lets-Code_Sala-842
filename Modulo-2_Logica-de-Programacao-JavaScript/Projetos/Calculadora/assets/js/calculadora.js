@@ -4,6 +4,19 @@
  * 
  */
 
+const resizeObserver = new ResizeObserver(entries => {
+    const calculatorElement = document.getElementsByTagName("section")[0];
+    const tempVisorText = visor.innerText;
+    let calculatorWidth;
+    visor.innerText = "";
+    calculatorElement.setAttribute("style","width:fit-content");
+    calculatorWidth = calculatorElement.offsetWidth;
+    visor.innerText = tempVisorText;
+    calculatorElement.setAttribute("style",`width:${calculatorWidth}px`);
+});
+
+resizeObserver.observe(document.body);
+
 var hasOperator = false;
 var operandValue = 0;
 var symbolValue = "";
@@ -11,6 +24,7 @@ var hasTypedValue = false;
 
 const inputVisor = (input) => {
     const visorText = visor.innerText;
+
     hasTypedValue = true;
     if(!visorText.includes(",")){
         if(input == ","){
@@ -101,7 +115,7 @@ const operator = (symbol) => {
             case "+":
                 operandValue += toNumber(visorInput);
                 break;
-
+            
             case "-":
                 operandValue -= toNumber(visorInput);
                 break;

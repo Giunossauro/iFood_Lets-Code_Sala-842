@@ -1,21 +1,7 @@
-
-
 body{
 	background-color: #02060D;
 	color: #CCD3D9;
 	font-family: 'Courier New', Courier, monospace;
-}
-
-header{
-    animation-name: boxAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-header h1{
-    animation-name: textAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
 }
 
 .col, #clear-history{
