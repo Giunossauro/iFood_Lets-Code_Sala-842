@@ -16,10 +16,10 @@
     </header>
     <main class="d-flex flex-wrap justify-content-evenly">
         <section class="container flex-shrink-0 mt-5 mb-5 text-center pe-0 ps-0 fs-3" style="width: fit-content;">
-            <div class="row row-cols-4 pe-5 ps-5 justify-content-center">
+            <div class="row row-cols-4 w-100 pe-4 ps-5 justify-content-center">
                 <div
                     id="operand"
-                    title="Operando"
+                    title="Operand"
                     class="fs-5 border col-9 p-0"
                 >0</div>
                 <div
@@ -30,7 +30,7 @@
                 <div
                     id="visor"
                     title="Visor"
-                    class="col-12 border text-center pt-3 pe-0 pb-3 ps-0"
+                    class="col-12 border text-center pt-3 pe-0 pb-3 ps-0 fw-bold"
                 >0</div>
                 <div onclick="percent()" title="Percent" class="col border text-center pt-3 pe-0 pb-3 ps-0">%</div>
                 <div onclick="clearEntry()" title="Clear Entry" class="col border text-center pt-3 pe-0 pb-3 ps-0">CE</div>
@@ -57,17 +57,25 @@
                 <div onclick="inputVisor(',')" title="Comma" class="col border text-center pt-3 pe-0 pb-3 ps-0">,</div>
                 <div onclick="operator('=')" title="Equal" class="col border text-center pt-3 pe-0 pb-3 ps-0">=</div>
             </div>
-     </section>
+        </section>
         <section class="container border mt-5 mb-5 pe-0 ps-0" style="width: fit-content;">
             <span class="d-flex border-bottom justify-content-between">
                 <h3 class="h3 me-5 mb-1 pe-5 pb-1 ps-1">Histórico</h3>
                 <div id="clear-history" onclick="clearHistory()" title="Clear History" class="pe-1 pb-0 ps-1 mb-0">Limpar</div>
             </span>
-            <div class="column" id="calculationHistory" title="Histórico"></div>
+            <div class="column" id="calculationHistory" title="History"></div>
         </section>
     </main>
-    <footer class="text-center border-top border-5 pt-5 fs-1 border-secondary">
-        Obrigado!
+    <footer class="text-center text-wrap border-top border-5 me-0 ms-0 pt-5 border-secondary">
+        <section>
+            <p>Author: Giuliano Mitteroheffer Morelli</p>
+            <p><a href="mailto:giuliano@valeuapenajogar.com">giuliano@valeuapenajogar.com</a></p>
+            <p><a href="https://www.linkedin.com/in/girzo/">LinkedIn: Girzo</a></p>
+        </section>
+
+        <section>
+            <p>Feito usando bootstrap 5.1.3 e sem olhar o código de nenhuma outra calculadora.</p>
+        </section>
     </footer>
     <script src="./assets/libs/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/calculadora.js"></script>

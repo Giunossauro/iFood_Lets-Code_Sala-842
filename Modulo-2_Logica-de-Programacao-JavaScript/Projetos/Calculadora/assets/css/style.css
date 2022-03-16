@@ -4,6 +4,10 @@ body{
 	font-family: 'Courier New', Courier, monospace;
 }
 
+header h1{
+    color: #E9EEF2;
+}
+
 .col, #clear-history{
     -ms-user-select: none;
     -webkit-user-select: none;
@@ -14,4 +18,45 @@ body{
     background-color: grey;
     color: #E9EEF2;
     cursor: pointer;
+}
+
+h3.popover-header{
+    text-align: center;
+    color: #212529;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    margin: 2em;
+}
+
+footer section {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+footer section:not(:first-child) {
+    font-weight: bold;
+}
+
+footer section:last-child {
+    border-left: 0.3vmin solid #6c757d;
+}
+
+footer a {
+    color: #E9EEF2;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration-color: #E9EEF2;
+    word-wrap: break-word;
+}
+
+footer p{
+    font-size: 1em;
+}
+
+footer p, footer h1, footer h3{
+    padding: 0 2vw 0 2vw;
 }

@@ -1,26 +1,42 @@
-/**
- * 
- * 
- * 
- */
+const limitAlert = new bootstrap.Popover(
+    visor,
+    {
+        content: `Números acima de (ou abaixo de -) ${
+            (Number.MAX_SAFE_INTEGER).toLocaleString(
+                'pt-br',{
+                    maximumFractionDigits: 0,
+                    maximumSignificantDigits: 21,
+                    style: 'decimal',
+                    useGrouping: true
+                }
+            )
+        } não são permitidos nesta versão da calculadora.`,
+        trigger: "manual"
+    }
+);
 
-const resizeObserver = new ResizeObserver(entries => {
-    const calculatorElement = document.getElementsByTagName("section")[0];
-    const tempVisorText = visor.innerText;
-    let calculatorWidth;
-    visor.innerText = "";
-    calculatorElement.setAttribute("style","width:fit-content");
-    calculatorWidth = calculatorElement.offsetWidth;
-    visor.innerText = tempVisorText;
-    calculatorElement.setAttribute("style",`width:${calculatorWidth}px`);
-});
+const limitOverflow = new bootstrap.Popover(
+    calculationHistory,
+    {
+        content: `Números acima de (ou abaixo de -) ${
+            (Number.MAX_SAFE_INTEGER).toLocaleString(
+                'pt-br',{
+                    maximumFractionDigits: 0,
+                    maximumSignificantDigits: 21,
+                    style: 'decimal',
+                    useGrouping: true
+                }
+            )
+        } não são permitidos nesta versão da calculadora.`,
+        trigger: "manual"
+    }
+);
 
-resizeObserver.observe(document.body);
-
-var hasOperator = false;
-var operandValue = 0;
-var symbolValue = "";
-var hasTypedValue = false;
+let hasOperator = false;
+let operandValue = 0;
+let symbolValue = "";
+let hasTypedValue = false;
+let timerStarted = false;
 
 const inputVisor = (input) => {
     const visorText = visor.innerText;
@@ -142,6 +158,10 @@ const operator = (symbol) => {
 
         visor.innerText = "0";
 
+        if (!Number.isSafeInteger(operandValue) && !timerStarted){
+            showAlert(limitOverflow);
+        }
+
         if (symbol == "="){
             operand.innerText = "0";
             operandSymbol.innerText = "";
@@ -182,9 +202,18 @@ const clearHistory = () => {
 };
 
 const toNumber = (string) => {
-    string = string.replaceAll(".","");
-    string = +string.replace(",",".");
-    return string;
+    string = (string.replaceAll(".",""));
+    string = string.replace(",",".");
+    const number = +string;
+    if (Number.isSafeInteger(number)){
+        return number;
+    }
+    
+    if(!timerStarted){
+        showAlert(limitAlert);
+    }
+    
+    return +string.slice(0, string.length - 1);
 };
 
 const formatVisor = (input) => {
@@ -194,11 +223,19 @@ const formatVisor = (input) => {
     return input.toLocaleString(
         'pt-br',{
             maximumFractionDigits: 20,
+            maximumSignificantDigits: 21,
             style: 'decimal',
             useGrouping: true
         }
     );
 };
+
+const showAlert = (popover) => {
+    popover.show();
+    document.getElementsByClassName("popover-header")[0].innerText = "Peço perdão!";
+    timerStarted = true;
+    setTimeout(function() {popover.hide(); timerStarted = false;}, 6000);
+}
 
 document.addEventListener("keypress",(event) => {
     const key = event.key;
@@ -211,18 +248,32 @@ document.addEventListener("keypress",(event) => {
     else if(key == "+" || key == "" || key == "*" || key == "/"){
         operator(key);
     }
-    else if(key == "Backspace"){
-        backspace();
-    }
     else if(key == "Enter" || key == "="){
         operator("=");
     }
 });
 
 document.addEventListener("keydown",(event) => {
-    if(event.key == "Esc" || event.key == "Escape"){
+    const key = event.key;
+    if(key == "Esc" || key == "Escape"){
         if (visor.innerText != "0") clearEntry();
         else if(operand.innerText != "0") clearAll();
         else clearHistory();
     }
+    else if(key == "Backspace"){
+        backspace();
+    }
 });
+
+const resizeObserver = new ResizeObserver(entries => {
+    const calculatorElement = document.getElementsByTagName("section")[0];
+    const tempVisorText = visor.innerText;
+    let calculatorWidth;
+    visor.innerText = "";
+    calculatorElement.setAttribute("style","width:fit-content");
+    calculatorWidth = calculatorElement.offsetWidth;
+    visor.innerText = tempVisorText;
+    calculatorElement.setAttribute("style",`width:${calculatorWidth}px`);
+});
+
+resizeObserver.observe(document.body);
