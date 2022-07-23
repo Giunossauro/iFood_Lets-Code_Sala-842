@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    form{
+      border: 1px solid black;
+      padding: 0.2em 1em 1em 1em;
+    }
+  </style>
+  <title>Atividade Principal 2</title>
+</head>
+
+<body>
+  
+<!-- obs html só tem get ou post, e tem q por post senão o form faz um get por padrão -->
+
+  <form id="registro" method="post">
+    <h1>login / registro</h1>
+    <!-- "id":
+          "name":
+          "last_name":
+          "cpf":
+          "bth_date":
+          "phone": -->
+    
+    <label for="registroId">ID:</label><br>
+    <input type="number" id="registroId" name="registroId"><br><br>
+
+    <label for="registroNome">Nome:</label><br>
+    <input type="text" id="registroNome" name="registroNome"><br><br>
+
+    <label for="registroSobrenome">Sobrenome:</label><br>
+    <input type="text" id="registroSobrenome" name="registroSobrenome"><br><br>
+
+    <label for="registroCPF">CPF:</label><br>
+    <input type="text" id="registroCPF" name="registroCPF"><br><br>
+
+    <label for="registroDtNasc">Data de Nascimento:</label><br>
+    <input type="date" id="registroDtNasc" name="registroDtNasc"><br><br>
+
+    <label for="registroTelefone">Telefone:</label><br>
+    <input type="text" id="registroTelefone" name="registroTelefone"><br><br>
+
+    <button type="button" onclick="request(this.parentElement,'get','/login')">post</button>
+    <button type="button" onclick="request(this.parentElement,'post','/login')">post</button>
+    <button type="button" onclick="request(this.parentElement,'put','/login')">patch</button>
+    <button type="button" onclick="request(this.parentElement,'delete','/login')">delete</button>
+
+  </form>
+
+  <!-- _________________________________________________________________ -->
+
+  <form id="endereco" method="post">
+    <h1>endereco</h1>
+
+    <!-- "id":
+          "street":
+          "number":
+          "district":
+          "city":
+          "state":
+          "country": -->
+    
+    <label for="enderecoId">ID:</label><br>
+    <input type="text" id="enderecoId" name="enderecoId"><br><br>
+
+    <label for="enderecoLogradouro">Logradouro:</label><br>
+    <input type="text" id="enderecoLogradouro" name="enderecoLogradouro"><br><br>
+
+    <label for="enderecoNumero">Número:</label><br>
+    <input type="text" id="enderecoNumero" name="enderecoNumero"><br><br>
+
+    <label for="enderecoCidade">Cidade:</label><br>
+    <input type="text" id="enderecoCidade" name="enderecoCidade"><br><br>
+
+    <label for="enderecoUF">UF:</label><br>
+    <input type="text" id="enderecoUF" name="enderecoUF"><br><br>
+
+    <label for="enderecoPais">Pais:</label><br>
+    <input type="text" id="enderecoPais" name="enderecoPais"><br><br>
+
+    <button type="button" onclick="request(this.parentElement,'get','/address')">post</button>
+    <button type="button" onclick="request(this.parentElement,'post','/address')">post</button>
+    <button type="button" onclick="request(this.parentElement,'put','/address')">patch</button>
+    <button type="button" onclick="request(this.parentElement,'delete','/address')">delete</button>
+
+  </form>
+
+  <!-- _________________________________________________________________ -->
+
+  <form id="cartao" method="post">
+    <h1>cartao de crédito</h1>
+
+    <!-- "id":
+          "card_number":
+          "card_name":
+          "validate":
+          "ccv": -->
+    
+    <label for="cartaoId">ID:</label><br>
+    <input type="number" id="cartaoId" name="cartaoId"><br><br>
+
+    <label for="cartaoNumero">Número do Cartão:</label><br>
+    <input type="text" id="cartaoNumero" name="cartaoNumero"><br><br>
+
+    <label for="cartaoNome">Nome Impresso no Cartão:</label><br>
+    <input type="text" id="cartaoNome" name="cartaoNome"><br><br>
+
+    <label for="cartaoValidade">Validade:</label><br>
+    <input type="date" id="cartaoValidade" name="cartaoValidade"><br><br>
+
+    <label for="cartaoCCV">CCV:</label><br>
+    <input type="number" id="cartaoCCV" name="cartaoCCV"><br><br>
+
+    <button type="button" onclick="request(this.parentElement,'get','/data_credit_card')">get</button>
+    <button type="button" onclick="request(this.parentElement,'post','/data_credit_card')">post</button>
+    <button type="button" onclick="request(this.parentElement,'put','/data_credit_card')">patch</button>
+    <button type="button" onclick="request(this.parentElement,'delete','/data_credit_card')">delete</button>
+
+  </form>
+
+  <div id="visualizarJson"></div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+//to colocando o client.js aqui tbm pq não ta puxando no script src
+// axios: https://axios-http.com/ptbr/docs/api_intro
+    function request(e,metodo,rota) {
+      console.log("dasdsa",
+        Object.entries(e.getElementsByTagName("input")).map(f => f[1].value)
+      );
+      axios({
+        method: metodo,
+        url: rota,
+        data: Object.entries(e.getElementsByTagName("input")).map(f => f[1].value),
+      })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.error(error);
+      }); 
+    }
+
+    // esta requisicao axios serve pra renderizar os dados na tela a primeira vez
+    axios.request('http://localhost:5000/post')
+      .then(res => {
+        document.getElementById('visualizarJson').innerText = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
+      })
+      .catch(err => console.log(err)
+    );
+  </script>
+  <!--script src="client.js"></script-->
+  
+</body>
+
+</html>

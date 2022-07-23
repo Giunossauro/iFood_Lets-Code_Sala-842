@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>a</div>
+    <script>
+        function c(x){
+            x = x + 1;
+            if ((x % 101) == 0) {
+                console.log(x);
+                setTimeout(function(){c(x)},1);
+                document.body.innerHTML += "<div>a</div>"
+            }
+            c(x);
+            return;
+        }
+        c(1);
+    </script>
+    <div>b</div>
+</body>
+</html>

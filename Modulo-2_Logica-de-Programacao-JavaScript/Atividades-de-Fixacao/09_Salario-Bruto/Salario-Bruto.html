@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../general-assets/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="../general-assets/css/style.css">
+    <title>Questão 9</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-center border-bottom border-secondary border-5 p-3">
+            <strong>Q.9</strong> - Quanto o trabalhador irá receber?
+        </h1>
+    </header>
+    <main class="container">
+        <form class="m-5 p-5 text-center">
+            <h3>A jornada de trabalho semanal de um funcionário é de 40 horas e funcionário que trabalhar mais de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%.<br /><br />Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas (considere que o mês possua 4 semanas exatas). </h3><br><br>
+            <div class="mb-3">
+                <label for="horas-1" class="form-label fs-4">Horas trabalhadas na primeira semana</label>
+                <input type="text" class="form-control fs-5" id="horas-1" required>
+            </div>
+            <div class="mb-3">
+                <label for="horas-2" class="form-label fs-4">Horas trabalhadas na segunda semana</label>
+                <input type="text" class="form-control fs-5" id="horas-2" required>
+            </div>
+            <div class="mb-3">
+                <label for="horas-3" class="form-label fs-4">Horas trabalhadas na terceira semana</label>
+                <input type="text" class="form-control fs-5" id="horas-3" required>
+            </div>
+            <div class="mb-3">
+                <label for="horas-4" class="form-label fs-4">Horas trabalhadas na quarta semana</label>
+                <input type="text" class="form-control fs-5" id="horas-4" required>
+            </div>
+            <div class="mb-3">
+                <label for="salario-hora" class="form-label fs-4">Valor da hora</label>
+                <input type="text" class="form-control fs-5" id="salario-hora" required>
+            </div>
+            <div class="mb-3">
+                <label for="salario-total" class="form-label fs-4">Salário Total</label>
+                <input type="text" class="form-control fs-4" id="salario-total" readonly>
+            </div>
+            <input type="button" class="btn btn-secondary" onclick="calcular()" value="Calcular">
+        </form>
+    </main>
+    <footer class="text-center border-top border-secondary border-5 mt-5 pt-5 fs-1">
+        Obrigado!
+    </footer>
+    <script src="../general-assets/libs/js/bootstrap.bundle.js"></script>
+    <script src="./Salario-Bruto.js"></script>
+</body>
+</html>

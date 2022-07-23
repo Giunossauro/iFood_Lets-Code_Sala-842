@@ -1,0 +1,53 @@
+{
+    "last_id": 7,
+    "transformer": [
+        {
+            "id": 1,
+            "nome": "Optimus Primal",
+            "equipe": "Maximal",
+            "voa" : "sim",
+            "formas_totais" : 3,
+            "sobrevive" : "sim"
+        },
+        {
+            "id": 2,
+            "nome": "Megatron",
+            "equipe": "Predacon",
+            "voa" : "sim",
+            "formas_totais" : 3,
+            "sobrevive" : "sim"
+        },
+        {
+            "id": 3,
+            "nome": "Rhinox",
+            "equipe": "Maximal",
+            "voa" : "não",
+            "formas_totais" : 1,
+            "sobrevive" : "sim"
+        },
+        {
+            "id": 4,
+            "nome": "Dinobot",
+            "equipe": "Predacon",
+            "voa" : "não",
+            "formas_totais" : 2,
+            "sobrevive" : "não"
+        },
+        {
+            "id": 5,
+            "nome": "Airazor",
+            "equipe": "Maximal",
+            "voa" : "sim",
+            "formas_totais" : 1,
+            "sobrevive" : "não"
+        },
+        {
+            "nome": "Inferno",
+            "equipe": "Predacon",
+            "voa" : "sim",
+            "formas_totais" : 1,
+            "sobrevive" : "não",
+            "id": 6
+        }
+    ]
+}

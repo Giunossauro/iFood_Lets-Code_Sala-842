@@ -1,27 +1,47 @@
-@keyframes textAnimation {
-    0%   {color:#9760E6; left:0px; top:0px;}
-    25%  {color:#E6B06C; left:200px; top:0px;}
-    50%  {color:#5569E6; left:200px; top:200px;}
-    75%  {color:#E6E03E; left:0px; top:200px;}
-    100% {color:#49B0E6; left:0px; top:0px;}
+* {
+    color: gray !important;
+    background-color: black !important;
 }
 
-@keyframes boxAnimation {
-    0%   {background-color:#E6B06C; left:0px; top:0px;}
-    25%  {background-color:#5569E6; left:200px; top:0px;}
-    50%  {background-color:#E6E03E; left:200px; top:200px;}
-    75%  {background-color:#49B0E6; left:0px; top:200px;}
-    100% {background-color:#9760E6; left:0px; top:0px;}
+div, input {
+    border: 1px solid #6c757d !important;
+    padding: 1rem !important;
+    align-items: center;
 }
 
-header{
-    animation-name: boxAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+.list-group {
+    border-radius: 1rem !important;
 }
 
-header h1{
-    animation-name: textAnimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+details {
+    border: 1px solid #ffffff !important;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+summary, details {
+    background-color: dimgray !important;
+    list-style: none;
+}
+
+summary::marker{
+	display: none;
+}
+
+summary::-webkit-details-marker{
+    display: none;
+	list-style: none;
+	list-style-type: none;
+}
+
+a, main strong, main b, h5 {
+    color: #dddddd !important;
+    background-color: dimgrey !important;
+    text-decoration: none;
+}
+
+footer {
+    padding-bottom: 1rem; 
 }

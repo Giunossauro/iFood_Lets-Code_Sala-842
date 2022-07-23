@@ -1,0 +1,29 @@
+{
+    "heroes": [
+        {
+            "id": 1,
+            "nome": "The Flash",
+            "publicadora": "DC"
+        },
+        {
+            "id": 2,
+            "nome": "Wolverine",
+            "publicadora": "Marvel"
+        },
+        {
+            "id": 3,
+            "nome": "Mulher Maravilha",
+            "publicadora": "Marvel"
+        },
+        {
+            "id": 4,
+            "nome": "Capitão América",
+            "publicadora": "DC"
+        },
+        {
+            "id": 5,
+            "nome": "Chapolin Colorado",
+            "publicadora": "Televisa"
+        }
+    ]
+}

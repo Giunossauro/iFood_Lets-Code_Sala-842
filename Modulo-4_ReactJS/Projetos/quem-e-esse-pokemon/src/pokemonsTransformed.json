@@ -1,0 +1,2898 @@
+[
+  {
+    "name": "deoxys-attack",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10001.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "deoxys-defense",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10002.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "deoxys-speed",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10003.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "wormadam-sandy",
+    "types": [
+      "bug",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10004.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "wormadam-trash",
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10005.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "shaymin-sky",
+    "types": [
+      "grass",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10006.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "giratina-origin",
+    "types": [
+      "ghost",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10007.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rotom-heat",
+    "types": [
+      "electric",
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10008.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rotom-wash",
+    "types": [
+      "electric",
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10009.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rotom-frost",
+    "types": [
+      "electric",
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10010.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rotom-fan",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10011.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rotom-mow",
+    "types": [
+      "electric",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10012.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "castform-sunny",
+    "types": [
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10013.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "castform-rainy",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10014.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "castform-snowy",
+    "types": [
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10015.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "basculin-blue-striped",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10016.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "darmanitan-zen",
+    "types": [
+      "fire",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10017.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "meloetta-pirouette",
+    "types": [
+      "normal",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10018.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "tornadus-therian",
+    "types": [
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10019.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "thundurus-therian",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10020.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "landorus-therian",
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10021.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "kyurem-black",
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10022.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "kyurem-white",
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10023.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "keldeo-resolute",
+    "types": [
+      "water",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10024.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "meowstic-female",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10025.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "aegislash-blade",
+    "types": [
+      "steel",
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10026.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pumpkaboo-small",
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10027.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pumpkaboo-large",
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10028.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pumpkaboo-super",
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10029.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gourgeist-small",
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10030.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gourgeist-large",
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10031.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gourgeist-super",
+    "types": [
+      "ghost",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10032.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "venusaur-mega",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10033.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "charizard-mega-x",
+    "types": [
+      "fire",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10034.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "charizard-mega-y",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10035.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "blastoise-mega",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10036.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "alakazam-mega",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10037.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gengar-mega",
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10038.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "kangaskhan-mega",
+    "types": [
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10039.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pinsir-mega",
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10040.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gyarados-mega",
+    "types": [
+      "water",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10041.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "aerodactyl-mega",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10042.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "mewtwo-mega-x",
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10043.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "mewtwo-mega-y",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10044.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "ampharos-mega",
+    "types": [
+      "electric",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10045.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "scizor-mega",
+    "types": [
+      "bug",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10046.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "heracross-mega",
+    "types": [
+      "bug",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10047.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "houndoom-mega",
+    "types": [
+      "dark",
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10048.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "tyranitar-mega",
+    "types": [
+      "rock",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10049.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "blaziken-mega",
+    "types": [
+      "fire",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10050.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gardevoir-mega",
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10051.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "mawile-mega",
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10052.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "aggron-mega",
+    "types": [
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10053.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "medicham-mega",
+    "types": [
+      "fighting",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10054.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "manectric-mega",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10055.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "banette-mega",
+    "types": [
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10056.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "absol-mega",
+    "types": [
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10057.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "garchomp-mega",
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10058.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "lucario-mega",
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10059.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "abomasnow-mega",
+    "types": [
+      "grass",
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10060.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "floette-eternal",
+    "types": [
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10061.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "latias-mega",
+    "types": [
+      "dragon",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10062.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "latios-mega",
+    "types": [
+      "dragon",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10063.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "swampert-mega",
+    "types": [
+      "water",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10064.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "sceptile-mega",
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10065.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "sableye-mega",
+    "types": [
+      "dark",
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10066.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "altaria-mega",
+    "types": [
+      "dragon",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10067.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gallade-mega",
+    "types": [
+      "psychic",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10068.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "audino-mega",
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10069.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "sharpedo-mega",
+    "types": [
+      "water",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10070.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "slowbro-mega",
+    "types": [
+      "water",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10071.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "steelix-mega",
+    "types": [
+      "steel",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10072.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pidgeot-mega",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10073.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "glalie-mega",
+    "types": [
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10074.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "diancie-mega",
+    "types": [
+      "rock",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10075.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "metagross-mega",
+    "types": [
+      "steel",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10076.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "kyogre-primal",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10077.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "groudon-primal",
+    "types": [
+      "ground",
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10078.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rayquaza-mega",
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10079.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-rock-star",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10080.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-belle",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10081.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-pop-star",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10082.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-phd",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10083.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-libre",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10084.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-cosplay",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10085.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "hoopa-unbound",
+    "types": [
+      "psychic",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10086.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "camerupt-mega",
+    "types": [
+      "fire",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10087.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "lopunny-mega",
+    "types": [
+      "normal",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10088.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "salamence-mega",
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10089.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "beedrill-mega",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10090.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rattata-alola",
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10091.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "raticate-alola",
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10092.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "raticate-totem-alola",
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10093.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-original-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10094.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-hoenn-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10095.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-sinnoh-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10096.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-unova-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10097.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-kalos-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10098.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-alola-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10099.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "raichu-alola",
+    "types": [
+      "electric",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10100.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "sandshrew-alola",
+    "types": [
+      "ice",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10101.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "sandslash-alola",
+    "types": [
+      "ice",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10102.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "vulpix-alola",
+    "types": [
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10103.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "ninetales-alola",
+    "types": [
+      "ice",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10104.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "diglett-alola",
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10105.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "dugtrio-alola",
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10106.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "meowth-alola",
+    "types": [
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10107.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "persian-alola",
+    "types": [
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10108.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "geodude-alola",
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10109.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "graveler-alola",
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10110.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "golem-alola",
+    "types": [
+      "rock",
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10111.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "grimer-alola",
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10112.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "muk-alola",
+    "types": [
+      "poison",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10113.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "exeggutor-alola",
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10114.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "marowak-alola",
+    "types": [
+      "fire",
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10115.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "greninja-battle-bond",
+    "types": [
+      "water",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10116.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "greninja-ash",
+    "types": [
+      "water",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10117.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zygarde-10-power-construct",
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10118.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zygarde-50-power-construct",
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10119.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zygarde-complete",
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10120.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gumshoos-totem",
+    "types": [
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10121.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "vikavolt-totem",
+    "types": [
+      "bug",
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10122.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "oricorio-pom-pom",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10123.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "oricorio-pau",
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10124.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "oricorio-sensu",
+    "types": [
+      "ghost",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10125.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "lycanroc-midnight",
+    "types": [
+      "rock"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10126.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "wishiwashi-school",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10127.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "lurantis-totem",
+    "types": [
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10128.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "salazzle-totem",
+    "types": [
+      "poison",
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10129.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-orange-meteor",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10130.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-yellow-meteor",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10131.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-green-meteor",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10132.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-blue-meteor",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10133.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-indigo-meteor",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10134.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-violet-meteor",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10135.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-red",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10136.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-orange",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10137.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-yellow",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10138.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-green",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10139.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-blue",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10140.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-indigo",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10141.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "minior-violet",
+    "types": [
+      "rock",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10142.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "mimikyu-busted",
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10143.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "mimikyu-totem-disguised",
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10144.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "mimikyu-totem-busted",
+    "types": [
+      "ghost",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10145.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "kommo-o-totem",
+    "types": [
+      "dragon",
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10146.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "magearna-original",
+    "types": [
+      "steel",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10147.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-partner-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10148.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "marowak-totem",
+    "types": [
+      "fire",
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10149.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "ribombee-totem",
+    "types": [
+      "bug",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10150.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rockruff-own-tempo",
+    "types": [
+      "rock"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10151.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "lycanroc-dusk",
+    "types": [
+      "rock"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10152.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "araquanid-totem",
+    "types": [
+      "water",
+      "bug"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10153.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "togedemaru-totem",
+    "types": [
+      "electric",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10154.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "necrozma-dusk",
+    "types": [
+      "psychic",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10155.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "necrozma-dawn",
+    "types": [
+      "psychic",
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10156.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "necrozma-ultra",
+    "types": [
+      "psychic",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10157.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-starter",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/25-starter.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "eevee-starter",
+    "types": [
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-viii/icons/133-starter.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-world-cap",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10160.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "meowth-galar",
+    "types": [
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10161.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "ponyta-galar",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10162.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rapidash-galar",
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10163.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "slowpoke-galar",
+    "types": [
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10164.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "slowbro-galar",
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10165.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "farfetchd-galar",
+    "types": [
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10166.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "weezing-galar",
+    "types": [
+      "poison",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10167.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "mr-mime-galar",
+    "types": [
+      "ice",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10168.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "articuno-galar",
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10169.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zapdos-galar",
+    "types": [
+      "fighting",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10170.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "moltres-galar",
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10171.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "slowking-galar",
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10172.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "corsola-galar",
+    "types": [
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10173.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zigzagoon-galar",
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10174.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "linoone-galar",
+    "types": [
+      "dark",
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10175.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "darumaka-galar",
+    "types": [
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10176.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "darmanitan-galar-standard",
+    "types": [
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10177.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "darmanitan-galar-zen",
+    "types": [
+      "ice",
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10178.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "yamask-galar",
+    "types": [
+      "ground",
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10179.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "stunfisk-galar",
+    "types": [
+      "ground",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10180.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zygarde-10",
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/718-10.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "cramorant-gulping",
+    "types": [
+      "flying",
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/845-gulping.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "cramorant-gorging",
+    "types": [
+      "flying",
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/845-gorging.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "toxtricity-low-key",
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10184.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "eiscue-noice",
+    "types": [
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10185.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "indeedee-female",
+    "types": [
+      "psychic",
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10186.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "morpeko-hangry",
+    "types": [
+      "electric",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/877-hangry.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zacian-crowned",
+    "types": [
+      "fairy",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10188.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zamazenta-crowned",
+    "types": [
+      "fighting",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10189.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "eternatus-eternamax",
+    "types": [
+      "poison",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10190.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "urshifu-rapid-strike",
+    "types": [
+      "fighting",
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10191.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "zarude-dada",
+    "types": [
+      "dark",
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/893-dada.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "calyrex-ice",
+    "types": [
+      "psychic",
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10193.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "calyrex-shadow",
+    "types": [
+      "psychic",
+      "ghost"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10194.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "venusaur-gmax",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10195.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "charizard-gmax",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10196.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "blastoise-gmax",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10197.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "butterfree-gmax",
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10198.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "pikachu-gmax",
+    "types": [
+      "electric"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10199.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "meowth-gmax",
+    "types": [
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10200.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "machamp-gmax",
+    "types": [
+      "fighting"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10201.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "gengar-gmax",
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10202.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "kingler-gmax",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10203.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "lapras-gmax",
+    "types": [
+      "water",
+      "ice"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10204.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "eevee-gmax",
+    "types": [
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10205.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "snorlax-gmax",
+    "types": [
+      "normal"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10206.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "garbodor-gmax",
+    "types": [
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10207.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "melmetal-gmax",
+    "types": [
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10208.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "rillaboom-gmax",
+    "types": [
+      "grass"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10209.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "cinderace-gmax",
+    "types": [
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10210.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "inteleon-gmax",
+    "types": [
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10211.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "corviknight-gmax",
+    "types": [
+      "flying",
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10212.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "orbeetle-gmax",
+    "types": [
+      "bug",
+      "psychic"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10213.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "drednaw-gmax",
+    "types": [
+      "water",
+      "rock"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10214.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "coalossal-gmax",
+    "types": [
+      "rock",
+      "fire"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10215.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "flapple-gmax",
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10216.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "appletun-gmax",
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10217.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "sandaconda-gmax",
+    "types": [
+      "ground"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10218.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "toxtricity-amped-gmax",
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10219.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "centiskorch-gmax",
+    "types": [
+      "fire",
+      "bug"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10220.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "hatterene-gmax",
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10221.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "grimmsnarl-gmax",
+    "types": [
+      "dark",
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10222.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "alcremie-gmax",
+    "types": [
+      "fairy"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10223.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "copperajah-gmax",
+    "types": [
+      "steel"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10224.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "duraludon-gmax",
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10225.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "urshifu-single-strike-gmax",
+    "types": [
+      "fighting",
+      "dark"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10226.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "urshifu-rapid-strike-gmax",
+    "types": [
+      "fighting",
+      "water"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10227.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  },
+  {
+    "name": "toxtricity-low-key-gmax",
+    "types": [
+      "electric",
+      "poison"
+    ],
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10228.png",
+    "color": "",
+    "generation": "",
+    "habitat": "",
+    "isLegendary": "",
+    "shape": ""
+  }
+]

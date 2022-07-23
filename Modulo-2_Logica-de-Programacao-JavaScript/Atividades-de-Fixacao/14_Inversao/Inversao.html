@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../general-assets/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="../general-assets/css/style.css">
+    <title>Questão 14</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-center border-bottom border-secondary border-5 p-3">
+            <strong>Q.14</strong> - Os valores invertidos...
+        </h1>
+    </header>
+    <main class="container">
+        <form class="m-5 p-5 text-center">
+            <h3>Faça um algoritmo para ler 20 números e armazenar em um vetor.<br /><br />Após a leitura total dos 20 números, o algoritmo deve escrever esses 20 números lidos na ordem inversa.</h3><br /><br />
+            <div class="mb-3">
+                <label for="valor" class="form-label fs-4 m-3">Digite um valor e clique em salvar.<br /><br />Depois de 20 valores salvos, veja o que acontece com os valores em nossa sociedade (os valores ficam invertidos).</label>
+                <input type="text" class="form-control fs-5 m-3" id="valor" required>
+            </div>
+            <input id="botao" type="button" class="btn btn-secondary m-3" onclick="salvar()" value="Salvar">
+            <div class="mb-3 mt-3" id="valores">
+                <!-- Dinamic -->
+            </div>
+        </form>
+    </main>
+    <footer class="text-center border-top border-secondary border-5 mt-5 pt-5 fs-1">
+        Obrigado!
+    </footer>
+    <script src="../general-assets/libs/js/bootstrap.bundle.js"></script>
+    <script src="./Inversao.js"></script>
+</body>
+</html>

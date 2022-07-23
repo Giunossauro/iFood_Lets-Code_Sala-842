@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    div{
+      display: inline-table;
+      border: 1px solid black;
+      width: fit-content;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  </style>
+  <title>SUCESSO</title>
+</head>
+<body>
+  <h1>SUCESSO!!!</h1>
+  <h2>Veja os registros:</h2>
+  <div id="register"></div>
+  <div id="address"></div>
+  <div id="credit_card_data"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    axios({
+      method:'post',
+      url: '/success'
+    })
+    .then((res) => {
+      register.innerHTML = res.data.register.data.map((e,i) => {
+        return `
+          ${i == 0 ? '<h3>client_register.json</h3>' : ''}
+          <p>id: ${e.id}</p>
+          <p>name: ${e.name}</p>
+          <p>last_name: ${e.last_name}</p>
+          <p>cpf: ${e.cpf}</p>
+          <p>bth_date: ${e.bth_date}</p>
+          <p>phone: ${e.phone}</p>
+          <hr />
+        `;
+      });
+      
+      address.innerHTML = res.data.address.data.map((e,i) => {
+        return `
+          ${i == 0 ? '<h3>client_address.json</h3>' : ''}
+          <p>id: ${e.id}</p>
+          <p>street: ${e.street}</p>
+          <p>number: ${e.number}</p>
+          <p>city: ${e.city}</p>
+          <p>state: ${e.state}</p>
+          <p>country: ${e.country}</p>
+          <hr />
+        `;
+      });
+      
+      credit_card_data.innerHTML = res.data.credit_card.data.map((e,i) => {
+        return `
+          ${i == 0 ? '<h3>cliente_credit_card_data.json</h3>' : ''}
+          <p>id: ${e.id}</p>
+          <p>card_number: ${e.card_number}</p>
+          <p>card_name: ${e.card_name}</p>
+          <p>validate: ${e.validate}</p>
+          <p>ccv: ${e.ccv}</p>
+          <hr />
+        `;
+      });
+    })
+    .catch((error) => {
+      console.log("_________",error,"________");
+    })
+  </script>
+</body>
+</html>

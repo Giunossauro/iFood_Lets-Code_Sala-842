@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade Principal 2</title>
+</head>
+
+<body>
+  <form id="endereco" method="post">
+    <h1>endereco</h1>
+    
+    <label for="enderecoId">ID:</label><br />
+    <input type="text" id="enderecoId" name="enderecoId" /><br /><br />
+
+    <label for="enderecoLogradouro">Logradouro:</label><br />
+    <input type="text" id="enderecoLogradouro" name="enderecoLogradouro" /><br /><br />
+
+    <label for="enderecoBairro">Bairro:</label><br />
+    <input type="text" id="enderecoBairro" name="enderecoBairro" /><br /><br />
+
+    <label for="enderecoNumero">Número:</label><br />
+    <input type="text" id="enderecoNumero" name="enderecoNumero" /><br /><br />
+
+    <label for="enderecoCidade">Cidade:</label><br />
+    <input type="text" id="enderecoCidade" name="enderecoCidade" /><br /><br />
+
+    <label for="enderecoUF">UF:</label><br />
+    <input type="text" id="enderecoUF" name="enderecoUF" /><br /><br />
+
+    <label for="enderecoPais">Pais:</label><br />
+    <input type="text" id="enderecoPais" name="enderecoPais" /><br /><br />
+
+    <button type="button" onclick="request('post','/address')">POST</button>
+    <button type="button" onclick="request('put','/address')">PUT</button>
+    <button type="button" onclick="request('delete','/address')">DELETE</button>
+
+  </form>
+ <div id="visualizarJson"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    function request(metodo, rota) {
+      console.log(metodo, rota);
+      axios({
+        method: metodo,
+        url: rota,
+        data: 
+          {
+            street: enderecoLogradouro.value,
+            district: enderecoBairro.value,
+            number: enderecoNumero.value,
+            city: enderecoCidade.value,
+            state: enderecoUF.value,
+            country: enderecoPais.value,
+            id: enderecoId.value
+          }
+        }
+      )
+      .then(function(response) {
+        document.getElementById("visualizarJson").innerText = response.data;
+        if(response.status == 200){
+          window.location.href = "http://localhost:8081/credit_card_data";
+        }
+      })
+      .catch(function(error) {
+        console.error("adsadas",error);
+      });
+    }
+  </script>   
+    
+</body>
+</html>

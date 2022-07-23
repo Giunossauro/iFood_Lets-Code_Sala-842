@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    /*
+    body{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    form{
+      border: 1px solid black;
+      padding: 0.2em 1em 1em 1em;
+    }
+    */
+  </style>
+  <title>Atividade Principal 2</title>
+</head>
+
+<body>
+  
+<!-- obs html só tem get ou post, e tem q por post senão o form faz um get por padrão -->
+
+  <form id="registro" method="post">
+    <h1>login / registro</h1>
+    <!-- "id":
+          "name":
+          "last_name":
+          "cpf":
+          "bth_date":
+          "phone": -->
+    
+    <label for="registroId">ID:</label><br />
+    <input type="number" id="registroId" name="registroId" /><br /><br />
+
+    <label for="registroNome">Nome:</label><br />
+    <input type="text" id="registroNome" name="registroNome" /><br /><br />
+
+    <label for="registroSobrenome">Sobrenome:</label><br />
+    <input type="text" id="registroSobrenome" name="registroSobrenome" /><br /><br />
+
+    <label for="registroCPF">CPF:</label><br />
+    <input type="text" id="registroCPF" name="registroCPF" /><br /><br />
+
+    <label for="registroDtNasc">Data de Nascimento:</label><br />
+    <input type="date" id="registroDtNasc" name="registroDtNasc" /><br /><br />
+
+    <label for="registroTelefone">Telefone:</label><br />
+    <input type="text" id="registroTelefone" name="registroTelefone" /><br /><br />
+
+    <div>Prosseguir com: </div>
+    <!--button formmethod="post" type="submit">123</button-->
+    <button type="button" onclick="request('post','/registration')">POST</button>
+    <button type="button" onclick="request('put','/registration')">PUT</button>
+    <button type="button" onclick="request('delete','/registration')">DELETE</button>
+    <!--button type="button" onclick="request('view','/registration')">VIEW</button-->
+  </form>
+
+  <br />
+
+  <div id="visualizarJson"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!--script src="http://localhost/js/client.js"></script-->
+  <script>
+    
+    function request(metodo, rota) {
+      console.log(metodo, rota);
+      console.log(Number(registroId.value));
+      axios({
+        method: metodo,
+        url: `http://localhost:3000/data/${
+          metodo != 'post' ? registroId.value : ''
+        }`,
+        data:
+          {
+            id: Number(registroId.value),
+            name: registroNome.value,
+            last_name: registroSobrenome.value,
+            cpf: registroCPF.value,
+            bth_date: registroDtNasc.value,
+            phone: registroTelefone.value
+          }
+        }
+      )
+      .then(function(response) {
+        // visualizarJson.innerText = Object.entries(response.data);
+        // console.log("postado:");
+        // console.log(Object.entries(response.data))//printa o json
+        if(response.status == 200 || response.status == 201){
+          window.location.href = "http://localhost:8081/address";
+        }
+      })
+      .catch(function(error) {
+        console.error("adsadas",error);
+      });
+    }
+
+    // esta requisicao axios serve pra renderizar os dados na tela a primeira vez
+    /*axios({
+      method: "_______________",
+      url: "/registration"
+    })
+    .then(res => {
+      visualizarJson.innerText = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
+    })
+    .catch(err => console.log(err)
+    );*/
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../general-assets/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="../general-assets/css/style.css">
+    <title>Questão 12</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-center border-bottom border-secondary border-5 p-3">
+            <strong>Q.12</strong> - Os nomes.
+        </h1>
+    </header>
+    <main class="container">
+        <form class="m-5 p-5 text-center">
+            <h3>Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armaze os nomes lidos em um vetor.<br /><br />Após isto, o algoritmo deve permitir a leitura de mais 1 nome qualquer de pessoa e depois escrever a mensagem ACHEI, se o nome estiver entre os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI caso contrário. </h3><br><br>
+            <div class="mb-3">
+                <label for="nome" class="form-label fs-4 m-3">Digite um nome e clique em salvar.<br><br>Depois de 10 nomes salvos, procure um nome entre eles.</label>
+                <input type="text" class="form-control fs-5 m-3" id="nome" required>
+            </div>
+            <input id="botao" type="button" class="btn btn-secondary m-3" onclick="salvar()" value="Salvar">
+            <div class="mb-3 mt-3" id="nomes">
+                <!-- Dinamic -->
+            </div>
+        </form>
+    </main>
+    <footer class="text-center border-top border-secondary border-5 mt-5 pt-5 fs-1">
+        Obrigado!
+    </footer>
+    <script src="../general-assets/libs/js/bootstrap.bundle.js"></script>
+    <script src="./Busca-por-Nome.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "aula-1_seg_27-06-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stringer_things.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.3",
+    "jest": "^28.1.1",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1"
+  }
+}

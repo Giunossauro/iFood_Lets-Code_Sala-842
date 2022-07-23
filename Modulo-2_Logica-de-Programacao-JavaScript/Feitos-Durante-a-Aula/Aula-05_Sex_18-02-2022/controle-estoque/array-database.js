@@ -144,5 +144,6 @@ module.exports = {
     buscarProdutoPorId,
     buscaGenerica,
     atualizarProduto,
-    deletarProdutoById
+    deletarProdutoById,
+    cadastrarVenda
 }

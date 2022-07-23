@@ -1,0 +1,48 @@
+body{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: black;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+h1{
+  margin-bottom: 0;
+}
+span{
+  font-size: 0.5em;
+  margin-top: 0;
+  margin-bottom: 5em;
+}
+button{
+  margin-top: 1em;
+  font-weight: bold;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+hr{
+  width: 50%;
+}
+p{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@keyframes shake {
+  0% { transform:rotate(0deg)   scale(1) }
+  25% { transform:rotate(35deg)  scale(1.5) }
+  50% { transform:rotate(0deg)   scale(2) }
+  75% { transform:rotate(-35deg) scale(1.5) }
+  100% { transform:rotate(0deg)   scale(1) }
+}
+body.shake {
+  animation: shake 500ms linear infinite;
+  overflow: hidden;
+}

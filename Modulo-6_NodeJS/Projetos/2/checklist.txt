@@ -1,0 +1,25 @@
+PRINCIPAL (700XP)
+[] Servidor NodeJS nos moldes do trabalho individual, seguindo todas as especificações;
+    [X] Servidor NodeJS usando a biblioteca HTTP;
+    [] Cada ação desse servidor deve acessar ou alterar dados de um arquivo JSON;
+    [] Este JSON deve guardar uma lista de objetos, cada um contendo um id e pelo menos 5 informações diferentes;
+    [] Deve haver pelo menos quatro rotas:
+        [] Uma para acessar a lista de elementos;
+        [] Uma para adicionar um elemento nessa lista;
+        [] Uma para atualizar um elemento dessa lista, com base no id (pode alterar todas as infos, ou só uma);
+        [] Uma para remover um elemento dessa lista, com base no id (evitar que ele elimine alguém caso não ache);
+
+[] Rotas (metodos):
+    [] ACESSAR,
+    [] CRIAR,
+    [] ATUALIZAR,
+    [] EXCLUIR 
+    dados de 3 entidades diferentes (3 rotas)
+        [] pelo menos uma delas pode ser feita usando json server;
+
+** [X] Biblioteca AXIOS para acessar o servidor local e realizar a ação necessária (GET, POST, PUT ou DELETE, lembrando que estas 3 devem ser implementadas);
+[] As ações devem ser rodadas através de um HTML (pegando dados preenchidos em inputs).
+
+EXTRA (200XP)
+[] Uma imagem deve ser carregada pelo frontend no momento do cadastro e salva em uma pasta do backend;
+[] Esta imagem deve aparecer posteriormente no frontend (foto do item registrado ou algo do tipo).

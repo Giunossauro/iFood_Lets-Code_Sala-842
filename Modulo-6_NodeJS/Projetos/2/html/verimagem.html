@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMAGEM</title>
+</head>
+<body>
+  <h1>IMAGEM</h1>
+  <img id="img" src="../img/imagem.png" alt="" >
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script>
+    axios({
+      method: "get",
+      url: "/img/imagem.png"
+    })
+    .then(res => {
+      document.getElementById("img").setAttribute("src",
+        `data:image/png;base64,${window.btoa(res.data)}`);
+      console.log(window.btoa(res.data));
+    })
+    .catch(err => {
+      console.log(err);
+    })
+  </script>
+</body>
+</html>

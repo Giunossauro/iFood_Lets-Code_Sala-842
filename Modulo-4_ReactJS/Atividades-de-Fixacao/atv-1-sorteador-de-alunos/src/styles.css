@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#quadros {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin: 1em;
+}
+
+.quadro {
+  border: 1px solid black;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1em;
+}
+
+ul {
+  padding: 0.1em 1em;
+  list-style-type: none;
+}
+
+li {
+  padding: 0.2em 0;
+}
+
+#alerta {
+  color: red;
+}

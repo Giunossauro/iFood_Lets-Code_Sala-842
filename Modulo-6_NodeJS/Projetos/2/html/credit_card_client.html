@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade Principal 2</title>
+</head>
+
+<body>
+  <form id="cartao" method="post">
+    <h1>cartao de crédito</h1>
+    
+    <label for="cartaoId">ID:</label><br />
+    <input type="number" id="cartaoId" name="cartaoId" /><br /><br />
+
+    <label for="cartaoNumero">Número do Cartão:</label><br />
+    <input type="text" id="cartaoNumero" name="cartaoNumero" /><br /><br />
+
+    <label for="cartaoNome">Nome Impresso no Cartão:</label><br />
+    <input type="text" id="cartaoNome" name="cartaoNome" /><br /><br />
+
+    <label for="cartaoValidade">Validade:</label><br />
+    <input type="date" id="cartaoValidade" name="cartaoValidade" /><br /><br />
+
+    <label for="cartaoCCV">CCV:</label><br />
+    <input type="number" id="cartaoCCV" name="cartaoCCV" /><br /><br />
+
+    <button type="button" onclick="request('post','/credit_card_data')">POST</button>
+    <button type="button" onclick="request('put','/credit_card_data')">PUT</button>
+    <button type="button" onclick="request('delete','/credit_card_data')">DELETE</button>
+
+  </form>
+  <div id="visualizarJson"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+
+    function request(metodo, rota) {
+      console.log(metodo, rota);
+      axios({
+        method: metodo,
+        url: rota,
+        data: 
+          {
+            id: cartaoId.value,
+            card_number: cartaoNumero.value,
+            card_name: cartaoNome.value,
+            validate: cartaoValidade.value,
+            ccv: cartaoCCV.value
+          }
+        }
+      )
+      .then(function(response) {
+        document.getElementById("visualizarJson").innerText = response.data;
+        console.log(response)
+        if(response.status == 200){
+          window.location.href = "http://localhost:8081/success";
+        }
+      })
+      .catch(function(error) {
+        console.error("adsadas",error);
+      });
+    }
+
+  </script>
+  
+</body>
+
+</html>

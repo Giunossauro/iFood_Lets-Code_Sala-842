@@ -1,1 +1,11 @@
-{}
+{
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.13.10",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../general-assets/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="../general-assets/css/style.css">
+    <title>Questão 3</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-center border-bottom border-secondary border-5 p-3">
+            <strong>Q.3</strong> - Quer saber por quanto vender um carro?
+        </h1>
+    </header>
+    <main class="container">
+        <form class="m-5 p-5 text-center">
+            <h3>O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica).<br /><br />Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor. </h3><br><br>
+            <div class="mb-3">
+                <label for="custo" class="form-label fs-4">Digite o custo de fábrica do carro</label>
+                <input type="text" class="form-control fs-5" id="custo" value="R$ " required>
+            </div>
+            <div class="mb-3">
+                <label for="custo-final" class="form-label fs-4">Custo ao consumidor final</label>
+                <input type="text" class="form-control fs-4" id="custo-final" readonly>
+            </div>
+            <input type="button" class="btn btn-secondary" onclick="reajustar(custo.value)" value="Calcular">
+        </form>
+    </main>
+    <footer class="text-center border-top border-secondary border-5 mt-5 pt-5 fs-1">
+        Obrigado!
+    </footer>
+    <script src="../general-assets/libs/js/bootstrap.bundle.js"></script>
+    <script src="./Custo-Final.js"></script>
+    <script src="../general-assets/js/Input-Handler.js"></script>
+</body>
+</html>

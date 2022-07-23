@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "street": "Rodrigo",
+            "number": 13,
+            "district": "Rangel",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "country": "Brasil"
+        },
+        {
+            "id": 2,
+            "street": "aaaaa",
+            "number": 132,
+            "district": "sdaffs",
+            "city": "Rio de Janeiro",
+            "state": "Rio de Janeiro",
+            "country": "Brasil"
+        },
+        {
+            "street": "ggg",
+            "district": "ggg",
+            "number": 33,
+            "city": "gg",
+            "state": "gg",
+            "country": "fsad",
+            "id": 3
+        }
+    ]
+}

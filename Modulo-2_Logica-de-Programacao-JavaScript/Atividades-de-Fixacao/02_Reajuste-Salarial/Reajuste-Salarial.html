@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../general-assets/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="../general-assets/css/style.css">
+    <title>Questão 2</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1 text-center border-bottom border-secondary border-5 p-3">
+            <strong>Q.2</strong> - Que tal um reajuste no salário?
+        </h1>
+    </header>
+    <main class="container">
+        <form class="m-5 p-5 text-center">
+            <h3>Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e escrever o valor do novo salário.</h3><br><br>
+            <div class="mb-3">
+                <label for="salario" class="form-label fs-4">Salário</label>
+                <input type="text" class="form-control fs-5" id="salario" value="R$ " required>
+            </div>
+            <div class="mb-3">
+                <label for="reajuste" class="form-label fs-4">Reajuste (em %)</label>
+                <input type="text" class="form-control fs-5" id="reajuste" value="%" required>
+            </div>
+            <div class="mb-3">
+                <label for="salario-reajustado" class="form-label fs-4">Salário Reajustado</label>
+                <input type="text" class="form-control fs-4" id="salario-reajustado" readonly>
+            </div>
+            <input type="button" class="btn btn-secondary" onclick="reajustar(salario.value, reajuste.value)" value="Calcular">
+        </form>
+    </main>
+    <footer class="text-center border-top border-secondary border-5 mt-5 pt-5 fs-1">
+        Obrigado!
+    </footer>
+    <script src="../general-assets/libs/js/bootstrap.bundle.js"></script>
+    <script src="./Reajuste-Salarial.js"></script>
+    <script src="../general-assets/js/Input-Handler.js"></script>
+</body>
+</html>

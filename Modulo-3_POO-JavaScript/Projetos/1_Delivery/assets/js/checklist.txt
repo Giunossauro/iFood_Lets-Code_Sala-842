@@ -1,0 +1,60 @@
+>>> ONDE PARAMOS: LOJISTA <<<
+
+Interpretador do Checklist:
+  SE está implementado e testado ou validado, logo a classe ou o método estarão funcionando, aí marca com o 'X'.
+  - validado: atributos foram validados de forma correta;
+  - testado: foram passados inputs e a classe ou métodos responderam como esperado;
+
+
+*** Vamos testar as classes e seus métodos no index, aproveitando as constantes já declaradas ***
+
+---> CHECKLIST <---
+[ X ] Classe Prato: implementada, validada, testado e funcionando
+
+[ ] Classe Cardapio: implementada e funcionando
+  - Métodos:
+    [ X ] pratoExiste(): implementado e testado
+    [ X ] incluirPrato(): implementado e testado
+    [ X ] removerPrato(): implementado e testado
+    [ X ] alterarPrato(): implementado e testado 
+    [  ] listarPratos(): implementado
+    [ X ] buscarPratos(): implementado e testado
+Testado por: Rodrigo
+
+[ X ] Classe Endereço
+
+[ X ] Classe Pessoa
+
+[  ] Classe Pedido 
+
+[ ] Classe Lojista
+  - Métodos:
+    [ X ] visualizarCardapio(): implementado e testado
+    [ X ] incluirPrato(): implementado e testado
+    [ X ] incluirPrato(): implementado e testado
+    [ X ] removerPrato(): implementado e testado
+    [ X ] alterarPrato(): implementado e testado
+    [  ] recusar pedido
+    [  ] aceitar pedido
+    [  ] cancelar pedido
+    [  ] exibir lista atualizada de pedidos
+
+[ X ] Classe Cliente
+
+[ ] Classe Entregador
+    --> verificar após finalizar cliente
+  - Métodos:
+    [ X ] exibir lista
+    [ X ] abrir/fechar turno
+    [ X ] aceitar pedido
+    [ X ] entregar pedido
+
+ENUNCIADO:
+•	Existem 3 perfis possíveis de usuários (cliente, lojista e entregador);
+
+•	O ***LOJISTA*** poderá manipular o cardápio (adicionar, remover, alterar os pratos). Poderá, também, cancelar um pedido que esteja em andamento, ao qual esteja associado;
+•	O ***CLIENTE*** poderá montar o carrinho, adicionando itens, remover itens, alterar quantidade dos itens ou cancelar o carrinho, e realizar um pedido;
+•	O ***ENTREGADOR*** poderá visualizar os pedidos disponíveis e se marcar como entregador deste;
+•	Ao finalizar um pedido, o ***LOJISTA*** terá a sua lista de pedidos atualizada com este;
+•	O ***CLIENTE*** poderá finalizar um pedido, confirmando a entrega.
+•	O **CLIENTE*** não poderá cancelar um pedido que já tenha um entregador associado
