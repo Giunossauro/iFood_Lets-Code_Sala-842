@@ -21,6 +21,5 @@ Dentro de cada módulo encontram-se as pastas:
 - "Projetos", onde ficam as atividades obrigatórias para formalização do progresso no curso.  
 
 ## Observações:  
-- 1) Adaptei os nomes dos módulos e suas respectivas descrições para algo que faz mais sentido para o curso e que é mais coerente com os conteúdos que foram abordados. Mais informações podem ser encontradas na página do programa ([Vem Ser Tech](https://www.letscode.com.br/processos-seletivos/potencia-tech-ifood)) e na página genérica do curso [Web Full Stack](https://www.letscode.com.br/web-full-stack) da Let's Code Academy;  
-- 2) A página do programa [Vem Ser Tech](https://www.letscode.com.br/processos-seletivos/potencia-tech-ifood) informa que o curso possui 400 horas, mas o curso foi ministrado, de fato, com 216 horas, que é a carga horária anotada no [certificado]();  
-- 3) Todos os links deste README foram acessados e conferidos por mim em __/__/____.  
+- Adaptei os nomes dos módulos e suas respectivas descrições para algo que faz mais sentido para o curso e que é mais coerente com os conteúdos que foram abordados. Mais informações podem ser encontradas na página do programa ([Vem Ser Tech](https://www.letscode.com.br/processos-seletivos/potencia-tech-ifood)) e na página genérica do curso [Web Full Stack](https://www.letscode.com.br/web-full-stack) da Let's Code Academy;  
+- A página do programa [Vem Ser Tech](https://www.letscode.com.br/processos-seletivos/potencia-tech-ifood) informa que o curso possui 400 horas, mas o curso foi ministrado, de fato, com 216 horas, que é a carga horária anotada no [certificado]().  
