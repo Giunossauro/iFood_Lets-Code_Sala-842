@@ -1,0 +1,1 @@
+###### As aulas 1 e 3 estão registradas, sendo a 3 continuação da 2. As demais aulas tiveram os códigos postados pelo Replit, mas deu algum erro nos repositórios que não estão mais acessíveis e eu não copiei em tempo, apenas acompanhei atentamente.  
