@@ -17,7 +17,7 @@ Módulos:
 ## Organização do Repositório  
 Dentro de cada módulo encontram-se as pastas:  
 - "Atividades-de-Fixação", onde ficam as atividades não obrigatórias que foram passadas;  
-- "Feitos-Durante-a-Aula", onde ficam os códigos desenvolvidos pela pessoa professora durante a aula;  
+- "Feitos-Durante-a-Aula", onde ficam os códigos desenvolvidos pela pessoa professora durante a aula (alguns eu fiz ao mesmo tempo, outros clonei do repositório);  
 - "Projetos", onde ficam as atividades obrigatórias para formalização do progresso no curso.  
 
 ## Observações:  

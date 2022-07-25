@@ -40,7 +40,7 @@ router.delete('/:veiculoID', (req, res) => {
   } else if (Number.isNaN(veiculoIDNumber)) {
     res.status(400).send('id inválido');
   } else {
-    veiculos = veiculos.filter(_, i => veiculoIDNumber == i);
+    const veiculo = veiculos.filter(_, i => veiculoIDNumber == i);
     res.send(veiculos);
   }
 });
