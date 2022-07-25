@@ -34,6 +34,7 @@ c. /hoteis?limit=5
 5. Ter, pelo menos, uma rota onde é possível visualizar algum dos recursos usando uma view engine; 
 
 6. Projeto deve usar um padrão de pastas modularizado, e.g.
+
 ![Hierarquia de Arquivos](https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/7_Web-Front-e-Back-End/Projetos/1_Cinemasso/Images/Hierarquia-de-Arquivos.png)
 
 7. Serviço deve conseguir salvar e buscar dados de algum sistema de storage, podendo ser o próprio filesystem;  
