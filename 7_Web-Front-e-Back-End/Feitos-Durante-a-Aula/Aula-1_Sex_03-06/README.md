@@ -1,1 +1,11 @@
-###### As aulas 1, 7 - 9 não tiveram código registrado. A 1 foi explicações conceituais e as demais reservadas para atividades.  
+###### Para ver
+
+Os slides rodam com mdx, então tem que fazer um setup pra rodar eles. Precisa clonar o projeto, ter o Node versão 16 ou superior, e executar os comandos  
+```
+npm i
+```
+e  
+```
+npm run presentation --name=intro-to-webservices
+```
+.  

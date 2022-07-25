@@ -1,0 +1,1 @@
+###### As aulas 3 - 8, as atividades de fixação e o projeto foram desenvolvidos em cima do código da [aula 2](https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/tree/master/8_Testes-Automatizados/Feitos-Durante-a-Aula/Aula-2_Qua_29-06/helper-api).  
