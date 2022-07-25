@@ -8,7 +8,7 @@
 
 ### Print:
 
-![Print](https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/1_Apresentacao-Pessoal/img/1f3.png)
+![Print](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/3_Tags-Semanticas-e-CSS/img/1f3.png)
 
 ## Requisitos  
 
