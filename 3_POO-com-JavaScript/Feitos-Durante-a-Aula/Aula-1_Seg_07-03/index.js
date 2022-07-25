@@ -3,7 +3,7 @@ class Animal {
         this.nome = nome;
         this.cor = cor;
         this.especie = especie;
-    }
+    } 
 
     emitirSom(){
         return "Hello, world!";

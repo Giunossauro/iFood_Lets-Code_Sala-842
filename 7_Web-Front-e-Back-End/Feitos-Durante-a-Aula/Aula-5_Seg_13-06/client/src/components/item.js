@@ -13,3 +13,4 @@ function Item({ titulo, quantidade, image }) {
 }
 
 export default Item;
+ 

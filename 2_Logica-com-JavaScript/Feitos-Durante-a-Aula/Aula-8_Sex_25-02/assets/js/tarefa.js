@@ -11,7 +11,7 @@ const salvarTarefa = (tarefa) =>{
     tarefas.push(tarefa);
     setLocalStorage(tarefas);
 };
-
+ 
 const atualizarTarefa = (tarefa) => {
     const index = tarefas.findIndex(item => item.id === tarefa.id);
     tarefas[index] = tarefa;

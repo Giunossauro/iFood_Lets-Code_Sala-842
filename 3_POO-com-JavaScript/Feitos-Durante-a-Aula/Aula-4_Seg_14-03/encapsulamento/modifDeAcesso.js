@@ -3,7 +3,7 @@ class Usuario {
     #sexo;
     #email;
     #senha;
-    #dtNasc;
+    #dtNasc; 
     #cpf;
     #endereco;
     constructor(nome, sexo, email, senha, dtNasc, cpf, endereco){

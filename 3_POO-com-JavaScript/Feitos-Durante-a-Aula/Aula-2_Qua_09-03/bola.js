@@ -5,7 +5,7 @@ class Bola{
         this.area = this.calcularArea();
         this.volume = this.calcularVolume();
     }
-
+ 
     imprimeCor(){
         console.log(`A cor da bola é: ${this.cor}`);
     }

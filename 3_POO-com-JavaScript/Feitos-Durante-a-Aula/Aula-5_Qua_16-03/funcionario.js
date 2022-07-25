@@ -6,7 +6,7 @@ class Funcionario {
   #ferias;
   #salarioBase;
   #descontos;
-
+ 
   constructor(id, nome, cpf, dtNasc, salarioBase, descontos) {
     this.#cpf = cpf;
     this.#salarioBase = salarioBase;

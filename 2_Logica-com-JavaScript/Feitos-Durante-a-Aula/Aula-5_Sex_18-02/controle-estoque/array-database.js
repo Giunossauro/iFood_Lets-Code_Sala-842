@@ -8,7 +8,7 @@ const produtos = [{
     categoria: 'cereais',
     frente: 'cereais',
     fornecedor: 'Camil'
-},{
+},{ 
     id: 2,
     nome: 'Feijão',
     quantidade: 15,

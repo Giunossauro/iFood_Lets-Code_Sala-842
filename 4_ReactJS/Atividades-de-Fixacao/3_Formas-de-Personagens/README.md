@@ -3,7 +3,7 @@
 ---  
 
 ## Atividade de Fixação 3  
-
+ 
 Criar interface com lista de personagens e suas respectivas formas, ao clicar numa forma, mostrar a imagem.
 
 Sugestões de estrutura para usar:

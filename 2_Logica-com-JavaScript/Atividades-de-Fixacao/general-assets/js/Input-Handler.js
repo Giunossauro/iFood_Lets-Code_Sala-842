@@ -12,7 +12,7 @@ const inputHandler = (input, range) => {
     } else {
         valueString = inputValue.replace('.','');
         dotIndex = inputValue.indexOf('.');
-    }
+    } 
     const lastCharIndex = valueString.length - 1;
     const lastChar = valueString[lastCharIndex];
     let newValue;

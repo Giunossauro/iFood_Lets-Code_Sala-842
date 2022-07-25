@@ -2,7 +2,7 @@ const BeneficiosColaborador = require("./BeneficiosColaborador")
 
 class Colaborador {
     #nome;
-    #funcao;
+    #funcao; 
     #salario;
     #beneficios;
     constructor(nome, funcao, salario){

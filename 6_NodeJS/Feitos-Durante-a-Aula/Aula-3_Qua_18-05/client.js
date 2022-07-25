@@ -7,7 +7,7 @@ const client = dgram.createSocket('udp4');
 const terminal = readline.createInterface({
     input: process.stdin,
     output: process.stdout
-});
+}); 
 
 terminal.question(`[Boas-vindas]`, (answer) => {
     client.send(answer, 5000, 'localhost');

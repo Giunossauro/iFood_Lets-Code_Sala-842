@@ -8,7 +8,7 @@
  function multiplica(x, y) {
     return x * y
 }
-
+ 
 
 const arrowMultiplica = (x, y) => {
     return x * y

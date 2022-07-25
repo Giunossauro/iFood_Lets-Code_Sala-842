@@ -11,7 +11,7 @@ class Vendedor extends Contratado {
     dtNasc,
     salarioBase,
     descontos,
-    beneficios,
+    beneficios, 
     vendas
   ) {
     super(id, nome, cpf, dtNasc, salarioBase, descontos, beneficios);

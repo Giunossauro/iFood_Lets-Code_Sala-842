@@ -8,7 +8,7 @@
  * 
  *      mediaFinal = ((n1 * 2) + (n2 * 3) + (n3 * 5))/10
  */
-
+ 
 // Por favor, me perdoe pelas gambiarras.
 // Está funcionando e vou refatorar num momento oportuno!
 // Os exercícios 2 e 3 estão refatorados.

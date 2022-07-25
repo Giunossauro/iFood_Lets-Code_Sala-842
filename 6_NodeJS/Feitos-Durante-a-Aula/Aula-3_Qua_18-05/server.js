@@ -7,7 +7,7 @@ const server = dgram.createSocket('udp4');
 const terminal = readline.createInterface({
     input: process.stdin,
     output: process.stdout
-});
+}); 
 
 // Caso a porta não esteja disponível, fechar o servidor
 server.on('error', (err) => {

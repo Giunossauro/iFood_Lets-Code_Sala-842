@@ -9,7 +9,7 @@ class Hero{
 class HeroesList {
     constructor(heroes){
         this.heroes = heroes;
-    }
+    } 
 
     adicionarHeroi(heroi){
         this.heroes.push(heroi);

@@ -8,7 +8,7 @@ Uma empresa de transportes pretende automatizar a gestão de frota de seus veicu
 * Pegar autorização
 * Pegar o carro
 * Ir a portaria
-* Apresentar a autorização
+* Apresentar a autorização 
 
 
 Criar um pequeno algoritimo que automatize e que perminte que seja preenchido um checklist com os seguintes campos:

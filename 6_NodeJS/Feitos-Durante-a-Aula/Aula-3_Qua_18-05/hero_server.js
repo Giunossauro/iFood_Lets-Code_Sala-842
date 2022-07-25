@@ -4,7 +4,7 @@ const fs = require("fs");
 const convert_hero_to_string = (hero) => {
     return `<li>${hero.nome} (${hero.nome_real})</li>`;
 }
-
+ 
 const readHeroes = (callback) => {
     return fs.promises.readFile("./super_herois.json")
             .then((buffer) => {

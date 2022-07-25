@@ -7,7 +7,7 @@
  */
 
  const json = require('./aluno.json')
-
+ 
  const cachorro = {
      nome: 'rex',
      apelido: 'tiu',

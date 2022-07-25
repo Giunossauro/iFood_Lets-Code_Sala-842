@@ -4,7 +4,7 @@ async function getPokemons(callback) {
     const json = await response.json();
     
     callback(json.results);
-
+ 
     // // Utilizando promises
     // fetch("https://pokeapi.co/api/v2/pokemon/").then((response) => {
     //     return response.json();
@@ -13,7 +13,7 @@ async function getPokemons(callback) {
     // }).catch((error) => {
     //     console.log(error);
     // });
-
+ 
 
     // // Simulando o uso de callbacks
     // setTimeout(() => {

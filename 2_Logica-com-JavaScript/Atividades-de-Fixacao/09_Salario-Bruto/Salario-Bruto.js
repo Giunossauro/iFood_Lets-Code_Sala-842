@@ -8,7 +8,7 @@
  * ser acrescido das horas extras, caso tenham sido trabalhadas 
  * (considere que o mês possua 4 semanas exatas).
  */
-
+ 
 // Por favor, me perdoe pelas gambiarras.
 // Está funcionando e vou refatorar num momento oportuno!
 // Os exercícios 2 e 3 estão refatorados.

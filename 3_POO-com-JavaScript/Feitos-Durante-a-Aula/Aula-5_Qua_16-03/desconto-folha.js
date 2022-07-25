@@ -5,4 +5,4 @@ class DescontoFolha {
   }
 }
 
-module.exports = DescontoFolha;
+module.exports = DescontoFolha; 

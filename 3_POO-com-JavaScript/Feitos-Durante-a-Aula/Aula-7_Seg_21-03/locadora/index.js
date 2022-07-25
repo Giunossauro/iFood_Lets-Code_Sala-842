@@ -11,4 +11,4 @@ class Locadora {
     adicionarLocacao(){
         this.listaLocacoes.push(locacao);
     }
-}
+} 

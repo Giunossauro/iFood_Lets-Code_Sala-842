@@ -9,7 +9,7 @@
 // Por favor, me perdoe pelas gambiarras.
 // Está funcionando e vou refatorar num momento oportuno!
 // Os exercícios 2 e 3 estão refatorados.
-
+ 
 const elementoNumero1 = document.getElementById("numero-1");
 const elementoNumero2 = document.getElementById("numero-2");
 

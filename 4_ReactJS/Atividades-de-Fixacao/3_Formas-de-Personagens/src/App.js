@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function App() {
   const personagens = new Map([
-    [
+    [ 
       "goku",
       [
         "https://www.einerd.com.br/wp-content/uploads/2017/02/goku-890x466.jpg",

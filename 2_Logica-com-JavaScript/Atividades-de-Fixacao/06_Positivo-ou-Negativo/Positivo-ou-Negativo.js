@@ -8,7 +8,7 @@
 // Os exercícios 2 e 3 estão refatorados.
 
 const elementoNumero = document.getElementById("numero");
-
+ 
 let typedCharIndex;
 let inputValue;
 let typedChar;

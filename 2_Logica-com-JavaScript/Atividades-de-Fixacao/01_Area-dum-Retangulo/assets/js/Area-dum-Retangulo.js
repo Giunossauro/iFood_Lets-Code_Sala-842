@@ -5,7 +5,7 @@
  * Obs: Utilize a interface html para receber os dados do usuário
  *
  */
-
+ 
 // Por favor, me perdoe pelas gambiarras.
 // Está funcionando e vou refatorar num momento oportuno!
 // Os exercícios 2 e 3 estão refatorados.

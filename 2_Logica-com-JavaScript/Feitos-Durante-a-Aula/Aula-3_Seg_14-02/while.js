@@ -10,6 +10,6 @@ let index = 0
 while (numeroDeAlunos > 0) {
     alunos.push(prompt('Digite o nome de um aluno:'))
     numeroDeAlunos--
-}
+} 
 
 alert(alunos)

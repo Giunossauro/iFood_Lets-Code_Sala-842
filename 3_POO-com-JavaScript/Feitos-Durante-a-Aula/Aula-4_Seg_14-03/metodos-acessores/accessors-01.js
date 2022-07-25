@@ -7,7 +7,7 @@ class Usuario {
         this.#nome = nome;
         this.#sexo = sexo;
         this.#email = email;
-    }
+    } 
 
     getNome(){
         return this.#nome;

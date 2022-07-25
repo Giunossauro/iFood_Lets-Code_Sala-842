@@ -8,7 +8,7 @@ const json = '{"id": 1,"nome": "The Flash","publicadora": "DC"},{"id": 2,"nome":
 //console.log(data);
 
 class Hero{
-    /* id;
+    /* id; 
     nome;
     publicadora;
     constructor(hero){

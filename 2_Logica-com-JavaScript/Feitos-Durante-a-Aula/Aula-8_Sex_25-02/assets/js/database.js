@@ -6,4 +6,4 @@ const getLocalStorage = () =>{
 
 const setLocalStorage = (tarefas) => {
     return localStorage.setItem(DB_TAREFAS_KEY, JSON.stringify(tarefas));
-};
+}; 

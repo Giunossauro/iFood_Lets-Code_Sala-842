@@ -13,7 +13,7 @@ function App() {
   }, []);
   
   return (
-    <ol>
+    <ol> 
       {
         itens.map((item, idx) => (
           <li key={idx}>

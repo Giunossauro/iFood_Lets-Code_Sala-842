@@ -5,7 +5,7 @@
  * Tipagem fraca
  *  
  *
- * 
+ *  
  * Links:
  *  https://www.freecodecamp.org/portuguese/news/linguagens-de-programacao-interpretadas-x-compiladas-qual-e-a-diferenca/#:~:text=Em%20uma%20linguagem%20compilada%2C%20a,l%C3%AA%20e%20executa%20o%20c%C3%B3digo.
  *  https://www.alura.com.br/artigos/o-que-sao-as-tipagens-estatica-e-dinamica-em-programacao

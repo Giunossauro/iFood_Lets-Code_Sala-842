@@ -6,7 +6,7 @@ values ('12312312312', 'Davi Nascimento', 'teste@teste.com',
 
 --Exemplo de insert com select formatando data
 SET datestyle = "DMY";
-
+ 
 insert into Usuarios
 values ('12312312314', 'Davi Nascimento', 'teste@teste.com',
 	   'du9f8y8dfyd78yfdgfyugff', '29/10/1997',

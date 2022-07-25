@@ -8,7 +8,7 @@ const AcionarLider = {SMS: function(){}};
 const Portaria = {Autorizar: function(resultadoChecklist){
     resultadoChecklist ? console.log("Pode sair!") : console.log("Nao pode sair...")
 }};
-
+ 
 function perguntaAberta(perguntaSobre){
     while(!checkedOk){
         if (!erro){

@@ -4,7 +4,7 @@
  * Se for falsa, executa as afirmações dentro de else.
  */
 
-//&&
+//&& 
 // true && true => true
 // true && false => false
 // false && true => false

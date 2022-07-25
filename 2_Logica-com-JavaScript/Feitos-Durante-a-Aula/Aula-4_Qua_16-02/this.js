@@ -8,7 +8,7 @@
  * Funções em JavaScript têm propriedades, assim como os objetos têm propriedades. E quando uma função é executada, 
  * ela obtém a propriedade this — uma variável com o valor do objeto que invoca a função na qual this é usado.
  */
-
+ 
 const fn = function () {
     return this;
 }

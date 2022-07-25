@@ -18,7 +18,7 @@
  * Modificações só podem ser feitas por funções
  * Sem loop's - Laços devem ser recursivos
  * Programação declarativa (independente) - Deve ter pelo menos um argumento e retornar algo (valor, função e etc.)
- * 
+ *  
  * 
  * 
  * Programação imperativa vs declarativa

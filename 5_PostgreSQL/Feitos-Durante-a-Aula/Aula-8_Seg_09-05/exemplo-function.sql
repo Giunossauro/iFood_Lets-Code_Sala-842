@@ -5,4 +5,4 @@ group by p.marcaId, m.Nome
 having count(*) > 1
 order by count(*);
 
-select * from vw_Marcas;
+select * from vw_Marcas; 

@@ -6,7 +6,7 @@
  */
 
 const elementoResultado = document.getElementById("resultado");
-
+ 
 const calcular = (valor1, valor2) => {
     elementoResultado.innerHTML = "";
     if (valor1 <= 10) {

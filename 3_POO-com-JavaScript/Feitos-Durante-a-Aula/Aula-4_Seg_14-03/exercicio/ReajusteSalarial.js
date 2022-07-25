@@ -5,7 +5,7 @@ salarial de um colaborador.
 Esta classe receberá como argumento o
 colaborador e o percentual de reajuste
 dele e fará o recalculo dos benefícios
-dele.
+dele. 
 
 Vamos criar, também, uma classe chamada
 Colaborador, que terá como atributos o

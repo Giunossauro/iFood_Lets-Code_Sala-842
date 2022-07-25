@@ -4,7 +4,7 @@ class Canal{
         this.numero = numero;
     }
 }
-
+ 
 class Televisor{
     constructor(fabricante, modelo, canalAtual, canais, volume){
         this.fabricante = fabricante;

@@ -11,3 +11,4 @@ console.log(novoArray2);
 
 // usando o spread, o array passa por valor, não por referência (padrão)
 
+ 

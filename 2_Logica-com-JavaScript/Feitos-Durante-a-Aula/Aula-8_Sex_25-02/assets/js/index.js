@@ -13,7 +13,7 @@ const atualizaListaNaTela = () => {
     const tarefas = obterTarefas();
     if (!tarefas.length){
         return renderizaSemTarefa();
-    }
+    } 
     tarefas.forEach((element) => {
         renderizaTarefa(element);
     });

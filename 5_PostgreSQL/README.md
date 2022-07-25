@@ -5,3 +5,4 @@ Professor: [Davi Guaracho](https://github.com/DaviGn).
 Aprender a desenvolver bancos de dados, tabelas e consultas usando a linguagem SQL usando o SGBD (Sistema Gerenciador de Banco de Dados) PostgreSQL.  
 
 ###### Total de Aulas Ministradas: 9  
+ 

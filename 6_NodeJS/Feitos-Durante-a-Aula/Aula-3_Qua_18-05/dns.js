@@ -4,4 +4,4 @@ console.clear();
 
 dns.promises.resolveAny('letscode-academy.com')
   .then(console.log)
-  .catch(console.error);
+  .catch(console.error); 

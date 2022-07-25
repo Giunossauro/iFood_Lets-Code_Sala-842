@@ -13,7 +13,7 @@ BEGIN
   INSERT INTO historicoProduto (produtoId, valor) values (OLD.id, OLD.valor);
   RETURN NULL;
 END
-$$
+$$ 
 LANGUAGE PLPGSQL;
 
 create or replace trigger trg_historico after update on Produto

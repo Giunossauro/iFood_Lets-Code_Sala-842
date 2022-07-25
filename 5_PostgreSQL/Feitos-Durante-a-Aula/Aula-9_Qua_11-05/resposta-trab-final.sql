@@ -5,7 +5,7 @@ create table Agencias (
 	primary key(id)
 );
 
-create table Contas (
+create table Contas ( 
 	Id int not null,
 	AgenciaId int not null,
 	Nome varchar (50) not null,

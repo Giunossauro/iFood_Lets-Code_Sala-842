@@ -1,7 +1,7 @@
 {
   "name": "atv-1-sorteador-de-alunos",
   "version": "0.1.0",
-  "private": true,
+  "private": true, 
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",

@@ -10,7 +10,7 @@ class Vigilante extends Terceirizado {
     descontos,
     empresa,
     turno,
-    horasNoturnas
+    horasNoturnas 
   ) {
     super(id, nome, cpf, dtNasc, salarioBase, descontos, empresa);
     this.turno = turno;

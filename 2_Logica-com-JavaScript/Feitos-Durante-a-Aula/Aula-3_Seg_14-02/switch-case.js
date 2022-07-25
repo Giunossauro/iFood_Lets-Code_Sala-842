@@ -3,7 +3,7 @@
  * com base em uma comparação de valores
  */
 
-const nota = 8
+const nota = 8 
 
 switch (nota) {
     case 10:

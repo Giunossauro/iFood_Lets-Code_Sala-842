@@ -7,4 +7,4 @@ class Locacao {
         this.dataFinal = dataFinal;
         this.quantidade = quantidadeParcelas;
     }
-}
+} 

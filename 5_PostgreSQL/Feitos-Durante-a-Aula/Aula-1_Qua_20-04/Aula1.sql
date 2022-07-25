@@ -1,7 +1,7 @@
 create table Cidade (
 	id int primary key,
 	nome varchar
-);
+); 
 
 insert into Cidade (id, nome)
 values (3, null);

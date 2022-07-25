@@ -5,3 +5,4 @@ Professor: [Esdras Aguilar](https://github.com/esdrasac).
 Aprender Lógica de Programação com introdução na linguagem JavaScript, bem como aprender os conceitos da Programação Funcional.  
 
 ###### Total de Aulas Ministradas: 9  
+ 

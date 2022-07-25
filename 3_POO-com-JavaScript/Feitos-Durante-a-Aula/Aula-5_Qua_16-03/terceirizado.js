@@ -7,4 +7,4 @@ class Terceirizado extends Funcionario {
   }
 }
 
-module.exports = Terceirizado;
+module.exports = Terceirizado; 

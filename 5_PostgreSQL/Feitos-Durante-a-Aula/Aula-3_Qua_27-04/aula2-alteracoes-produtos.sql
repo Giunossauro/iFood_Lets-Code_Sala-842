@@ -4,7 +4,7 @@ create table Marca (
 	id int generated always as identity,
 	nome varchar(50) not null,
 	primary key(id)
-);
+); 
 
 alter table Produto add column MarcaId int not null;
 alter table Produto add constraint FK_Produto_Marca foreign key(marcaId) references marca(id);

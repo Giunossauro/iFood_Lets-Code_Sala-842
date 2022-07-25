@@ -6,7 +6,7 @@ import Items from "./items";
 
 export default function App() {
   const [esperando, setEsperando] = useState([
-    "Leandro Fernandes Patrício",
+    "Leandro Fernandes Patrício", 
     "Rithie Natan Carvalhaes Prado",
     "Rodrigo Mendes de Souza",
     "Rodrigo Ribeiro Rangel",

@@ -15,7 +15,7 @@ app.post('/refresh', (req, res) => {
       process.env.AUTH_SECRET,
       { expiresIn: '20s' },
       null
-    );
+    ); 
     res.send({
       authToken: newAuthToken,
     });

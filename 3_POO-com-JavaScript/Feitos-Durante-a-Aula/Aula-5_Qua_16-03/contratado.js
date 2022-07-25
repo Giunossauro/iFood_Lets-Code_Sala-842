@@ -6,7 +6,7 @@ class Contratado extends Funcionario {
   constructor(id, nome, cpf, dtNasc, salarioBase, descontos, beneficios) {
     super(id, nome, cpf, dtNasc, salarioBase, descontos);
     this.#beneficios = beneficios;
-  }
+  } 
 
   adicionaBeneficio(beneficio) {
     if (beneficio instanceof BeneficioFolha) {

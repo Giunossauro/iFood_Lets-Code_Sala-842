@@ -9,7 +9,7 @@ Projeto deve ser feito usando React e publicado em alguma plataforma como [Netli
 Tema do jogo fica a critério do grupo escolher.  
 
 ### Regras do jogo:  
-
+ 
 No inicio do jogo deve ser possível ver lista completa de elementos.  
 
 Um dos elementos tem que ser escolhido pela aplicação sem que o usuário saiba qual. O objetivo do usuario é descobrir qual o elemento selecionado pela aplicacao.  

@@ -7,7 +7,7 @@ Se peso menor ou igual a 0 (
     Solitar peso maior que 0
 )
 anotar peso em um caderno
-
+ 
 solicitar altura  em metros
 se altura menor ou igual a 0 (
     Solicitar altura maior que 0

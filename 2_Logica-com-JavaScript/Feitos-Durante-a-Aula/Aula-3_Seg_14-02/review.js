@@ -8,7 +8,7 @@
  * Sistema de tipos
  *  * Estático
  *  * Dinâmico
- * 
+ *  
  * Tipos de variáveis e constantes
  *  * undefined -> Não há tipo nem valor
  *  * boolean -> verdadeiro ou falso

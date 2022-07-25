@@ -11,7 +11,7 @@
  *      unidadeMedida
  *      categoria
  *      frente
- *      fornecedor
+ *      fornecedor 
  * 
  *  vendas:
  *      id

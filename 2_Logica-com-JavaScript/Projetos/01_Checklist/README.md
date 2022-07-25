@@ -9,7 +9,7 @@ Uma empresa de transportes pretende automatizar a gestão de frota de seus veicu
 * O motorista chega na empresa  
 * Pega o checklist com o lider  
 * Verifica o carro  
-* Preenche o checklist  
+* Preenche o checklist   
 * Leva o checklist preenchido ao lider  
 * Validar o checklist  
 * Pegar autorização  

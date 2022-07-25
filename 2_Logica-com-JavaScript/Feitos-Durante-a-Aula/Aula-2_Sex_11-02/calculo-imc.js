@@ -4,7 +4,7 @@ function calculoImcSrJoaquin(peso, altura) {
     }
 
     const _peso = peso
-
+ 
     if(altura <= 0) {
         return console.log('Digite uma altura maior que 0')
     }

@@ -8,7 +8,7 @@ const elementoReajuste = document.getElementById("reajuste");
 
 elementoSalario.addEventListener("input", (event) => {
     elementoSalario.value = inputHandler(event.target.value)[0];
-});
+}); 
 
 elementoReajuste.addEventListener("input", (event) => {
     const inputValue = event.target.value.replace("%", "");

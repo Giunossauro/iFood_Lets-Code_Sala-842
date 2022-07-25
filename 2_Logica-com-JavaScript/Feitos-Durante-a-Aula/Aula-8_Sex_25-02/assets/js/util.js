@@ -15,7 +15,7 @@ const obterDiaDaSemana = (dia) =>{
         case 6:
             return "Sábado";
     }
-};
+}; 
 
 const obterMes = (mes) =>{
     switch(mes){

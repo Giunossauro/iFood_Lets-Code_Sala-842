@@ -9,7 +9,7 @@
 
 const elementoNumero = document.getElementById("numero");
 const elementoResultado = document.getElementById("resultado");
-
+ 
 let typedCharIndex;
 let inputValue;
 let typedChar;

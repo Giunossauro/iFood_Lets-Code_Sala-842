@@ -3,7 +3,7 @@ CREATE DATABASE SistemaFinanceiro
   WITH ENCODING = 'UTF-8';
 
 SET DATESTYLE = 'DMY';
-
+ 
 --   Sobre a modelagem, pesquisei e pensei em diversas situações que
 -- poderiam ocorrer na vida real, mas tentei deixar da forma mais
 -- simplificada, me segurando para não colocar um monte de coisas

@@ -5,7 +5,7 @@ order by Nome;
 -- Ex 2
 select * from Produto
 where Nome like '%Vans%';
-
+ 
 -- Ex 3
 select marcaId, count(*) from Produto
 group by marcaId;

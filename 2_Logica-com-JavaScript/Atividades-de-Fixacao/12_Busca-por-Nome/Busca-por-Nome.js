@@ -7,7 +7,7 @@
  * os 10 nomes lidos anteriormente (guardados no vetor), ou NÃO ACHEI
  * caso contrário.
  */
-
+ 
 const elementoNomes = document.getElementById("nomes");
 const elementoNome = document.getElementById("nome");
 let nomes = [];

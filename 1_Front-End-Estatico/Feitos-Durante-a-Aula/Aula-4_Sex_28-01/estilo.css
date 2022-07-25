@@ -1,7 +1,7 @@
 /* CSS Externo */
 header{
     border: 1px solid tomato;
-}
+} 
 header, nav, main, article, aside, footer{
     margin: 10px 0;
     /*same as

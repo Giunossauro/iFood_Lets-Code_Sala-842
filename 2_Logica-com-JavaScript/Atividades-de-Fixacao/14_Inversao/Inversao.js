@@ -10,7 +10,7 @@
 
 const elementoValor = document.getElementById("valor");
 const elementoValores = document.getElementById("valores");
-
+ 
 let valores = [];
 let contador = 0;
 let valor;

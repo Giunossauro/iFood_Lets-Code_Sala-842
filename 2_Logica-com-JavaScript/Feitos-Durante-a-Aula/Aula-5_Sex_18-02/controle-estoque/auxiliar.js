@@ -8,7 +8,7 @@
 //     categoria: 'cereais',
 //     frente: 'cereais',
 //     fornecedor: 'Camil'
-// }
+// } 
 // const clickDoEnvet = 'id'
 // console.log(produto[clickDoEnvet])
 

@@ -5,7 +5,7 @@ inner join Marca m on p.MarcaId = m.Id;  -- Direita
 -- Colocando condição a mais no join
 select * from Departamentos d
 left join Usuarios u on d.Id = u.DepartamentoId and u.Excluido = false;
-
+ 
 -- RIGHT JOIN
 select * from Marca     -- Esquerda
 join -- junte com a tabela 

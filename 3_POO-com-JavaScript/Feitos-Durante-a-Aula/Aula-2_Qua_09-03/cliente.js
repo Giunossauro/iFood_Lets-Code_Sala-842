@@ -3,7 +3,7 @@ class Cliente{
         this.nome = nome;
         this.idade = idade;
         this.email = email;
-    }
+    } 
 
     imprime(){
         console.log("O cliente " + this.nome + " tem " + this.idade + " anos e seu email é: " + this.email);

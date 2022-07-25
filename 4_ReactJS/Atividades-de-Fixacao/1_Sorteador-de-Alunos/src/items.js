@@ -12,5 +12,5 @@ export default function Items({ nomes, removeNome }) {
         ))}
       </ul>
     );
-  }
+  } 
   

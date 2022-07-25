@@ -5,4 +5,4 @@ class BeneficioFolha {
   }
 }
 
-module.exports = BeneficioFolha;
+module.exports = BeneficioFolha; 

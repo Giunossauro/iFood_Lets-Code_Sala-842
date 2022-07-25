@@ -13,3 +13,4 @@ $$;
 
 select * from Produto
 select totalProducts(2);
+ 

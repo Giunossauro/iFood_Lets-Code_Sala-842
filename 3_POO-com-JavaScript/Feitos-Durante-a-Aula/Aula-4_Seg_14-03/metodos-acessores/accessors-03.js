@@ -8,7 +8,7 @@ const uuu = {
 		return this._nome;
 	}
 }
-
+ 
 Object.defineProperty(uuu,"nome",{
 	get: function () {
 		return this._nome;

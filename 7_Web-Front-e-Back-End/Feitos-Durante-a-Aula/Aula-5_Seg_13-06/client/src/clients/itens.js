@@ -8,3 +8,4 @@ async function fetchItens() {
 export default {
   fetchItens,
 };
+ 

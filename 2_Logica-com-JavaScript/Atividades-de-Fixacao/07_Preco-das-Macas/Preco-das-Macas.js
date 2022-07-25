@@ -5,7 +5,7 @@
  * Escreva um programa que leia o número de maçãs compradas, calcule e
  * escreva o custo total da compra.
  */
-
+ 
 // Por favor, me perdoe pelas gambiarras.
 // Está funcionando e vou refatorar num momento oportuno!
 // Os exercícios 2 e 3 estão refatorados.

@@ -12,7 +12,7 @@ export default function Input({ adicionar, sortear }) {
     }
   };
 
-  return (
+  return ( 
     <>
       <button onClick={sortear}>Sortear</button>
       <br />

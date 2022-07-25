@@ -4,7 +4,7 @@
  * Imagine o seguinte problema: 
  * Você precisa criar um algoritmo que lê o nome e as 4 notas de 50 alunos, 
  * calcular a média de cada aluno e informar quais foram aprovados e quais foram reprovados.
- * 
+ *  
  * Nós precisariamos das seguintes variáveis:
  * 50 variáveis para armazenar os nomes dos alunos
  * 200 variáveis para armazenar as 4 notas de cada aluno

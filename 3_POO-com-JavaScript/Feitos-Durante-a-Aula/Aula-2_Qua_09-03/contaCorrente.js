@@ -4,7 +4,7 @@ class ContaCorrente{
     constructor(cliente, saldo){
         this.cliente = cliente;
         this.saldo = saldo;
-    }
+    } 
     depositar(valor){
         if(this.validarValor(valor)){
             this.saldo += valor;

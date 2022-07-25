@@ -6,7 +6,7 @@ class BeneficiosColaborador{
         this.#colaborador = colaborador;
         this.#inss = inss;
         this.#fgts = fgts;
-    }
+    } 
 
     mostrarBeneficios(){
         return `

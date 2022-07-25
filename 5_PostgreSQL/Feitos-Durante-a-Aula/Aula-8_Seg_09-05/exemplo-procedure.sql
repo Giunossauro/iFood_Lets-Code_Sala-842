@@ -6,4 +6,4 @@ BEGIN ATOMIC
 END;
 
 call changebrandproductvalue(2, 10);
-select * from produto;
+select * from produto; 

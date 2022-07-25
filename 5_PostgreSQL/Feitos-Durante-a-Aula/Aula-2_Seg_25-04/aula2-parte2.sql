@@ -1,6 +1,6 @@
 -- Formular do alter
 -- ALTER TABLE NomeDaTabela [ADD, ALTER, DROP] [COLUMN, CONSTRAINT];
-
+ 
 -- Criar a coluna
 ALTER TABLE Estado ADD COLUMN PaisId int not null default 1;
 

@@ -4,7 +4,7 @@ create table if not exists Alunos (
 	Nome varchar,
 	Email varchar,
 	primary key(Cpf)
-);
+); 
 
 insert into Alunos values ('123.123.123-12', 'Davi');
 insert into Alunos values ('123.123.123-13', 'Fulano', 'teste@teste.com');

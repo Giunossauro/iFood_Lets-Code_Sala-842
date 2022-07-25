@@ -9,7 +9,7 @@ const inss = new DescontoFolha("INSS", 11);
 const alimentacao = new DescontoFolha("Alimentação", 3);
 const transporte = new DescontoFolha("Transporte", 6);
 const planoSaude = new DescontoFolha("Plano de saúde", 9);
-
+ 
 // Benefícios
 const plr = new BeneficioFolha("PLR", 18000);
 const gympass = new BeneficioFolha("Gympass", 50);

@@ -3,7 +3,7 @@
  * É uma linguagem de programação INTERPRETADA
  * Scripts de alto nível
  * Tipagem fraca
- *  
+ *   
  *
  * 
  * Links:

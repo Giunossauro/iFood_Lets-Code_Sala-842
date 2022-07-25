@@ -5,7 +5,7 @@ const querystring = require('querystring');
 const server = http.createServer((request, response) => {
     let { url, method } = request;
     console.log({ url, method });
-
+ 
     const split_resp = url.split("?");
     const params_string = split_resp[1];
     let params;

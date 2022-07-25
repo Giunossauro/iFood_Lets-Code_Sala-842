@@ -12,7 +12,7 @@ const pessoa = {
 
 // em obj literal as novas var precisam ter mesmo nome do obj
 const {nome, sobrenome} = pessoa;
-
+ 
 // ... em https://www.geeksforgeeks.org/javascript-spread-operator/
 const {cpf, ...pessoaSemCPF} = pessoa;
 

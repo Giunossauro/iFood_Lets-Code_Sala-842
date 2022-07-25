@@ -3,7 +3,7 @@ create table Produto (
 	nome varchar (100) not null,
 	primary key(Id)
 );
-
+ 
 create table Cliente (
 	Id int generated always as identity,
 	nome varchar (100) not null,

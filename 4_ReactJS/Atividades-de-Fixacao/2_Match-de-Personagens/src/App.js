@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./styles.css";
-
+ 
 export default function App() {
   const elementoInput = useRef(null);
   const elementoPersonagem = useRef(null);

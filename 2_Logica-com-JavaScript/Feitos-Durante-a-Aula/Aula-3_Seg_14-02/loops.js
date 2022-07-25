@@ -9,7 +9,7 @@
  *      array.forEach((valor, index) => {...any implementation...})
  * 
  *      for(let index in array)
- * 
+ *  
  *      for(let value of array)
  */
 

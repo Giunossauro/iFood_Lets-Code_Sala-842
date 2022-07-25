@@ -8,7 +8,7 @@ class Animal {
         console.log("Algum som");
     }
 }
-
+ 
 class Cachorro extends Animal {
     constructor(nome, especie){
         super(nome, especie);

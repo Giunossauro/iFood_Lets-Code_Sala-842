@@ -3,7 +3,7 @@ class FiguraGeometrica{
         this.base = base;
         this.altura = altura;
     }
-
+ 
     calcularArea(){
         return `A área é: ${this.base * this.altura}`;
     }
