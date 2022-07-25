@@ -29,7 +29,7 @@ b. /hoteis?nome=sh3r4t0n
 c. /hoteis?limit=5
 ```
 
-[x] 4. Todas rotas devem suportar, pelo menos, GET, PUT, POST, e DELETE.
+[x] 4 - Todas rotas devem suportar, pelo menos, GET, PUT, POST, e DELETE.
 
 [x] 5. Ter, pelo menos, uma rota onde é possível visualizar algum dos recursos usando uma view engine; 
 
