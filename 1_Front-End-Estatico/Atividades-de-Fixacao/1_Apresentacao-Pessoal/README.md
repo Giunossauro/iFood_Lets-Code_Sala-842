@@ -4,7 +4,7 @@
 
 ## Atividade de Fixação 1  
 
-##### Link para visitar a página da atividade: [__Cliqui Aqui__](http://htmlpreview.github.io/?https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/1_Apresentacao-Pessoal/ATIVIDADE_DE_FIXACAO_1.html)
+##### Link para visitar a página da atividade: [Clique Aqui](http://htmlpreview.github.io/?https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/1_Apresentacao-Pessoal/ATIVIDADE_DE_FIXACAO_1.html)
 
 ### Print:
 
