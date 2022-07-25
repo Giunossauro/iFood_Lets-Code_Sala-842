@@ -4,7 +4,7 @@
 
 ## Atividade de Fixação 3  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/1_Front-End-Estatico/Atividades-de-Fixacao/3_Tags-Semanticas-e-CSS)
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/1_Front-End-Estatico/Atividades-de-Fixacao/3_Tags-Semanticas-e-CSS/index.html)
 
 ### Print:
 
