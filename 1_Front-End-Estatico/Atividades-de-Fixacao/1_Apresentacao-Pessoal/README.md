@@ -4,11 +4,14 @@
 
 ## Atividade de Fixação 1  
 
-###### Link para ver como ficou: htmlpreview.github.io/?https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/1_Apresentacao-Pessoal/ATIVIDADE_DE_FIXACAO_1.html
+###### Link para ver como ficou:
+http://htmlpreview.github.io/?https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/1_Apresentacao-Pessoal/ATIVIDADE_DE_FIXACAO_1.html
 
-#### Preview:
+### Print:
 
 ![Preview](https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/1_Apresentacao-Pessoal/img/1f1.png)
+
+## Requisitos
 
 - [x] Título: Nome Completo do Aluno;  
 
