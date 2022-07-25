@@ -50,13 +50,13 @@ personagens = [
 ]
 ```
 
-![Estado inicial](./image1.png)
+![Estado inicial](./img/image1.png)
 Estado inicial
 
-![Após selecionar goku forma 0](./image2.png)
+![Após selecionar goku forma 0](./img/image2.png)
 Após selecionar goku forma 0
 
-![Após selecionar vegeta forma 2](./image3.png)
+![Após selecionar vegeta forma 2](./img/image3.png)
 Após selecionar vegeta forma 2
 
 ###### Prazo: 31/03/2022 ~ 06/04/2022  

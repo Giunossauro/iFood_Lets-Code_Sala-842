@@ -6,23 +6,23 @@
 Vamos implementar a modelagem de um sistema de delivery de refeições. Para tal, será necessário criar as classes que representam cada uma das entidades envolvidas no processo.
 
 Serão considerados como requisitos:
-[x] Deverão ser abordados os conceitos estudados ao longo do módulo, a saber: Orientação a Objetos, Classes, Atributos, Métodos, Herança, Polimorfismo, Encapsulamento, Métodos de acesso, etc.;  
+- [x] Deverão ser abordados os conceitos estudados ao longo do módulo, a saber: Orientação a Objetos, Classes, Atributos, Métodos, Herança, Polimorfismo, Encapsulamento, Métodos de acesso, etc.;  
 
-[x] Existem 3 perfis possíveis de usuários (cliente, lojista e entregador);  
+- [x] Existem 3 perfis possíveis de usuários (cliente, lojista e entregador);  
 
-[x] O lojista poderá manipular o cardápio (adicionar, remover, alterar os pratos). Poderá, também, cancelar um pedido que esteja em andamento, ao qual esteja associado;  
+- [x] O lojista poderá manipular o cardápio (adicionar, remover, alterar os pratos). Poderá, também, cancelar um pedido que esteja em andamento, ao qual esteja associado;  
 
-[x] O cliente poderá montar o carrinho, adicionando itens, remover itens, alterar quantidade dos itens ou cancelar o carrinho, e realizar um pedido;  
+- [x] O cliente poderá montar o carrinho, adicionando itens, remover itens, alterar quantidade dos itens ou cancelar o carrinho, e realizar um pedido;  
 
-[x] O entregador poderá visualizar os pedidos disponíveis e se marcar como entregador deste;  
+- [x] O entregador poderá visualizar os pedidos disponíveis e se marcar como entregador deste;  
 
-[x] Ao finalizar um pedido, o lojista terá a sua lista de pedidos atualizada com este;  
+- [x] Ao finalizar um pedido, o lojista terá a sua lista de pedidos atualizada com este;  
 
-[x] O cliente poderá finalizar um pedido, confirmando a entrega;  
+- [x] O cliente poderá finalizar um pedido, confirmando a entrega;  
 
-[x] O cliente não poderá cancelar um pedido que já tenha um entregador associado;  
+- [x] O cliente não poderá cancelar um pedido que já tenha um entregador associado;  
 
-[x] Os requisitos acima são os requisitos mínimos, mas podem usar a criatividade para desenvolver algo a mais, atentando sempre ao prazo, que será nossa última aula, dia 25/03/2022.  
+- [x] Os requisitos acima são os requisitos mínimos, mas podem usar a criatividade para desenvolver algo a mais, atentando sempre ao prazo, que será nossa última aula, dia 25/03/2022.  
   
 ## Grupo (em ordem alfabetica):  
 - [Ana Clara](https://github.com/acbarbeta);  

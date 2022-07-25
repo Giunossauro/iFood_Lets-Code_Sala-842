@@ -6,14 +6,17 @@
 
 ##### Obrigatório  
 
-[x] Catálogo igual ao do trabalho principal 01, porém responsivo;  
-[x] Fazer um formulário de registro para o catálogo digital que criaram (se quiserem deixar funcionando tudo bem, mas não precisa);  
-[x] Navegação precisa funcionar (da página principal para outras páginas, e na página principal em si);  
-[x] O site deve estar otimizado para SEO e acessibilidade.  
+- [x] Catálogo igual ao do trabalho principal 01, porém responsivo;  
+
+- [x] Fazer um formulário de registro para o catálogo digital que criaram (se quiserem deixar funcionando tudo bem, mas não precisa);  
+
+- [x] Navegação precisa funcionar (da página principal para outras páginas, e na página principal em si);  
+
+- [x] O site deve estar otimizado para SEO e acessibilidade.  
 
 ##### Extra  
 
-[x] Site inteiro feito com bootstrap.  
+- [x] Site inteiro feito com bootstrap.  
 
 ## Grupo  
 - [Ana Clara](https://github.com/acbarbeta);  

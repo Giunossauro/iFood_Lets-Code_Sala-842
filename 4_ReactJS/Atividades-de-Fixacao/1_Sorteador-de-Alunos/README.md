@@ -15,13 +15,13 @@ function randomIntFromInterval(min, max) { // max ta incluido
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 ```
-![Estado inicial](./image1.png)
+![Estado inicial](./img/image1.png)
 Estado inicial
 
-![Após clicar no botão sortear e ter sorteado 2 alunos](./image2.png)
+![Após clicar no botão sortear e ter sorteado 2 alunos](./img/image2.png)
 Após clicar no botão sortear e ter sorteado 2 alunos
 
-![Após clicar no botão sortear e ter sorteado 2 alunos](./image3.png)
+![Após clicar no botão sortear e ter sorteado 2 alunos](./img/image3.png)
 Mensagem de erro ao tentar sortear aluno com a lista vazia
 
 (imagens do enunciado)

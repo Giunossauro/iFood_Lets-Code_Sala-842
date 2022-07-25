@@ -10,9 +10,9 @@ Serão avaliadas questões como implementação de API RESTful, modelagem de rec
 
 ##### Obrigatório  
 
-[x] Necessário criar, pelo menos, 3 recursos que tenham algum nível de relacionamento. e.g. hotel, hóspede, e reserva.
+- [x] Necessário criar, pelo menos, 3 recursos que tenham algum nível de relacionamento. e.g. hotel, hóspede, e reserva.
 
-[x] Criar rotas no serviço, usando path params, que suportem a interação com esses recursos, e.g.
+- [x] Criar rotas no serviço, usando path params, que suportem a interação com esses recursos, e.g.
 ```
 a. /hoteis
     i. /hotel/1
@@ -22,30 +22,30 @@ c. /reservas
     i. /reservas/9/hospedes
 ```
 
-[x] Suportar query params com 3 funcionalidades: sortBy, algum tipo de filtro como nome ou qtd de estrelas, e limit. e.g.
+- [x] Suportar query params com 3 funcionalidades: sortBy, algum tipo de filtro como nome ou qtd de estrelas, e limit. e.g.
 ```
 a. /hoteis?sortBy=name
 b. /hoteis?nome=sh3r4t0n
 c. /hoteis?limit=5
 ```
 
-[x] Todas rotas devem suportar, pelo menos, GET, PUT, POST, e DELETE.
+- [x] Todas rotas devem suportar, pelo menos, GET, PUT, POST, e DELETE.
 
-[x] Ter, pelo menos, uma rota onde é possível visualizar algum dos recursos usando uma view engine; 
+- [x] Ter, pelo menos, uma rota onde é possível visualizar algum dos recursos usando uma view engine; 
 
-[x] Projeto deve usar um padrão de pastas modularizado, e.g.
+- [x] Projeto deve usar um padrão de pastas modularizado, e.g.
 
 ![Hierarquia de Arquivos](https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/7_Web-Front-e-Back-End/Projetos/1_Cinemasso/Images/Hierarquia-de-Arquivos.png)
 
-[x] Serviço deve conseguir salvar e buscar dados de algum sistema de storage, podendo ser o próprio filesystem;  
+- [x] Serviço deve conseguir salvar e buscar dados de algum sistema de storage, podendo ser o próprio filesystem;  
 
-[x] Deve ser possível ler e escrever dados através de algum cliente HTTP como Postman, cURL, Insomnia.  
+- [x] Deve ser possível ler e escrever dados através de algum cliente HTTP como Postman, cURL, Insomnia.  
 
 ##### Extra  
 
-[x] Usar Postgres como storage;  
+- [x] Usar Postgres como storage;  
 
-[x] Usar uma aplicação React como view.  
+- [x] Usar uma aplicação React como view.  
 
 ## Grupo (em ordem alfabética)  
 - Giuliano Morelli (eu);  

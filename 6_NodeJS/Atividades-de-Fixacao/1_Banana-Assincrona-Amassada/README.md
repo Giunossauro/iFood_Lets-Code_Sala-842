@@ -4,10 +4,10 @@
 
 ## Atividade de Fixação 1  
 
-[x] Fazer uma chamada assíncrona usando a função fetch;  
+- [x] Fazer uma chamada assíncrona usando a função fetch;  
 
-[x] Esta chamada deve ser feita de 3 formas: usando callbacks, promises e async/await;  
+- [x] Esta chamada deve ser feita de 3 formas: usando callbacks, promises e async/await;  
 
-[x] Usar do resultado desta chamada para alterar o DOM (parecido com o que fizemos em sala coma PokéAPI).  
+- [x] Usar do resultado desta chamada para alterar o DOM (parecido com o que fizemos em sala coma PokéAPI).  
 
 ###### Prazo: 13/05/2022 ~ 21/01/2022  
