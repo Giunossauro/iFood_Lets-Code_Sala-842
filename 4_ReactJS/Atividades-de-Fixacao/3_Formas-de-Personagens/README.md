@@ -3,6 +3,14 @@
 ---  
 
 ## Atividade de Fixação 3  
+
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
  
 Criar interface com lista de personagens e suas respectivas formas, ao clicar numa forma, mostrar a imagem.
 

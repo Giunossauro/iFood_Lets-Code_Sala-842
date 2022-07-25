@@ -4,6 +4,12 @@
 
 ## Atividade de Fixação 2  
 
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Crie um banco para modelar o seguinte cenário:  
 
 Você está desenvolvendo o sistema de controle de usuário de uma empresa. Os usuário possuem cpf, nome, e-mail e data nascimento para poderem ser cadastrados. Além disso quando você cria um usuário, é enviado um e-mail de confirmação e você deve saber se o usuário o validou.  

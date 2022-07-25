@@ -4,6 +4,14 @@
 
 ## Atividade Principal 1  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 ##### Obrigatório  
 
 - [x] Deve ser criado um servidor NodeJS, usando a biblioteca HTTP;  

@@ -4,6 +4,14 @@
 
 ## Atividade de Fixação 3  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/3_Tags-Semanticas-e-CSS/ATIVIDADE_DE_FIXACAO_3.html)
+
+### Print:
+
+![Print](https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Atividades-de-Fixacao/1_Apresentacao-Pessoal/img/1f3.png)
+
+## Requisitos  
+
 - [x] Utilizar as tags semânticas para juntar o conteúdo técnico das Atividades 01 e 02;  
 
 - [x] Cada atividade deverá ter sua própria section;  

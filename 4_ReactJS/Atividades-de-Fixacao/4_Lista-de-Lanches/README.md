@@ -4,6 +4,14 @@
 
 ## Atividade de Fixação 4  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Criar interface para criar e adicionar lanches em uma lista.  
 
 Necessário ter, pelo menos, 2 inputs para receber descrição e preço, e um botão para adicionar na lista de lanches.  

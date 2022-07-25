@@ -4,6 +4,12 @@
 
 ## Atividade de Fixação 1  
 
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Crie um banco de dados com a seguinte estrutura:  
 
 - [x] uma tabela de alunos que possua as colunas nome, cpf e e-mail. Deixe todas as colunas permitindo valores nulos;  

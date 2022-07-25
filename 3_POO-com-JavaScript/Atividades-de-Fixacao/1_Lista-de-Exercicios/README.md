@@ -4,6 +4,14 @@
 
 ## Atividade de Fixação 1  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 - [x] Crie uma classe chamada Pessoa que aceita o nome de uma pessoa como uma string e sua data de nascimento, no formato “ano-mes-dia” (“2000-04-25”, por exemplo);  
 
 - [x] A classe Pessoa deve ter um método chamado __calcularIdade__, que receberá a data de nascimento de Pessoa e retornará a idade e um outro método, chamado __detalharPessoa__, que retorne uma string com a seguinte sintaxe: "_nome, idade anos_". Por exemplo, se John tiver 19 anos, a função detalharPessoa de seu objeto retornará "_John, 19 anos_";

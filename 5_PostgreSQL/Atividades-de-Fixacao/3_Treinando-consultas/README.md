@@ -4,6 +4,12 @@
 
 ## Atividade de Fixação 3  
 
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Utilize o banco de produtos que criamos nos arquivos "aula 2 parte 3" e "aula 2 alteracoes produtos" no Git.  
 
 Execute as seguintes consultas:  

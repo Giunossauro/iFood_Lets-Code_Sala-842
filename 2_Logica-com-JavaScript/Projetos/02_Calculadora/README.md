@@ -4,6 +4,14 @@
 
 ## Atividade Principal 2  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Desenvolva uma calculadora web (HTML/CSS) com as seguintes funcionalidades:  
 
 - [x] Soma  

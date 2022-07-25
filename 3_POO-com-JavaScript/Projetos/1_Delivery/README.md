@@ -3,6 +3,15 @@
 ---  
   
 ## Atividade Principal 1  
+
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Vamos implementar a modelagem de um sistema de delivery de refeições. Para tal, será necessário criar as classes que representam cada uma das entidades envolvidas no processo.
 
 Serão considerados como requisitos:

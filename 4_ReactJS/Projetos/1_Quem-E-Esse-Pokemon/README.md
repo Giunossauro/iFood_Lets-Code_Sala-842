@@ -4,6 +4,14 @@
   
 ## Atividade Principal 1  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Projeto deve ser feito usando React e publicado em alguma plataforma como [Netlify](https://www.netlify.com/) ou [Surge](https://github.com/sintaxi/surge#readme).  
 
 Tema do jogo fica a critério do grupo escolher.  

@@ -2,7 +2,15 @@
 
 ---  
 
-## Atividade Principal 2 (em grupo)
+## Atividade Principal 2 (em grupo)  
+
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos  
 
 ##### Obrigatório  
 

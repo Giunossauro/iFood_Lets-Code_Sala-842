@@ -2,7 +2,15 @@
 
 ---
 
-## Atividade de Fixação 1  
+## Atividade de Fixação 12  
+
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
 
 Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armaze os nomes lidos em um vetor.  
  

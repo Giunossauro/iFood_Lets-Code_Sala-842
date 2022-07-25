@@ -1,4 +1,12 @@
-# Lista de Exercícios - Lógica de Programação
+# Lista de Exercícios - Lógica de Programação  
+
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos  
 
 Leia com atenção todos os enunciados.
 

@@ -2,7 +2,15 @@
 
 ---  
 
-## Atividade Principal 1 (em grupo)
+## Atividade Principal 1 (em grupo)  
+
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
 
 Criar aplicação web usando os conceitos vistos ao longo do módulo e do curso.  
 

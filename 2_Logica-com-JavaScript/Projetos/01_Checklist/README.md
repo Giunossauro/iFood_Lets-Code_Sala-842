@@ -4,6 +4,14 @@
 
 ## Atividade Principal 1  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 Uma empresa de transportes pretende automatizar a gestão de frota de seus veiculos, e querem automatizar um processo de preenchimento de checklists, hoje esse processo é feito manualmente, e contém os seguintes passos:  
 
 * O motorista chega na empresa  

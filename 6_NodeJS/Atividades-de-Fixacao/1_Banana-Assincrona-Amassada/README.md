@@ -4,6 +4,14 @@
 
 ## Atividade de Fixação 1  
 
+###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
+
+### Print:
+
+![Print]()
+
+## Requisitos
+
 - [x] Fazer uma chamada assíncrona usando a função fetch;  
 
 - [x] Esta chamada deve ser feita de 3 formas: usando callbacks, promises e async/await;  
