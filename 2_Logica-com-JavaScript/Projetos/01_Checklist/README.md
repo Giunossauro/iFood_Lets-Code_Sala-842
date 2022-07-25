@@ -4,11 +4,11 @@
 
 ## Atividade Principal 1  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/2_Logica-com-JavaScript/Projetos/01_Checklist/Checklist.html)
 
-### Print:
+### Preview (GIF - aperte o Play):
 
-![Print]()
+![Preview (GIF - aperte o Play):](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/2_Logica-com-JavaScript/Projetos/01_Checklist/img/2p1.gif)
 
 ## Requisitos
 

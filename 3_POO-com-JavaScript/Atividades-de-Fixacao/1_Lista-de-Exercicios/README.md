@@ -4,11 +4,11 @@
 
 ## Atividade de Fixação 1  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/3_POO-com-JavaScript/Atividades-de-Fixacao/1_Lista-de-Exercicios/index.html)
 
-### Print:
+### Preview (GIF - aperte o Play):  
 
-![Print]()
+![Preview (GIF - aperte o Play):](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/3_POO-com-JavaScript/Atividades-de-Fixacao/1_Lista-de-Exercicios/img/3f1.gif)
 
 ## Requisitos
 
