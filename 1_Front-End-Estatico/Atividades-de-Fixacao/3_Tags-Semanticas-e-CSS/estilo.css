@@ -127,7 +127,7 @@ figure{
 	text-decoration-line: underline;
 }
 
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 10em) {
 	header nav nav {display: none;}
 	header nav nav.navicon {
 		float: right;
@@ -135,7 +135,7 @@ figure{
 	}
 }
 
-@media screen and (max-width: 20em) {
+@media screen and (max-width: 10em) {
 		header nav.responsive {position: relative;}
 		header nav.responsive .navicon {
 		position: absolute;
