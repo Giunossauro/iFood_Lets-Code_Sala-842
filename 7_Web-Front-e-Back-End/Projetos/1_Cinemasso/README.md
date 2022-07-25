@@ -47,12 +47,12 @@ c. /hoteis?limit=5
 
 2. Usar uma aplicação React como view.  
 
-## Grupo  
-- [Ana Clara](https://github.com/acbarbeta);  
+## Grupo (em ordem alfabética)  
 - Giuliano Morelli (eu);  
-- [Lincoln Rodrigo](https://github.com/LinkolnR);  
+- [Julia Téo](https://github.com/juructteo);  
+- [Leandro Patrício](https://github.com/Leandro-Patricio);  
 - [Milan Moreira](https://github.com/Milan-Cruz);  
-- [Rodrigo Rangel](https://github.com/rodrigo-rngl).  
+- [Murilo Oliveira](https://github.com/akadot).  
 
 O trabalho foi feito em grupo pelo [Replit](https://replit.com/@Giunossauro/AtvPrincipal2).  
 
