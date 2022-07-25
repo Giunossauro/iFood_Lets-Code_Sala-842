@@ -4,13 +4,13 @@
 
 ## Atividade Principal 1  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/1_Front-End-Estatico/Projetos/1_Catalogo-Digital-Basico/index.html)
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/1_Front-End-Estatico/Projetos/1_Catalogo-Digital-Basico/index.html)  
 
-### Print:
+### Print:  
 
-![Print](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Projetos/1_Catalogo-Digital-Basico/img/1p1.gif)
+![Preview (GIF - aperte o Play)](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Projetos/1_Catalogo-Digital-Basico/imagem/1p1.gif)
 
-## Requisitos
+## Requisitos  
 
 ##### Obrigatório  
 

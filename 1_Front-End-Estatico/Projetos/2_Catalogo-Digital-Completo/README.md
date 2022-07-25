@@ -4,11 +4,11 @@
 
 ## Atividade Principal 2 (em grupo)  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/1_Front-End-Estatico/Projetos/2_Catalogo-Digital-Completo/index.html)
 
-### Print:
+### Preview (GIF - aperte o Play):  
 
-![Print]()
+![Preview (GIF - aperte o Play)](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Projetos/2_Catalogo-Digital-Completo/imagem/1p2.gif)
 
 ## Requisitos  
 

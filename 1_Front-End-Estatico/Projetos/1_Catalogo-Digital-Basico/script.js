@@ -8,7 +8,7 @@ var dropData = document.getElementsByClassName("drop-data")[0];
 var dropBtn = document.getElementById("drop-btn");
 var drop = document.getElementsByClassName("drop")[0];
 var radioSpans = document.getElementsByTagName("span");
-
+ 
 var url = new URL(window.location.href);
 var searchParams = new URLSearchParams(url.search);
 
