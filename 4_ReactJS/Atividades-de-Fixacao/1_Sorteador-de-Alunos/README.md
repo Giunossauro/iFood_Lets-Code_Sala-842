@@ -4,7 +4,7 @@
  
 ## Atividade de Fixação 1  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/4_ReactJS/Atividades-de-Fixacao/1_Sorteador-de-Alunos/index.html)
+###### Link para visitar a página da atividade: [![Netlify Status](https://api.netlify.com/api/v1/badges/7b1c9d5b-01d0-4c2a-872e-3e897815a3b7/deploy-status)](https://app.netlify.com/sites/symphonious-crostata-915cb4/deploys)
 
 ### Preview (GIF - aperte o Play):  
 
