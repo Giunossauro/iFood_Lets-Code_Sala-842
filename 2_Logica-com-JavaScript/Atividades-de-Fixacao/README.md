@@ -4,7 +4,7 @@
 
 ### Print:
 
-![Print](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/2_Logica-com-JavaScript/Projetos/img/2f.gif)
+![Print](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/2_Logica-com-JavaScript/Atividades-de-Fixacao/img/2f.gif)
 
 ## Requisitos  
 
