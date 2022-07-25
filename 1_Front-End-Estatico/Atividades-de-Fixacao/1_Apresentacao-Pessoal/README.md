@@ -4,7 +4,7 @@
 
 ## Atividade de Fixação 1  
 
-[x] Título: Nome Completo do Aluno;  
+- [x] Título: Nome Completo do Aluno;  
 
 [x] Pelo menos duas tags de divisão;  
 
