@@ -45,7 +45,7 @@ c. /hoteis?limit=5
 
 1. [x] Usar Postgres como storage;  
 
-- [x] Usar uma aplicação React como view.  
+[x] - Usar uma aplicação React como view.  
 
 ## Grupo (em ordem alfabética)  
 - Giuliano Morelli (eu);  
