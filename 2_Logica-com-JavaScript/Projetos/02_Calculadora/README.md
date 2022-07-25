@@ -6,22 +6,23 @@
 
 Desenvolva uma calculadora web (HTML/CSS) com as seguintes funcionalidades:  
 
-* Soma  
-* Subtração  
-* Multiplicação  
-* Divisão  
-* Resto de uma divisão  
-* Raiz quadrada  
-* Potenciação  
-* Seno  
-* Coseno  
-* Pi  
+[x] Soma  
+[x] Subtração  
+[x] Multiplicação  
+[x] Divisão  
+[x] Resto de uma divisão  
+[x] Raiz quadrada  
+[x] Potenciação  
+[x] Seno  
+[x] Coseno  
+[x] Pi  
 
 ##### ATENÇÃO  
 A calculadora deve ter um histórico de operações!!! Esse histórico deve ficar armazenado em um array de objetos com os seguintes dados:  
-- Valores  
-- Operador  
-- Resultado  
+
+[x] Valores  
+[x] Operador  
+[x] Resultado  
 
 A interface é livre, usem a imaginação!  
 
