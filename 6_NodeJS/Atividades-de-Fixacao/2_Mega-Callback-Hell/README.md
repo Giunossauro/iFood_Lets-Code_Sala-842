@@ -4,13 +4,9 @@
 
 ## Atividade de Fixação 2  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/6_NodeJS/Atividades-de-Fixacao/2_Mega-Callback-Hell/index.html)
 
-### Print:
-
-![Print]()
-
-## Requisitos
+## Requisitos  
 
 - [x] Criar um callback hell seu (não pode ser igual ao que eu fiz em sala, mas pode ser parecido);  
 

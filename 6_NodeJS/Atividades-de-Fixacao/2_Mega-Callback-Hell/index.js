@@ -5,6 +5,7 @@ for(let contador = 1; contador <= 10; contador++){
     function(callback){
       setTimeout(() => {
         console.log("\nID: ",contador);
+        div.innerHTML += `<p>\nID: ${contador}</p>`;
         callback();
       }, 300);
     }
@@ -30,6 +31,7 @@ for(let contador = 1; contador <= 10; contador++){
       const response = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${contador}/`);
       callback();
       console.log("Color: ",(await response.json()).color.name);
+      div.innerHTML += `Color: ${(await response.json()).color.name}</p>`;
     }
   );
 }
@@ -74,7 +76,10 @@ for(let contador = 1; contador <= 10; contador++){
                                                                 callback_4.push(aux.json());
                                                               }
                                                               const responseAll = await Promise.all(callback_4);
-                                                              responseAll.forEach((e) => console.log(e.name));
+                                                              responseAll.forEach((e) => {
+                                                                console.log(e.name);
+                                                                div.innerHTML += `<p>${e.name}</p>`;
+                                                              });
                                                               await sleep(450);
                                                               const responseRace = await Promise.race(callbackHell_2);
                                                               console.log(
@@ -84,35 +89,70 @@ for(let contador = 1; contador <= 10; contador++){
                                                                   ).json()
                                                                 ).name,"\ncostuma ser o Bulbasauro mesmo... Bicho corre!"
                                                               );
+                                                              div.innerHTML += `<p>VENCEDOR: 
+                                                                ${(await (
+                                                                  await responseRace(()=>{})
+                                                                ).json()).name}
+                                                              < /br>costuma ser o Bulbasauro mesmo... Bicho corre!</p>`;
                                                             })
-                                                          ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                                                          ).then((p)=>p.json()).then((json)=>{
+                                                            console.log("Name: ",json.name);
+                                                            div.innerHTML += `<p>Name: ${json.name}</p>`;
+                                                          })
                                                         )
                                                       )
-                                                    ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                                                    ).then((p)=>p.json()).then((json)=>{
+                                                      console.log("Name: ",json.name);
+                                                      div.innerHTML += `<p>Name: ${json.name}</p>`;
+                                                    })
                                                   )
                                                 )
-                                              ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                                              ).then((p)=>p.json()).then((json)=>{
+                                                console.log("Name: ",json.name);
+                                                div.innerHTML += `<p>Name: ${json.name}</p>`;
+                                              })
                                             )
                                           )
-                                        ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                                        ).then((p)=>p.json()).then((json)=>{
+                                          console.log("Name: ",json.name);
+                                          div.innerHTML += `<p>Name: ${json.name}</p>`;
+                                        })
                                       )
                                     )
-                                  ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                                  ).then((p)=>p.json()).then((json)=>{
+                                    console.log("Name: ",json.name);
+                                    div.innerHTML += `<p>Name: ${json.name}</p>`;
+                                  })
                                 )
                               )
-                            ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                            ).then((p)=>p.json()).then((json)=>{
+                              console.log("Name: ",json.name);
+                              div.innerHTML += `<p>Name: ${json.name}</p>`;
+                            })
                           )
                         )
-                      ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                      ).then((p)=>p.json()).then((json)=>{
+                        console.log("Name: ",json.name);
+                        div.innerHTML += `<p>Name: ${json.name}</p>`;
+                      })
                     )
                   )
-                ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+                ).then((p)=>p.json()).then((json)=>{
+                  console.log("Name: ",json.name);
+                  div.innerHTML += `<p>Name: ${json.name}</p>`;
+                })
               )
             )
-          ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+          ).then((p)=>p.json()).then((json)=>{
+            console.log("Name: ",json.name);
+            div.innerHTML += `<p>Name: ${json.name}</p>`;
+          })
         )
       )
-    ).then((p)=>p.json()).then((json)=>console.log("Name: ",json.name))
+    ).then((p)=>p.json()).then((json)=>{
+      console.log("Name: ",json.name);
+      div.innerHTML += `<p>Name: ${json.name}</p>`;
+    })
   );
 })()
 
