@@ -6,10 +6,6 @@
 
 ###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/3_POO-com-JavaScript/Projetos/1_Delivery/index.html)
 
-### Preview (GIF - aperte o Play):  
-
-![Preview (GIF - aperte o Play):](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/3_POO-com-JavaScript/Projetos/1_Delivery/img/3p1.gif)
-
 ## Requisitos
 
 Vamos implementar a modelagem de um sistema de delivery de refeições. Para tal, será necessário criar as classes que representam cada uma das entidades envolvidas no processo.

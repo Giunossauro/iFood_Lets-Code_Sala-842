@@ -32,4 +32,4 @@ Dentro de cada módulo encontram-se as pastas:
 ## Observações:  
 - Adaptei os nomes dos módulos e suas respectivas descrições para algo que faz mais sentido para o curso e que é mais coerente com os conteúdos que foram abordados. Mais informações podem ser encontradas na página do programa ([Vem Ser Tech](https://www.letscode.com.br/processos-seletivos/potencia-tech-ifood)) e na página genérica do curso [Web Full Stack](https://www.letscode.com.br/web-full-stack) da Let's Code Academy;  
 - A página do programa [Vem Ser Tech](https://www.letscode.com.br/processos-seletivos/potencia-tech-ifood) informa que o curso possui 400 horas, mas o curso foi ministrado, de fato, com 216 horas, que é a carga horária anotada no [certificado](https://github.com/Giunossauro/IFood_Lets-Code_Sala-842/blob/master/Certificado.pdf).  
- 
+- Neste repositório eu postei a evolução do meu aprendizado. Eu refatorei alguns códigos antigos usando conceitos de design patterns e clean code que fui aprendendo com a prática, mas ainda não tive tempo de refatorar tudo, bem como tem coisa que se eu alterar mais, vai desrespeitar a ideia de registrar o momento.

@@ -4,10 +4,6 @@
 
 ## Atividade Principal 1  
 
-### Print:
-
-![Print]()
-
 ## Requisitos
 
 Você está criando um sistema de transferências simples para uma instituição financeira e deverá modelar o banco de dados.  

@@ -6,10 +6,6 @@
 
 ###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/2_Logica-com-JavaScript/Projetos/01_Checklist/Checklist.html)
 
-### Preview (GIF - aperte o Play):
-
-![Preview (GIF - aperte o Play):](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/2_Logica-com-JavaScript/Projetos/01_Checklist/img/2p1.gif)
-
 ## Requisitos
 
 Uma empresa de transportes pretende automatizar a gestão de frota de seus veiculos, e querem automatizar um processo de preenchimento de checklists, hoje esse processo é feito manualmente, e contém os seguintes passos:  

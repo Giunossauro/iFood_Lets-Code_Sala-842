@@ -6,9 +6,9 @@
 
 ###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/1_Front-End-Estatico/Projetos/1_Catalogo-Digital-Basico/index.html)  
 
-### Print:  
+### Preview (clique para assistir):  
 
-![Preview (GIF - aperte o Play)](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Projetos/1_Catalogo-Digital-Basico/imagem/1p1.gif)
+![Preview (clique para assistir)](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/1_Front-End-Estatico/Projetos/1_Catalogo-Digital-Basico/imagem/1p1.gif)
 
 ## Requisitos  
 

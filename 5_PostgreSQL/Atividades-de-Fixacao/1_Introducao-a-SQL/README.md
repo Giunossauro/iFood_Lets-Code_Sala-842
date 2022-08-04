@@ -4,11 +4,7 @@
 
 ## Atividade de Fixação 1  
 
-### Print:
-
-![Print]()
-
-## Requisitos
+## Requisitos  
 
 Crie um banco de dados com a seguinte estrutura:  
 

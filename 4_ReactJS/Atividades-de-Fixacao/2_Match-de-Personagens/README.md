@@ -4,11 +4,7 @@
 
 ## Atividade de Fixação 1  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](http://htmlpreview.github.io/?)
-
-### Print:
-
-![Print]()
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://match-de-personagens.herokuapp.com/)
 
 ## Requisitos
 

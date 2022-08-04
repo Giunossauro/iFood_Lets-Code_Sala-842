@@ -4,11 +4,11 @@
  
 ## Atividade de Fixação 1  
 
-###### Link para visitar a página da atividade: [![Netlify Status](https://api.netlify.com/api/v1/badges/7b1c9d5b-01d0-4c2a-872e-3e897815a3b7/deploy-status)](https://app.netlify.com/sites/symphonious-crostata-915cb4/deploys)
+###### Link para visitar a página da atividade: [!CLIQUE AQUI)](https://sorteador-de-alunos.herokuapp.com/)
 
-### Preview (GIF - aperte o Play):  
+### Preview (GIF - clique para assistir):  
 
-![Preview (GIF - aperte o Play):](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/4_ReactJS/Atividades-de-Fixacao/1_Sorteador-de-Alunos/img/4f1.gif)
+![Preview (GIF - clique para assistir):](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/4_ReactJS/Atividades-de-Fixacao/1_Sorteador-de-Alunos/img/4f1.gif)
 
 ## Requisitos
 

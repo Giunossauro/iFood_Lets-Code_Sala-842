@@ -6,10 +6,6 @@
 
 ###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/3_POO-com-JavaScript/Atividades-de-Fixacao/1_Lista-de-Exercicios/index.html)
 
-### Preview (GIF - aperte o Play):  
-
-![Preview (GIF - aperte o Play):](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/3_POO-com-JavaScript/Atividades-de-Fixacao/1_Lista-de-Exercicios/img/3f1.gif)
-
 ## Requisitos
 
 - [x] Crie uma classe chamada Pessoa que aceita o nome de uma pessoa como uma string e sua data de nascimento, no formato “ano-mes-dia” (“2000-04-25”, por exemplo);  

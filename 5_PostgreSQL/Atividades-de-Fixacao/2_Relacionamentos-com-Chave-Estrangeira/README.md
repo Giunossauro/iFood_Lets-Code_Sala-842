@@ -4,10 +4,6 @@
 
 ## Atividade de Fixação 2  
 
-### Print:
-
-![Print]()
-
 ## Requisitos
 
 Crie um banco para modelar o seguinte cenário:  
