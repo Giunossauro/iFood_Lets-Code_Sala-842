@@ -20,7 +20,7 @@ node client.js
 
 ### Veja como (clique para assistr):  
 
-![Preview (clique para assistir)](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/tree/master/6_NodeJS/Atividades-de-Fixacao/3_Sockets/img/5f3.gif)
+![(clique para assistir)](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/blob/master/6_NodeJS/Atividades-de-Fixacao/3_Sockets/img/5f3.gif)
 
 ## Requisitos  
 
