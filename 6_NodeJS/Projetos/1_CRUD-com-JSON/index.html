@@ -8,7 +8,6 @@
   <style>
     form {
       display: block;
-      width: 50%;
     }
 
     p {
@@ -16,7 +15,7 @@
     }
 
     #dados {
-      max-height: 30.5vh;
+      max-height: 34vh;
       overflow-y: scroll;
     }
   </style>
@@ -54,9 +53,9 @@
 
   </form><br><br>
 
-  <div id="resposta" style="font-size: x-large;">_</div><br><br>
-  <div style="font-size: x-large;">DADOS:</div>
-  <div id="dados" style="font-size: x-large;"></div>
+  <div id="resposta" style="font-size: large;">_</div><br><br>
+  <div style="font-size: large;">DADOS:</div>
+  <div id="dados" style="font-size: large;"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
@@ -79,10 +78,6 @@
       )
       .then((res) => {
         console.log(res);
-
-        res.status == 200 ?
-          resposta.innerText = "enviado certo" :
-          resposta.innerText = "erro enviando";
 
         axios.request('http://localhost:5000/json')
           .then((res) => {

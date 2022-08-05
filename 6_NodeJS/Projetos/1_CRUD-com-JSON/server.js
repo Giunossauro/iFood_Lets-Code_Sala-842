@@ -1,9 +1,14 @@
 const fs = require('node:fs/promises');
 
-const server = require("node:http")
+const server = require("node:http");
 server.createServer((req, res) => {
   const { method } = req;
-  const url = new URL(req.url, 'http://localhost');
+  const url = new URL(req.url, `http://${process.env.YOUR_HOST || '0.0.0.0'}`);
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE',
+    'Access-Control-Max-Age': 2592000
+  };
 
   if (url.pathname == '/') {
     if (method == "GET") {
@@ -19,7 +24,7 @@ server.createServer((req, res) => {
       }
       return read("./index.html", (file) => {
         res.setHeader('content-type', 'text/html;charset=utf-8');
-        res.writeHead(200);
+        res.writeHead(200, headers);
         res.end(file);
       });
     } 
@@ -33,6 +38,7 @@ server.createServer((req, res) => {
           file.push(newData);
           console.log(`Postado ${JSON.stringify(newData)}!`);
           fs.writeFile("./storage.json", JSON.stringify(file));
+          res.writeHead(200, headers);
           res.end();
         });
       });
@@ -48,6 +54,7 @@ server.createServer((req, res) => {
           file[index] = newData;
           console.log(`Putado ${JSON.stringify(newData)}!`);
           fs.writeFile("./storage.json", JSON.stringify(file));
+          res.writeHead(200, headers);
           res.end();
         });
       });
@@ -62,13 +69,14 @@ server.createServer((req, res) => {
           file = file.filter(e => e.id != newData.id);
           console.log(`Deletado ${JSON.stringify(newData)}!`);
           fs.writeFile("./storage.json", JSON.stringify(file));
+          res.writeHead(200, headers);
           res.end();
         });
       });
     }
 
     res.setHeader('content-type', 'text/html;charset=utf-8');
-    res.writeHead(403);
+    res.writeHead(403, headers);
     return res.end("método não permitido");
   }
 
@@ -78,7 +86,7 @@ server.createServer((req, res) => {
         './storage.json',
         (file) => {
           res.setHeader('content-type', 'application/json;charset=utf-8');
-          res.writeHead(200);
+          res.writeHead(200, headers);
           res.end(file);
         }
       );
@@ -95,6 +103,7 @@ server.createServer((req, res) => {
             file.push(newData);
             console.log(`Postado ${JSON.stringify(newData)}!`);
             fs.writeFile("./storage.json", JSON.stringify(file));
+            res.writeHead(200, headers);
             res.end();
           });
         }
@@ -104,8 +113,8 @@ server.createServer((req, res) => {
 
   res.writeHead(404);
   res.end('not found');
-}).listen(5000, 'localhost', () => {
-  console.log(`Server is running on http://localhost:5000`);
+}).listen(process.env.PORT || 5000, process.env.YOUR_HOST || '0.0.0.0', () => {
+  console.log(`Server is running on heroku`);
 });
 
 
@@ -116,7 +125,7 @@ const read = (file, callback) => fs.readFile(file)
   .catch((err) => {
     console.log(err);
   }
-  );
+);
 
 const paramsToObject = (entries) => {
   const result = {}

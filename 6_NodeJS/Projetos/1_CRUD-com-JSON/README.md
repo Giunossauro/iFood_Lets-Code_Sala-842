@@ -4,11 +4,7 @@
 
 ## Atividade Principal 1  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
-
-### Print:
-
-![Print]()
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://crud-com-json.herokuapp.com/)
 
 ## Requisitos
 
