@@ -34,4 +34,6 @@
 
 - [x] As ações devem ser rodadas através de um HTML (pegando dados preenchidos em inputs).  
 
+Obs.: meti um axios de brinde lá no meio.
+
 ###### Prazo: 24/05/2022 ~ 31/05/2022  

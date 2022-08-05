@@ -6,23 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    p{
+    form {
+      display: block;
+      width: 50%;
+    }
+
+    p {
       word-wrap: break-word;
+    }
+
+    #dados {
+      max-height: 30.5vh;
+      overflow-y: scroll;
     }
   </style>
   <title>CRUD com JSON</title>
 </head>
 
 <body>
-  <!--a href="./postar">
-    <h1>postar</h1>
-  </a>
-  <a href="./atualizar">
-    <h1>atualizar</h1>
-  </a>
-  <a href="./deletar">
-    <h1>deletar</h1>
-  </a-->
+
+  <h2>Ta feio, mas funciona - objetivo: aprender CRUD</h2>
 
   <form method="post">
 
@@ -82,19 +85,19 @@
           resposta.innerText = "erro enviando";
 
         axios.request('http://localhost:5000/json')
-        .then((res) => {
-          dados.innerHTML = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
-        })
-        .catch((err) => {console.log(err)});
+          .then((res) => {
+            dados.innerHTML = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
+          })
+          .catch((err) => { console.error(err) });
       })
-      .catch((err) => console.error(err));
+      .catch((err) => { console.error(err) });
     }
 
     axios.request('http://localhost:5000/json')
       .then((res) => {
         dados.innerHTML = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
       })
-      .catch((err) => {console.log(err)});
+      .catch((err) => { console.log(err) });
   </script>
 </body>
 
