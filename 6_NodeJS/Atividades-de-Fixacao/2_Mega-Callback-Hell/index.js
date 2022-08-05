@@ -93,7 +93,7 @@ for(let contador = 1; contador <= 10; contador++){
                                                                 ${(await (
                                                                   await responseRace(()=>{})
                                                                 ).json()).name}
-                                                              < /br>costuma ser o Bulbasauro mesmo... Bicho corre!</p>`;
+                                                              (costuma ser o Bulbasauro mesmo... Bicho corre!)</p>`;
                                                             })
                                                           ).then((p)=>p.json()).then((json)=>{
                                                             console.log("Name: ",json.name);

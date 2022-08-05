@@ -4,11 +4,23 @@
 
 ## Atividade de Fixação 3  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
+###### Esta atividade roda apenas usando o terminal do servidor NodeJS. *Em breve publicarei um chat ao vivo noutro repositório!*
 
-### Print:
+### Para iniciar os repositórios:
 
-![Print]()
+Abra 2 terminais na raiz do projeto e digite os seguintes comandos em qualquer um deles digite:  
+```
+node server.js
+```
+
+Depois digite o seguinte comando no outro terminal:  
+```
+node client.js
+```
+
+### Veja como (clique para assistr):  
+
+![Preview (clique para assistir)](https://github.com/Giunossauro/iFood_Lets-Code_Sala-842/tree/master/6_NodeJS/Atividades-de-Fixacao/3_Sockets/img/5f3.gif)
 
 ## Requisitos  
 

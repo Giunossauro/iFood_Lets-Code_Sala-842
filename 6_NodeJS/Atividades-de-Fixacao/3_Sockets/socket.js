@@ -5,15 +5,14 @@ class Socket{
     this.name = name;
     this.thisPort = thisPort;
     this.otherPort = otherPort;
-    this.socket = require('dgram').createSocket('udp4');
-    this.terminal = require('readline').createInterface({
+    this.socket = require('node:dgram').createSocket('udp4');
+    this.terminal = require('node:readline').createInterface({
       input: process.stdin,
       output: process.stdout
     });
     this.qtdMensagens = 0;
     this.tamTotalDasMensagens = 0;
     this.tamMedDasMensagens = 0;
-    this.d = 0;
     
     console.clear();
 
@@ -22,7 +21,7 @@ class Socket{
       if(!errConnecting){
         setTimeout(()=>{
           this.socket.send(`Olá!`,(_,tamanhoDaMensagem)=>{
-            contabilizaMensagens(tamanhoDaMensagem);
+            this.contabilizaMensagens(tamanhoDaMensagem);
           });
         },1000);
         return;
@@ -32,7 +31,9 @@ class Socket{
   
     this.socket.on('listening', () => {
       const address = this.socket.address();
-      console.log(`${this.name} running at ${address.address}:${address.port}`);
+      console.log(`${this.name} running at ${
+        address.address}:${address.port
+      }\nEnter 'c' (without quotation marks) to disconnect.\n`);
     });
   
     this.socket.on('message', (buffer,rinfo) => {
@@ -49,7 +50,7 @@ class Socket{
           return;
         }
         this.socket.send(answer,(_,tamanhoDaMensagem)=>{
-          contabilizaMensagens(tamanhoDaMensagem);
+          this.contabilizaMensagens(tamanhoDaMensagem);
         });
       });
     });
@@ -60,7 +61,9 @@ class Socket{
     });
   
     this.socket.on('close', (err) => {
-      if (err) console.log(`---\nsocket error: ${err}\n---`);
+      if (err) {
+        console.log(`---\nsocket error: ${err}\n---`);
+      }
       this.tamMedDasMensagens = (this.tamTotalDasMensagens / this.qtdMensagens);
       console.log(`Foram enviadas ${
         this.qtdMensagens
@@ -78,7 +81,7 @@ class Socket{
   
   endConnection(){
     this.socket.send(`${this.name} disconnected`,(_,tamanhoDaMensagem)=>{
-      contabilizaMensagens(tamanhoDaMensagem);
+      this.contabilizaMensagens(tamanhoDaMensagem);
     });
     this.socket.disconnect();
     this.socket.close(() => {
