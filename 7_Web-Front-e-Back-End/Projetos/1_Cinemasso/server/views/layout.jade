@@ -1,0 +1,19 @@
+
+    
+
+
+block content
+ul
+each filme in respostaDB
+    
+    h2= filme.id + ': ' +filme.nome
+    div= 'duração:'+filme.duracao
+    div= 'categoria Id:'+filme.categoriaid
+    br
+    img(src = filme.imagemsrc alt='imagem filme' widht='250' height='250')
+    br
+   
+   
+   
+    
+   

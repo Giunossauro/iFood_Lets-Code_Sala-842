@@ -4,11 +4,7 @@
 
 ## Atividade Principal 2 (em grupo)  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
-
-### Print:
-
-![Print]()
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://mega-crud-com-json.herokuapp.com/) (o site ta feio, o código ta feio, mas funciona rs e o objetivo era aprender os métodos/verbos http)
 
 ## Requisitos  
 

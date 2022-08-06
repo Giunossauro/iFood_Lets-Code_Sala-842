@@ -13,13 +13,6 @@
       "card_name": "AAAAAAA",
       "validate": "09/27",
       "ccv": 998
-    },
-    {
-      "id": 3,
-      "card_number": 1111,
-      "card_name": "sss",
-      "validate": "2022-06-08",
-      "ccv": 111
     }
   ]
 }

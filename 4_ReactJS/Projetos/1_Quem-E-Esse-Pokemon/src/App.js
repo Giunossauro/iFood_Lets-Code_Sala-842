@@ -1,20 +1,17 @@
-//add node ./src/getPkm.js &&  to package.json start script
+//add node ./src/getPkm.js && to package.json start script
 
 import { useState } from 'react';
 import {
   Container, Paper, Grid, Tooltip, Zoom, styled,
-  Autocomplete, createFilterOptions, ImageList, Checkbox,
+  Autocomplete, createFilterOptions, ImageList,
   ImageListItem, ImageListItemBar, IconButton, TextField
 } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
-import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
-import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import './App.css';
 import pokemonsList from "./pokemons.json";
 import filtersList from "./filters.json";
 import parse from 'autosuggest-highlight/parse';
 import match from 'autosuggest-highlight/match';
-import { borderRadius } from '@mui/system';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -40,15 +37,16 @@ export default function App() {
     "calc(".concat(headerTitlesHeight, " + ", headerContentHeight, ")")
   );
   const [mainHeightCalc, setMainHeightCalc] = useState(
-    "calc(100% - ".concat(headerHeight,")")
+    "calc(100% - ".concat(headerHeight, ")")
   );
 
   const [pokemons, setPokemons] = useState(pokemonsList);
   const [filters, setFilters] = useState(filtersList);
   const [filtrados, setFiltrados] = useState([]);
-  console.log("secretPokemon - ",secretPokemon,secretPokemon[0][1][0])
+  console.log("secretPokemon - ", secretPokemon, secretPokemon[0][1][0])
 
-  /* console.log(
+  /*
+  console.log(
     "headerTitlesHeight: ".concat(
       headerTitlesHeight,
       "\nheaderContentHeight: ",
@@ -58,11 +56,12 @@ export default function App() {
       "\nmainHeightCalc: ",
       mainHeightCalc
     )
-  ); */
-  if(isOnListHandler){
+  );
+  */
+
+  if (isOnListHandler) {
     isOnListHandler = false;
-  }
-  else{
+  } else {
     isOnList = false;
   }
 
@@ -76,7 +75,7 @@ export default function App() {
         p: 0,
         m: 0,
         display: "flex",
-        backgroundColor:"#30A7D7",
+        backgroundColor: "#30A7D7",
         borderBottom: "1px solid black",
         fontSize: "1.5rem"
       }}
@@ -85,15 +84,15 @@ export default function App() {
       > {/* below minWidth related to mr of SELECTED Grid */}
         <div style={{
           minWidth: "15rem",
-          textAlign:"center",
+          textAlign: "center",
         }}>
           Selecionadas
         </div>
         <div style={{
-          minWidth: "calc(100% - 15rem - 2px)", 
+          minWidth: "calc(100% - 15rem - 2px)",
           margin: 0,
           borderLeft: "2px solid black",
-          textAlign:"center",
+          textAlign: "center",
         }}>
           Selecionar Características
         </div>
@@ -108,7 +107,7 @@ export default function App() {
           flexGrow: 1,
           display: "flex",
           position: "fixed",
-          backgroundColor:"#30A7D7",
+          backgroundColor: "#30A7D7",
           width: "100%",
           height: `${headerContentHeight}`,
           maxHeight: `${headerContentHeight}`,
@@ -128,16 +127,16 @@ export default function App() {
           alignItems: "center",
           justifyContent: "space-around",
         }}>
-          {filtrados.map((item, i) => (
+          {filtrados.map((item, _i) => (
             <Grid
               item xs={12} sm={12} md={6} lg={6} xl={6}
               sx={item.isOnList ? {
                 backgroundColor: "green"
               }
-              :{
-                backgroundColor: "red"
-              }}
-              >
+                : {
+                  backgroundColor: "red"
+                }}
+            >
               <Item>{item.selecionado}</Item>
             </Grid>
           ))}
@@ -164,20 +163,20 @@ export default function App() {
                 autoComplete={false}
                 onInputChange={(event) => {
                   const selecionado = event.target.firstChild.textContent;
-                  secretPokemon.forEach((attr)=>attr.forEach((value)=>{
-                    if(typeof value !== "object"){
-                      if (value === selecionado){
+                  secretPokemon.forEach((attr) => attr.forEach((value) => {
+                    if (typeof value !== "object") {
+                      if (value === selecionado) {
                         isOnList = true;
                         isOnListHandler = true;
-                        console.log("isOnList Atualizado: ",isOnList);
+                        console.log("isOnList Atualizado: ", isOnList);
                         return;
                       }
                     }
-                    else{
-                      if (value.includes(selecionado)){
+                    else {
+                      if (value.includes(selecionado)) {
                         isOnList = true;
                         isOnListHandler = true;
-                        console.log("isOnList Atualizado: ",isOnList);
+                        console.log("isOnList Atualizado: ", isOnList);
                         return;
                       }
                     }
@@ -191,9 +190,9 @@ export default function App() {
                   setPokemons(() => {
                     const asArray = pokemons.map(pokemon => Object.entries(pokemon));
                     let index = [];
-                    asArray.map((p,ind) => p.map((e) => e.map((k) => {
+                    asArray.map((p, ind) => p.map((e) => e.map((k) => {
                       if (k !== selecionado) {
-                        if(typeof k === "object"){
+                        if (typeof k === "object") {
                           if (k.includes(selecionado)) {
                             index.push(ind);
                           }
@@ -204,9 +203,9 @@ export default function App() {
                       }
                       return undefined;
                     })));
-                    return pokemons.filter((_,inde) => {
-                      for (const element of index){
-                        if (element === inde){return isOnList;}
+                    return pokemons.filter((_, inde) => {
+                      for (const element of index) {
+                        if (element === inde) { return isOnList; }
                       }
                       return !isOnList;
                     });
@@ -232,15 +231,15 @@ export default function App() {
                     placeholder="Escolha"
                     label={Object.getOwnPropertyNames(item)}
                     sx={{
-                      backgroundColor:"#919191",
-                      borderRadius:".25rem"
+                      backgroundColor: "#919191",
+                      borderRadius: ".25rem"
                     }}
                   />
                 )}
                 renderOption={(props, option, { inputValue }) => {
                   const matches = match(option, inputValue);
                   const parts = parse(option, matches);
-          
+
                   return (
                     <li {...props}>
                       <div>
@@ -249,7 +248,7 @@ export default function App() {
                             key={index}
                             style={{
                               fontWeight: part.highlight ? 700 : 400,
-                              marginRight: 8 
+                              marginRight: 8
                             }}
                           >
                             {part.text}
@@ -279,7 +278,7 @@ export default function App() {
           width: "100%",
           maxWidth: "100%",
           minWidth: "100%",
-          m:0,
+          m: 0,
           pt: 1,
           px: 0,
           pb: 0,
@@ -289,7 +288,7 @@ export default function App() {
         {pokemons.map((item, i) => (
           <ImageListItem
             key={item.sprite}
-            sx={{height: "100%",width: "100%"}}
+            sx={{ height: "100%", width: "100%" }}
           >
             <img
               src={`${item.sprite}`}
@@ -306,7 +305,7 @@ export default function App() {
               title={
                 i < 898 ?
                   "".concat(i + 1, " - ", item.name)
-                :
+                  :
                   "".concat(item.name)
               }
             >
@@ -315,25 +314,25 @@ export default function App() {
                   title={
                     i < 898 ?
                       "".concat(i + 1, " - ", item.name)
-                    :
+                      :
                       "".concat(item.name)
                   }
                   alt={
                     i < 898 ?
                       "".concat(i + 1, " - ", item.name)
-                    :
+                      :
                       "".concat(item.name)
                   }
                   subtitle={
                     item.generation ?
                       `generation: ${item.generation}`
-                    :
+                      :
                       "temporary transformation"
                   }
-                  sx={{maxWidth: "90%", ml: "5%"}}
+                  sx={{ maxWidth: "90%", ml: "5%" }}
                   actionIcon={
                     <IconButton
-                      sx={{ color: 'rgba(255, 255, 255, 0.54)'}}
+                      sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
                       aria-label={`info about ${item.name}`}
                     >
                       <InfoIcon />
@@ -346,7 +345,7 @@ export default function App() {
         ))}
       </ImageList>
       {/* /MAIN */}
-      
+
       {/* FOOTER */}
       <footer></footer>
       {/* /FOOTER */}

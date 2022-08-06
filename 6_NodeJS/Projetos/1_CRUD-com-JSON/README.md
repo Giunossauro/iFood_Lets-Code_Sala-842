@@ -4,7 +4,7 @@
 
 ## Atividade Principal 1  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://crud-com-json.herokuapp.com/)
+###### Link para visitar a página da atividade: [CLIQUE AQUI](https://crud-com-json.netlify.app/)
 
 ## Requisitos
 

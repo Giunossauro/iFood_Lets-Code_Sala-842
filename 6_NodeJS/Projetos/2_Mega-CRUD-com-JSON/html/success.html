@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <style>
     div{
       display: inline-table;
@@ -17,7 +18,7 @@
 </head>
 <body>
   <h1>SUCESSO!!!</h1>
-  <h2>Veja os registros:</h2>
+  <h2>Veja os registros: (depois <a href="https://mega-crud-com-json.herokuapp.com/upar-imagem">CLIQUE AQUI</a> para testar o upload de imagem)</h2>
   <div id="register"></div>
   <div id="address"></div>
   <div id="credit_card_data"></div>
@@ -28,8 +29,9 @@
       method:'post',
       url: '/success'
     })
-    .then((res) => {
-      register.innerHTML = res.data.register.data.map((e,i) => {
+    .then(async (res) => {
+      const jsonserver = await (await fetch("https://json-server-do-mega-crud.herokuapp.com/data/")).json();
+      register.innerHTML = jsonserver.map((e,i) => {
         return `
           ${i == 0 ? '<h3>client_register.json</h3>' : ''}
           <p>id: ${e.id}</p>

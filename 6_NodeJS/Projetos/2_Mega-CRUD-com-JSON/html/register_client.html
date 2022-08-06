@@ -5,19 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    /*
-    body{
-      display:flex;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    form{
-      border: 1px solid black;
-      padding: 0.2em 1em 1em 1em;
-    }
-    */
-  </style>
+  <link rel="stylesheet" href="style.css">
   <title>Atividade Principal 2</title>
 </head>
 
@@ -73,7 +61,7 @@
       console.log(Number(registroId.value));
       axios({
         method: metodo,
-        url: `http://localhost:3000/data/${
+        url: `https://json-server-do-mega-crud.herokuapp.com/data/${
           metodo != 'post' ? registroId.value : ''
         }`,
         data:
@@ -92,7 +80,7 @@
         // console.log("postado:");
         // console.log(Object.entries(response.data))//printa o json
         if(response.status == 200 || response.status == 201){
-          window.location.href = "http://localhost:8081/address";
+          window.location.href = "/address";
         }
       })
       .catch(function(error) {
@@ -101,15 +89,15 @@
     }
 
     // esta requisicao axios serve pra renderizar os dados na tela a primeira vez
-    /*axios({
-      method: "_______________",
+    axios({
+      method: "get",
       url: "/registration"
     })
     .then(res => {
       visualizarJson.innerText = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
     })
     .catch(err => console.log(err)
-    );*/
+    );
   </script>
 </body>
 

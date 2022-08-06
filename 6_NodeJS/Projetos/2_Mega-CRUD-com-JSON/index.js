@@ -166,8 +166,14 @@ const server = http.createServer(async (req, res) => {
       req.setEncoding('latin1');
       for await (const chunk of req) {
         newImage += chunk;
-      } 
-      await fs.promises.writeFile('./img/imagem.png',newImage,'latin1');
+      }
+      console.log("oiafhoiasjfdçlahfçluiashndfçklahjnfklahnfçal")
+      try {
+        await fs.promises.writeFile('./img/imagem.png',newImage,'latin1');
+      } catch (e) {
+        console.log("erro: ", e);
+        res.end("erro: ", e.toString());
+      }
       res.writeHead(200);
       res.end("imagem enviada!");
       return;
@@ -204,9 +210,7 @@ const server = http.createServer(async (req, res) => {
     res.writeHeader(404)
     res.end('<h1>Page Not Found</h1>')
   }
-})
-
-server.listen(8081, 'localhost', () => {
+}).listen(process.env.PORT || 8081, process.env.YOUR_HOST || '0.0.0.0', () => {
   const address = server.address()
 
   console.log(`Servidor rodando em ${address.address}:${address.port}`)

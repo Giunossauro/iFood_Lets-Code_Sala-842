@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      color: darkgray;
+      background-color: black;
+    }
+
+    form {
+      display: block;
+    }
+
+    p {
+      word-wrap: break-word;
+    }
+
+    #dados {
+      max-height: 34vh;
+      overflow-y: scroll;
+    }
+  </style>
+  <title>CRUD com JSON</title>
+</head>
+
+<body>
+
+  <h2>Ta feio, mas funciona - objetivo: aprender CRUD</h2>
+
+  <form method="post">
+
+    <label for="id">Id:</label>
+    <input type="number" id="id" name="id"><br><br>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <label for="email">email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="telefone">telefone:</label>
+    <input type="text" id="telefone" name="telefone"><br><br>
+
+    <label for="endereco">endereco:</label>
+    <input type="text" id="endereco" name="endereco"><br><br>
+
+    <label for="senha">senha:</label>
+    <input type="password" id="senha" name="senha"><br><br>
+
+    <input type="submit" value="GET" formmethod="get">
+    <button type="button" onclick="send('post')">post</button>
+    <button type="button" onclick="send('put')">patch</button>
+    <button type="button" onclick="send('delete')">delete</button>
+
+  </form><br><br>
+
+  <div id="resposta" style="font-size: large;">_</div><br><br>
+  <div style="font-size: large;">DADOS:</div>
+  <div id="dados" style="font-size: large;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    function send(option) {
+      fetch(
+        '/',
+        {
+          method: option,
+          body: JSON.stringify(
+            {
+              id: id.value,
+              nome: nome.value,
+              email: email.value,
+              telefone: telefone.value,
+              endereco: endereco.value,
+              senha: senha.value
+            }
+          )
+        }
+      )
+      .then((res) => {
+        console.log(res);
+
+        axios.request('/json')
+          .then((res) => {
+            dados.innerHTML = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
+            dados.scrollTo(0, dados.getClientRects()[0].bottom);
+          })
+          .catch((err) => { console.error(err) });
+      })
+      .catch((err) => { console.error(err) });
+    }
+
+    axios.request('/json')
+      .then((res) => {
+        dados.innerHTML = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
+        dados.scrollTo(0, dados.getClientRects()[0].bottom);
+      })
+      .catch((err) => { console.log(err) });
+  </script>
+</body>
+
+</html>

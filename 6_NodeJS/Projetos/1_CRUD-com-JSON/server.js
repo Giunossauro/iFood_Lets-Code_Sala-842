@@ -3,7 +3,7 @@ const fs = require('node:fs/promises');
 const server = require("node:http");
 server.createServer((req, res) => {
   const { method } = req;
-  const url = new URL(req.url, `http://${process.env.YOUR_HOST || '0.0.0.0'}`);
+  const url = new URL(req.url, `https://${process.env.YOUR_HOST || '0.0.0.0'}`);
   const headers = {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE',
@@ -22,7 +22,7 @@ server.createServer((req, res) => {
           //res.end();
         });
       }
-      return read("./index.html", (file) => {
+      return read("./public/index.html", (file) => {
         res.setHeader('content-type', 'text/html;charset=utf-8');
         res.writeHead(200, headers);
         res.end(file);
@@ -80,7 +80,7 @@ server.createServer((req, res) => {
     return res.end("método não permitido");
   }
 
-  if (url.pathname == '/json') {
+  else if (url.pathname == '/json') {
     if (method == "GET"/*  || method == "POST" */) {
       return read(
         './storage.json',
@@ -109,12 +109,12 @@ server.createServer((req, res) => {
         }
       );
     }
+  } else {
+    res.writeHead(404);
+    res.end('not found');
   }
-
-  res.writeHead(404);
-  res.end('not found');
 }).listen(process.env.PORT || 5000, process.env.YOUR_HOST || '0.0.0.0', () => {
-  console.log(`Server is running on heroku`);
+  console.log(`Server is running on netlifyyyyyyy`);
 });
 
 

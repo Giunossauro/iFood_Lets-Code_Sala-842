@@ -1,1 +1,18 @@
-[{"id":1,"nome":"AAA","email":"giu@gmail.com","telefone":"11-999999999","endereco":"aaa","senha":"123"},{"id":2,"nome":"BBB","email":"giu@gmail.com","telefone":"21-888888888","endereco":"bbb","senha":"1234"},{"id":3,"nome":"CCC","email":"giu@gmail.com","telefone":"13-999999999","endereco":"ccc","senha":"senha"},{"id":4,"nome":"dfad","email":"giu@gmail.com","telefone":"2132","endereco":"12321","senha":"231"}]
+[
+  {
+    "id": 1,
+    "nome": "AAA",
+    "email": "giu@gmail.com",
+    "telefone": "11-999999999",
+    "endereco": "aaa",
+    "senha": "123"
+  },
+  {
+    "id": 2,
+    "nome": "BBB",
+    "email": "giu@gmail.com",
+    "telefone": "21-888888888",
+    "endereco": "bbb",
+    "senha": "1234"
+  }
+]

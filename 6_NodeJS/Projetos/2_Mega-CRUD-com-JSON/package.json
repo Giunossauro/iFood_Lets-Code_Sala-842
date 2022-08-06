@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "Criação de CRUD + Server Http",
   "main": "index.js",
+  "engines" : { 
+    "npm" : "8.12.2",
+    "node" : "16.14.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
+    "concurrently": "^7.3.0",
     "json-server": "^0.17.0"
   }
 }

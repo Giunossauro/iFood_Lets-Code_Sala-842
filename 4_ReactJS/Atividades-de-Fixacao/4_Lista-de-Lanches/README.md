@@ -4,7 +4,7 @@
 
 ## Atividade de Fixação 4  
 
-###### Link para visitar a página da atividade: [CLIQUE AQUI](https://giunossauro.github.io/iFood_Lets-Code_Sala-842/)
+###### Link para visitar a página da atividade: [CLIQUE AQUI]()
 
 ## Requisitos
 

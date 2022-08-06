@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
@@ -16,26 +17,34 @@
   <script>
 
     function init() {
+      console.log("AAAAA");
       document.getElementById('fileInput').addEventListener('change', handleFileSelect, false);
+      console.log("BBBBBBB");
     }
 
     function handleFileSelect(event) {
+      console.log("aaaaa");
       const reader = new FileReader();
+      console.log("bbbbbbbbb");
       reader.onload = handleFileLoad;
+      console.log("ccccccccccc");
       reader.readAsArrayBuffer(event.target.files[0]);
+      console.log("ddddddddddddd");
     }
 
     function handleFileLoad(event) {
-
+      console.log("1111");
+      console.log(event.target.result.toString())
       axios.post("/upar-imagem", event.target.result, {
         headers: {
           "Content-Type": "image/png"
         }, 
       })
       .then((res) => {
-        window.location.href = "http://localhost:8081/ver-imagem";
+        window.location.href = "/ver-imagem";
       })
       .catch((err) => {
+        console.log("22222222222");
         console.log(err);
       });
     }

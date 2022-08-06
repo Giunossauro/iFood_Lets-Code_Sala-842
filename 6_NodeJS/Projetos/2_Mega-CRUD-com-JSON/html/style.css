@@ -1,0 +1,17 @@
+* {
+  color: darkgray;
+  background-color: black;
+}
+
+/*
+body{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+form{
+  border: 1px solid black;
+  padding: 0.2em 1em 1em 1em;
+}
+*/
+

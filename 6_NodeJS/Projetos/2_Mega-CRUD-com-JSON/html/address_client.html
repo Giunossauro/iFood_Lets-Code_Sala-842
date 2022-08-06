@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
   <title>Atividade Principal 2</title>
 </head>
 
@@ -62,7 +63,7 @@
       .then(function(response) {
         document.getElementById("visualizarJson").innerText = response.data;
         if(response.status == 200){
-          window.location.href = "http://localhost:8081/credit_card_data";
+          window.location.href = "/credit_card_data";
         }
       })
       .catch(function(error) {
