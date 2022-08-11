@@ -1,91 +1,91 @@
 [
   {
-    "types": [
-      "grass",
-      "poison",
-      "fire",
-      "flying",
-      "water",
-      "bug",
-      "normal",
-      "electric",
-      "ground",
-      "fairy",
-      "fighting",
-      "psychic",
-      "rock",
-      "steel",
-      "ice",
-      "ghost",
-      "dragon",
-      "dark"
+    "Tipos": [
+      "Grama",
+      "Veneno",
+      "Fogo",
+      "Voador",
+      "Água",
+      "Inseto",
+      "Normal",
+      "Elétrico",
+      "Terra",
+      "Fada",
+      "Lutador",
+      "Psíquico",
+      "Pedra",
+      "Aço",
+      "Gelo",
+      "Fantasma",
+      "Dragão",
+      "Sombrio"
     ]
   },
   {
-    "color": [
-      "green",
-      "red",
-      "blue",
-      "white",
-      "brown",
-      "yellow",
-      "purple",
-      "pink",
-      "gray",
-      "black",
-      "null"
+    "Cor": [
+      "Verde",
+      "Vermelho",
+      "Azul",
+      "Branco",
+      "Marrom",
+      "Amarelo",
+      "Roxo",
+      "Rosa",
+      "Cinza",
+      "Preto"
     ]
   },
   {
-    "generation": [
-      "generation-i",
-      "generation-ii",
-      "generation-iii",
-      "generation-iv",
-      "generation-v",
-      "generation-vi",
-      "generation-vii",
-      "generation-viii",
-      "null"
+    "EvoSpeed": [
+      "Meio Lenta",
+      "Moderada",
+      "Rápida",
+      "Lenta",
+      "Decrescente",
+      "Crescente"
     ]
   },
   {
-    "habitat": [
-      "grassland",
-      "mountain",
-      "waters-edge",
-      "forest",
-      "rough-terrain",
-      "cave",
-      "urban",
-      "sea",
-      "rare",
-      "null"
-    ]
-  },
-  {
-    "isLegendary?": [
-      "no",
-      "yes",
-      "null"
-    ]
-  },
-  {
-    "shape": [
-      "quadruped",
-      "upright",
-      "armor",
-      "squiggle",
-      "bug-wings",
-      "wings",
+    "Formato": [
+      "Quadrúpede",
+      "Humanoide",
+      "Bolha",
+      "Cascudo",
+      "Com Asas de Inseto",
+      "Com Asas",
+      "Desordenado",
       "humanoid",
-      "legs",
-      "blob",
-      "heads",
-      "tentacles",
-      "arms",
-      "fish",
-      "ball",
+      "Grandes Pernas",
+      "Cabeçudo",
+      "Com Tentáculos",
+      "Brações",
+      "Peixe",
+      "Bola"
+    ]
+  },
+  {
+    "Geracao": [
+      "Geração I",
+      "Geração II",
+      "Geração III",
+      "Geração IV",
+      "Geração V",
+      "Geração VI",
+      "Geração VII",
+      "Geração VIII"
+    ]
+  },
+  {
+    "Lar": [
+      "Campo",
+      "Montanha",
+      "Águas",
+      "Floresta",
+      "Terreno Desigual",
+      "Caverna",
+      "Urbano",
+      "Mar",
+      "Raro",
       "null"
     ]
   }
