@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+#loadingAnimation {
+  border: 7.5vmin solid #f3f3f3;
+  border-top: 7.5vmin solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  width: 20vmin;
+  height: 20vmin;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+}
+
+#loadingBackground {
+  background-color: black;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

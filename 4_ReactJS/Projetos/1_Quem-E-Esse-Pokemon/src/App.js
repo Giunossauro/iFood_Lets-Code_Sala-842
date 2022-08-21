@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, lazy, Suspense } from "react";
 
 import Container from "@mui/material/Container";
 
@@ -10,8 +10,8 @@ import pokemonsList from "./pokemons.json";
 import HeaderTitles from "./components/HeaderTitles";
 import SelectedContent from "./components/SelectedContent";
 import Selectable from "./components/Selectable";
-import PokemonsCards from "./components/PokemonsCards";
 import Modals from "./components/Modals";
+const PokemonsCards = lazy(() => import("./components/PokemonsCards"));
 
 const secretPokemonIndex = Math.floor((Math.random() * (pokemonsList.length - 1)));
 const secretPokemon = Object.entries(pokemonsList[secretPokemonIndex]);
@@ -41,31 +41,6 @@ export default class App extends Component {
     };
   }
 
-  shouldComponentUpdate(_nextProps, _nextState) {
-    /* console.log(
-      "--this.state",
-      this.state,
-      "\n\nnextState",
-      nextState
-    ) */
-    return true;
-  }
-
-  /* 
-    componentDidMount() {
-  
-    }
-
-    componentDidUpdate(_, prevState) {
-      if (this.state != prevState){
-        // do stuff
-      }
-    }
-
-    componentWillUnmount() {
-  
-    }
-   */
   propsHandler(args) {
     if (args.filtrados) {
       this.setState({
@@ -76,25 +51,13 @@ export default class App extends Component {
         }, ...this.state.filtrados]
       });
 
-    } else /* if (
-        args.pokemonEscolhido
-        ||
-        Object.hasOwn(args, "modalConfirmState")
-        ||
-        Object.hasOwn(args, "endOfGame")
-        )  */{
+    } else {
       this.setState({
         ...this.state,
         ...args
       });
 
-    }/*  else {
-      console.log("HEEEEREEE")
-      this.setState({
-        ...this.state,
-        args
-      });
-    } */
+    }
   }
 
   handleSelectChange(filtersState, selecionado) {
@@ -164,51 +127,54 @@ export default class App extends Component {
       isOnList = false;
     }
 
-    return (<>
-      <HeaderTitles headerTitlesHeight={headerTitlesHeight} />
-      <Container
-        maxWidth={false}
-        disableGutters={true}
-        sx={{
-          maxHeight: `${headerContentHeight}`,
-          height: `${headerContentHeight}`,
-          backgroundColor: "#30A7D7",
-          position: "fixed",
-          display: "flex",
-          width: "100%",
-          flexGrow: 1,
-          pr: 0,
-          pl: 1,
-        }}
-      >
-        <SelectedContent filtrados={this.state.filtrados} />
-        <Selectable
-          filtersList={filtersList}
+    return (
+      <Suspense fallback={<>
+        <div id="loadingAnimation"></div>
+        <div id="loadingBackground"></div>
+      </>}>
+        <HeaderTitles headerTitlesHeight={headerTitlesHeight} />
+        <Container
+          maxWidth={false}
+          disableGutters={true}
+          sx={{
+            maxHeight: `${headerContentHeight}`,
+            height: `${headerContentHeight}`,
+            backgroundColor: "#30A7D7",
+            position: "fixed",
+            display: "flex",
+            width: "100%",
+            flexGrow: 1,
+            pr: 0,
+            pl: 1,
+          }}
+        >
+          <SelectedContent filtrados={this.state.filtrados} />
+          <Selectable
+            filtersList={filtersList}
+            propsHandler={this.propsHandler.bind(this)}
+            handleSelectChange={this.handleSelectChange.bind(this)}
+            isOnList={isOnList}
+          />
+        </Container>
+
+        {/* MAIN */}
+        <PokemonsCards
+          headerHeight={headerHeight}
+          mainHeightCalc={mainHeightCalc}
+          pokemons={this.state.pokemons}
           propsHandler={this.propsHandler.bind(this)}
-          handleSelectChange={this.handleSelectChange.bind(this)}
-          /* filtrados={this.state.filtrados} */
-          isOnList={isOnList}
         />
-      </Container>
 
-      {/* MAIN */}
-      <PokemonsCards
-        headerHeight={headerHeight}
-        mainHeightCalc={mainHeightCalc}
-        pokemons={this.state.pokemons}
-        propsHandler={this.propsHandler.bind(this)}
-        /* isOnList={isOnList} */
-      />
-
-      {/* FOOTER */}
-      <Modals
-        secretPokemonId={secretPokemonId}
-        endOfGame={this.state.endOfGame}
-        modalConfirmState={this.state.modalConfirmState}
-        pokemons={this.state.pokemons}
-        pokemonEscolhido={this.state.pokemonEscolhido}
-        propsHandler={this.propsHandler.bind(this)}
-      />
-    </>);
+        {/* FOOTER */}
+        <Modals
+          secretPokemonId={secretPokemonId}
+          endOfGame={this.state.endOfGame}
+          modalConfirmState={this.state.modalConfirmState}
+          pokemons={this.state.pokemons}
+          pokemonEscolhido={this.state.pokemonEscolhido}
+          propsHandler={this.propsHandler.bind(this)}
+        />
+      </Suspense>
+    );
   }
 }

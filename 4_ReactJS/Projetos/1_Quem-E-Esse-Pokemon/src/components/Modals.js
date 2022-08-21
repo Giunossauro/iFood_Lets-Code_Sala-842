@@ -55,6 +55,24 @@ export default class Modals extends Component{
       (this.props.modalConfirmState !== nextProps.modalConfirmState)
     );
   }
+
+  oPokemonSecretoEstaNaLista() {
+    return this.props.pokemons.some(
+      (pokemon) => pokemon.id === this.props.secretPokemonId
+    );
+  }
+
+  spriteDoPokemonSecreto() {
+    return this.props.pokemons.find((pokemon) =>
+      pokemon.id === this.props.secretPokemonId
+    ).sprite;
+  }
+
+  nomeDoPokemonSecreto() {
+    return this.props.pokemons.find((pokemon) =>
+      pokemon.id === this.props.secretPokemonId
+    ).nome;
+  }
   
   render() {
     return (<>
@@ -119,37 +137,25 @@ export default class Modals extends Component{
               <span style={{ display: "flex", justifyContent: "center" }}><img
                 width={"100%"}
                 src={
-                  this.props.pokemons.some(
-                    (pokemon) => pokemon.id === this.props.secretPokemonId
-                  )
+                  this.oPokemonSecretoEstaNaLista()
                     ?
-                    this.props.pokemons.find((pokemon) =>
-                      pokemon.id === this.props.secretPokemonId
-                    ).sprite
+                    this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                  "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 srcSet={
-                  this.props.pokemons.some(
-                    (pokemon) => pokemon.id === this.props.secretPokemonId
-                  )
+                  this.oPokemonSecretoEstaNaLista()
                     ?
-                    this.props.pokemons.find((pokemon) =>
-                      pokemon.id === this.props.secretPokemonId
-                    ).sprite
+                    this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                  "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 alt={
-                  this.props.pokemons.some(
-                    (pokemon) => pokemon.id === this.props.secretPokemonId
-                  )
+                  this.oPokemonSecretoEstaNaLista()
                     ?
-                    this.props.pokemons.find((pokemon) =>
-                      pokemon.id === this.props.secretPokemonId
-                    ).Nome
+                    this.nomeDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                  "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 style={{
                   borderRadius: "0.5vmin",
@@ -199,14 +205,14 @@ export default class Modals extends Component{
                   >{
                       this.props.secretPokemonId === this.props.pokemonEscolhido
                         ?
-                        `O ${this.props.pokemons.find(
-                          (pokemon) => pokemon.id === this.props.pokemonEscolhido
-                        ).Nome.toUpperCase()
+                        `O ${
+                          this.props.pokemons.find(
+                            (pokemon) => pokemon.id === this.props.pokemonEscolhido
+                          ).Nome.toUpperCase()
                         } é o pokemon escolhido!`
                         :
-                        `O ${this.props.pokemons.find(
-                          (pokemon) => pokemon.id === this.props.secretPokemonId
-                        ).Nome.toUpperCase()
+                        `O ${
+                          String(this.nomeDoPokemonSecreto()).toUpperCase()
                         } era o pokemon secreto.`
                     }</Typography>
                   <Button
@@ -270,37 +276,25 @@ export default class Modals extends Component{
             <span style={{ mt: 2, display: "flex", justifyContent: "center" }}><img
               width={"50%"}
               src={
-                this.props.pokemons.some(
-                  (pokemon) => pokemon.id === this.props.secretPokemonId
-                )
+                this.oPokemonSecretoEstaNaLista()
                   ?
-                  this.props.pokemons.find((pokemon) =>
-                    pokemon.id === this.props.secretPokemonId
-                  ).sprite
+                  this.spriteDoPokemonSecreto()
                   :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                "ERRO AO BUSCAR O NOME DO POKEMON"
               }
               srcSet={
-                this.props.pokemons.some(
-                  (pokemon) => pokemon.id === this.props.secretPokemonId
-                )
+                this.oPokemonSecretoEstaNaLista()
                   ?
-                  this.props.pokemons.find((pokemon) =>
-                    pokemon.id === this.props.secretPokemonId
-                  ).sprite
+                  this.spriteDoPokemonSecreto()
                   :
-                  "ERRO AO BUSCAR O NOME DO POKEMON".sprite
+                "ERRO AO BUSCAR O NOME DO POKEMON".sprite
               }
               alt={
-                this.props.pokemons.some(
-                  (pokemon) => pokemon.id === this.props.secretPokemonId
-                )
+                this.oPokemonSecretoEstaNaLista()
                   ?
-                  this.props.pokemons.find((pokemon) =>
-                    pokemon.id === this.props.secretPokemonId
-                  ).Nome
+                  this.nomeDoPokemonSecreto()
                   :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                "ERRO AO BUSCAR O NOME DO POKEMON"
               }
               style={{
                 borderRadius: "0.5vmin",
@@ -377,37 +371,25 @@ export default class Modals extends Component{
               <span style={{ display: "flex", justifyContent: "center" }}><img
                 width={"100%"}
                 src={
-                  this.props.pokemons.some(
-                    (pokemon) => pokemon.id === this.props.secretPokemonId
-                  )
+                  this.oPokemonSecretoEstaNaLista()
                     ?
-                    this.props.pokemons.find((pokemon) =>
-                      pokemon.id === this.props.secretPokemonId
-                    ).sprite
+                    this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                  "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 srcSet={
-                  this.props.pokemons.some(
-                    (pokemon) => pokemon.id === this.props.secretPokemonId
-                  )
+                  this.oPokemonSecretoEstaNaLista()
                     ?
-                    this.props.pokemons.find((pokemon) =>
-                      pokemon.id === this.props.secretPokemonId
-                    ).sprite
+                    this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON".sprite
+                  "ERRO AO BUSCAR O NOME DO POKEMON".sprite
                 }
                 alt={
-                  this.props.pokemons.some(
-                    (pokemon) => pokemon.id === this.props.secretPokemonId
-                  )
+                  this.oPokemonSecretoEstaNaLista()
                     ?
-                    this.props.pokemons.find((pokemon) =>
-                      pokemon.id === this.props.secretPokemonId
-                    ).Nome
+                    this.nomeDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                  "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 style={{
                   borderRadius: "0.5vmin",
