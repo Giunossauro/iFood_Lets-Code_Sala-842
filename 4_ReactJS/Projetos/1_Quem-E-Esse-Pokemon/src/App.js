@@ -12,7 +12,6 @@ import SelectedContent from "./components/SelectedContent";
 import Selectable from "./components/Selectable";
 import PokemonsCards from "./components/PokemonsCards";
 import Modals from "./components/Modals";
-import { flushSync } from "react-dom";
 
 const secretPokemonIndex = Math.floor((Math.random() * (pokemonsList.length - 1)));
 const secretPokemon = Object.entries(pokemonsList[secretPokemonIndex]);
@@ -42,7 +41,7 @@ export default class App extends Component {
     };
   }
 
-  shouldComponentUpdate(_nextProps, nextState) {
+  shouldComponentUpdate(_nextProps, _nextState) {
     /* console.log(
       "--this.state",
       this.state,
@@ -77,18 +76,25 @@ export default class App extends Component {
         }, ...this.state.filtrados]
       });
 
-    } else if (args.pokemonEscolhido || Object.hasOwn(args, "modalConfirmState")) {
+    } else /* if (
+        args.pokemonEscolhido
+        ||
+        Object.hasOwn(args, "modalConfirmState")
+        ||
+        Object.hasOwn(args, "endOfGame")
+        )  */{
       this.setState({
         ...this.state,
         ...args
       });
 
-    } else {
+    }/*  else {
+      console.log("HEEEEREEE")
       this.setState({
         ...this.state,
         args
       });
-    }
+    } */
   }
 
   handleSelectChange(filtersState, selecionado) {

@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run build && serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "getPkm": "node ./src/old.zip/getPkm.zip.js"
+    "getPkm": "node ./src/old.zip/getPkm.zip.js",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "dependencies": {
     "@emotion/react": "11.10.0",
@@ -51,5 +52,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "heroku-run-build-script": true
 }
