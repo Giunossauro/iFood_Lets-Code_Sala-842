@@ -12,6 +12,7 @@ import SelectedContent from "./components/SelectedContent";
 import Selectable from "./components/Selectable";
 import PokemonsCards from "./components/PokemonsCards";
 import Modals from "./components/Modals";
+import { flushSync } from "react-dom";
 
 const secretPokemonIndex = Math.floor((Math.random() * (pokemonsList.length - 1)));
 const secretPokemon = Object.entries(pokemonsList[secretPokemonIndex]);
@@ -41,6 +42,16 @@ export default class App extends Component {
     };
   }
 
+  shouldComponentUpdate(_nextProps, nextState) {
+    /* console.log(
+      "--this.state",
+      this.state,
+      "\n\nnextState",
+      nextState
+    ) */
+    return true;
+  }
+
   /* 
     componentDidMount() {
   
@@ -60,8 +71,18 @@ export default class App extends Component {
     if (args.filtrados) {
       this.setState({
         ...this.state,
+        filtrados: [{
+          selecionado: args.filtrados[0].selecionado,
+          isOnList: args.filtrados[0].isOnList
+        }, ...this.state.filtrados]
+      });
+
+    } else if (args.pokemonEscolhido || Object.hasOwn(args, "modalConfirmState")) {
+      this.setState({
+        ...this.state,
         ...args
       });
+
     } else {
       this.setState({
         ...this.state,
@@ -159,7 +180,7 @@ export default class App extends Component {
           filtersList={filtersList}
           propsHandler={this.propsHandler.bind(this)}
           handleSelectChange={this.handleSelectChange.bind(this)}
-          filtrados={this.state.filtrados}
+          /* filtrados={this.state.filtrados} */
           isOnList={isOnList}
         />
       </Container>
@@ -170,7 +191,7 @@ export default class App extends Component {
         mainHeightCalc={mainHeightCalc}
         pokemons={this.state.pokemons}
         propsHandler={this.propsHandler.bind(this)}
-        isOnList={isOnList}
+        /* isOnList={isOnList} */
       />
 
       {/* FOOTER */}

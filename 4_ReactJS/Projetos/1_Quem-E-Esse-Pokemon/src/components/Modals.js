@@ -1,4 +1,4 @@
-import { Component/* , useRef */ } from "react";
+import { Component , createRef } from "react";
 
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
@@ -39,15 +39,20 @@ export default class Modals extends Component{
       modalSombraState: false,
       modalResultState: false
     }
+    this.sombraRef = createRef();
+    this.confirmRef = createRef();
+    this.resultRef = createRef();
   }
 
-  shouldComponentUpdate(_nextProps, nextState) {
+  shouldComponentUpdate(nextProps, nextState) {
     return (
       (this.state.modalWelcomeState !== nextState.modalWelcomeState)
       ||
       (this.state.modalSombraState !== nextState.modalSombraState)
       ||
       (this.state.modalResultState !== nextState.modalResultState)
+      ||
+      (this.props.modalConfirmState !== nextProps.modalConfirmState)
     );
   }
   
@@ -57,11 +62,11 @@ export default class Modals extends Component{
         handle="#modal-confirm"
         open={this.props.modalConfirmState}
         onClose={() => this.props.propsHandler({ modalConfirmState: false })}
-        //nodeRef={nodeRefConfirm}
+        nodeRef={this.confirmRef}
       >
         <Modal
           keepMounted
-          //ref={nodeRefConfirm}
+          ref={this.confirmRef}
           id="modal-confirm"
           hideBackdrop={false}
           open={this.props.modalConfirmState}
@@ -221,7 +226,6 @@ export default class Modals extends Component{
       </Draggable>
       <Modal
         keepMounted
-        //ref={nodeRef}
         id="modal-welcome"
         hideBackdrop={false}
         open={this.state.modalWelcomeState}
@@ -329,12 +333,12 @@ export default class Modals extends Component{
         handle="#modal-sombra"
         open={this.state.modalSombraState}
         onClose={() => this.setState({ ...this.state, modalSombraState: false })}
-        //nodeRef={nodeRefSombra}
+        nodeRef={this.sombraRef}
       >
         <Modal
           keepMounted
           id="modal-sombra"
-          //ref={nodeRefSombra}
+          ref={this.sombraRef}
           hideBackdrop={false}
           closeAfterTransition
           open={this.state.modalSombraState}

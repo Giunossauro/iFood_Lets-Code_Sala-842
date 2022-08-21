@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { flushSync } from "react-dom";
 
 import FormControl from "@mui/material/FormControl";
 import Grid from "@mui/material/Grid";
@@ -15,33 +16,33 @@ export default class Selectable extends Component {
     super(props);
     this.state = {
       filters: filtersList,
-      selectState: filtersList.map(() => false)
+      selectState: filtersList.map(() => false),
+      close: false,
+      changing: false
     };
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log(
-      "--- this.props",
-      this.props,
-      "\n\nnextProps",
-      nextProps,
-      "\n\nthis.state",
-      this.state,
-      "\n\nnextState",
-      nextState
+  shouldComponentUpdate(_nextProps, nextState) {
+
+    /* const a = this.state.selectState.some(
+      (state, index) => state !== nextState.selectState[index]
     );
 
+    const b = this.state.filters.some((filters, filtersIndex) =>
+      Object.entries(filters)[0][1].length
+      !==
+      Object.entries(nextState.filters[filtersIndex])[0][1].length
+    ); */
+
     return (
-      !this.state.selectState.every(
-        (state, index) => state === nextState.selectState[index]
+      this.state.selectState.some(
+        (state, index) => state !== nextState.selectState[index]
       )
       ||
-      this.state.filters.every(
-        (filters, filtersIndex) => Object.entries(filters)[0][1].every(
-          (filter, filterIndex) => filter === Object.entries(
-            nextState.filters[filtersIndex]
-          )[0][1][filterIndex]
-        )
+      this.state.filters.some((filters, filtersIndex) =>
+        Object.entries(filters)[0][1].length
+        !==
+        Object.entries(nextState.filters[filtersIndex])[0][1].length
       )
     );
   }
@@ -116,32 +117,49 @@ export default class Selectable extends Component {
                 fontSize: ".75em"
               }}
 
-              open={this.state.selectState[filtersIdx] && activeElement}
+              open={
+                this.state.selectState[filtersIdx] && !this.state.close/* activeElement */
+              }
 
               onClick={() => {
-                this.setState({
-                  selectState: filtersList.map((_, idx) => filtersIdx === idx)
-                });
+                if (!this.state.close) {
+                  flushSync(()=> this.setState({
+                    selectState: filtersList.map((_, idx) => filtersIdx === idx)
+                  }));
+                } else {
+                  flushSync(()=> this.setState({
+                    selectState: filtersList.map(() => false),
+                    close: false
+                  }));
+                }
               }}
 
               onClose={() => {
-                this.setState({
-                  selectState: filtersList.map(() => false)
-                });
+                if (!this.state.changing) {
+                  flushSync(()=> this.setState({
+                    selectState: filtersList.map(() => false),
+                    close: true
+                  }));
+                } else {
+                  flushSync(()=> this.setState({
+                    changing: false
+                  }));
+                }
               }}
 
               onChange={async (e) => {
-                await this.setState(() => ({
+                await flushSync(()=> this.setState(() => ({
                   filters: this.props.handleSelectChange(
                     this.state.filters, e.target.value
-                  )
-                }));
+                  ),
+                  changing: true
+                })));
 
                 this.props.propsHandler({
                   filtrados: [{
                     selecionado: e.target.value,
                     isOnList: this.props.isOnList
-                  }, ...this.props.filtrados]
+                  }/* , ...this.props.filtrados */]
                 });
               }}
             >

@@ -28,9 +28,9 @@ Tema do jogo fica a critério do grupo escolher.
 
 - [x] Caso elemento selecionado pelo usuário seja o mesmo que o selecionado pela aplicação, mostrar mensagem de sucesso; caso contrário, mostrar mensagem de erro e avisar qual era o certo.  
 
-- [ ] O usuário deve conseguir reiniciar o jogo a qualquer momento.  
+- [x] O usuário deve conseguir reiniciar o jogo a qualquer momento.  
 
-- [x] [x] [x] [x] [x] [x] Não é necessario estar bonito.  
+- [x] Não é necessario estar bonito.  
 
 #### Bonus:  
 

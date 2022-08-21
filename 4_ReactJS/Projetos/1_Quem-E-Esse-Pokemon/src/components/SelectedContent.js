@@ -25,8 +25,8 @@ export default class SelectedContent extends Component {
         alignItems: "center",
         justifyContent: "space-around",
       }}>
-        {this.props.filtrados.map((item, index) => {
-          const color = item.isOnList ? "#4DAD5B" : "#D62F50";
+        {this.props.filtrados.map((filtrado, index) => {
+          const color = filtrado.isOnList ? "#4DAD5B" : "#D62F50";
 
           return (
             <Grid
@@ -41,7 +41,7 @@ export default class SelectedContent extends Component {
               }}
               key={index}
             >
-              <Item>{item.selecionado}</Item>
+              <Item>{filtrado.selecionado}</Item>
             </Grid>
           )
         })}
