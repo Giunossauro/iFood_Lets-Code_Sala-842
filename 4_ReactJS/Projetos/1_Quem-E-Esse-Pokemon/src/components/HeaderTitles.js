@@ -91,7 +91,7 @@ export default class HeaderTitles extends PureComponent {
         <Modal
           keepMounted
           //ref={nodeRef}
-          id="modal-welcome"
+          id="modal-restart"
           hideBackdrop={false}
           open={this.state.modalRestartState}
           closeAfterTransition
@@ -115,8 +115,8 @@ export default class HeaderTitles extends PureComponent {
               left: "-150vw",
             }
           }}
-          aria-labelledby="modal-welcome-title"
-          aria-describedby={"modal-welcome-description"}
+          aria-labelledby="modal-restart-title"
+          aria-describedby={"modal-restart-description"}
           onClose={() => this.setState({ modalRestartState: false })}
         >
           <Fade in={this.state.modalRestartState}>
@@ -133,7 +133,7 @@ export default class HeaderTitles extends PureComponent {
               p: 4
             }}>
               <Typography
-                id="modal-welcome-title"
+                id="modal-restart-title"
                 variant="h6"
                 component="h2"
                 sx={{ textAlign: "center" }}
@@ -142,7 +142,7 @@ export default class HeaderTitles extends PureComponent {
               </Typography>
               <Typography
                 sx={{ mt: 2, textAlign: "center" }}
-                id="modal-welcome-description"
+                id="modal-restart-description"
               >
                 Deseja reiniciar o jogo?
               </Typography>

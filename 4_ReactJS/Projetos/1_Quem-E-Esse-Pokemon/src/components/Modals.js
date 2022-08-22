@@ -71,7 +71,7 @@ export default class Modals extends Component{
   nomeDoPokemonSecreto() {
     return this.props.pokemons.find((pokemon) =>
       pokemon.id === this.props.secretPokemonId
-    ).nome;
+    ).Nome;
   }
   
   render() {
@@ -306,7 +306,7 @@ export default class Modals extends Component{
               id="modal-welcome-description"
               component={"div"}
             >
-              <Typography component='p' sx={{ pb: 2 }}>Escolha até _ filtros:
+              <Typography component='p' sx={{ pb: 2 }}>Escolha até 12 filtros:
                 se for do pokemon secreto, todos que tiverem ficam,
                 senão somem.</Typography>
 

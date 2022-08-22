@@ -1,5 +1,10 @@
-import { Grid, Paper, styled } from '@mui/material';
 import { Component } from 'react';
+
+import Grid from '@mui/material/Grid';
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material';
+
+import CancelIcon from "@mui/icons-material/Cancel";
 
 const Item = styled(Paper)(() => ({
   margin: "0",
@@ -9,9 +14,10 @@ const Item = styled(Paper)(() => ({
 export default class SelectedContent extends Component {
 
   shouldComponentUpdate(nextProps, _nextState) {
-    return this.props.filtrados.length !== nextProps.filtrados.length;
+    //console.log(this.props.filtrados, " - ", nextProps.filtrados);
+    return this.props.filtrados.length !== nextProps.filtrados.length/*  || true */;
   }
-  
+
   render() {
     return (
       <Grid container spacing={1} sx={{
@@ -26,6 +32,7 @@ export default class SelectedContent extends Component {
         justifyContent: "space-around",
       }}>
         {this.props.filtrados.map((filtrado, index) => {
+          //console.log(filtrado);
           const color = filtrado.isOnList ? "#4DAD5B" : "#D62F50";
 
           return (
@@ -41,7 +48,26 @@ export default class SelectedContent extends Component {
               }}
               key={index}
             >
-              <Item>{filtrado.selecionado}</Item>
+              <Item>
+                {filtrado.selecionado}
+                <CancelIcon
+                  fontSize={"small"}
+                  sx={{
+                    padding: "0px 1px 0 5px",
+                    margin: "0px -4px -5px -6px",
+                    cursor: "pointer"
+                  }}
+                  onClick={()=>{
+                    this.props.propsHandler({
+                      filtrados: [filtrado]
+                    }, false);
+
+                    this.props.propsHandler({
+                      selectedFiltersCounter: this.props.selectedFiltersCounter -1
+                    })
+                  }}
+                />
+              </Item>
             </Grid>
           )
         })}

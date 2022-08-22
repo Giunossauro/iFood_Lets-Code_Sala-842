@@ -14,32 +14,33 @@ Tema do jogo fica a critério do grupo escolher.
 
 ### Regras do jogo:  
  
-- [x] No inicio do jogo deve ser possível ver lista completa de elementos.  
+- [x] No inicio do jogo deve ser possível ver lista completa de elementos;  
 
-- [x] Um dos elementos tem que ser escolhido pela aplicação sem que o usuário saiba qual. O objetivo do usuario é descobrir qual o elemento selecionado pela aplicacao.  
+- [x] Um dos elementos tem que ser escolhido pela aplicação sem que o usuário saiba qual. O objetivo do usuario é descobrir qual o elemento selecionado pela aplicacao;  
 
-- [x] Deve haver um jeito de selecionar filtros com características de cada elemento. Ao selecionar uma característica nova, verificar se o elemento, escolhido pela aplicação no passo anterior, tem aquela característica ou não.  
+- [x] Deve haver um jeito de selecionar filtros com características de cada elemento. Ao selecionar uma característica nova, verificar se o elemento, escolhido pela aplicação no passo anterior, tem aquela característica ou não;  
 
-- [x] Caso o elemento tenha, devemos filtrar a lista de elementos para conter apenas os que tenham a característica selecionada.  
+- [x] Caso o elemento tenha, devemos filtrar a lista de elementos para conter apenas os que tenham a característica selecionada;  
 
-- [x] Caso o elemento não tenha a característica, filtrar lista de elementos para conter apenas os elementos que não tem a característica. Processo se repete até todos os filtros forem selecionados OU usuário escolher um dos elementos.  
+- [x] Caso o elemento não tenha a característica, filtrar lista de elementos para conter apenas os elementos que não tem a característica. Processo se repete até todos os filtros forem selecionados OU usuário escolher um dos elementos;  
 
-- [x] Usuário deve poder fazer sua escolha a qualquer momento.  
+- [x] Usuário deve poder fazer sua escolha a qualquer momento;  
 
-- [x] Caso elemento selecionado pelo usuário seja o mesmo que o selecionado pela aplicação, mostrar mensagem de sucesso; caso contrário, mostrar mensagem de erro e avisar qual era o certo.  
+- [x] Caso elemento selecionado pelo usuário seja o mesmo que o selecionado pela aplicação, mostrar mensagem de sucesso; caso contrário, mostrar mensagem de erro e avisar qual era o certo;  
 
-- [x] O usuário deve conseguir reiniciar o jogo a qualquer momento.  
+- [x] O usuário deve conseguir reiniciar o jogo a qualquer momento;  
 
 - [x] Não é necessario estar bonito.  
 
 #### Bonus:  
 
-- [ ] Limitar escolha de filtros quando sobrar apenas X elementos para que usuário seja obrigado a escolher um.  
+- [x] Limitar escolha de filtros quando sobrar apenas X elementos para que usuário seja obrigado a escolher um;  
 
-- [ ] Criar uma pontuação baseado no tempo que o usuário levou desde o inicio do jogo até o fim E/OU na quantidade de filtros que utilizou.  
+- [ ] Criar uma pontuação baseado no tempo que o usuário levou desde o inicio do jogo até o fim E/OU na quantidade de filtros que utilizou;  
 
-- [ ] Permitir que usuario remova um dos filtros selecionados anteriormente.
-Adicionar algum audio para as acoes.  
+- [x] Permitir que usuario remova um dos filtros selecionados anteriormente;
+
+- [ ] Adicionar algum audio para as acoes.  
 
 #### Help
 

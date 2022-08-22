@@ -1,24 +1,23 @@
 import { Component, lazy, Suspense } from "react";
+import { flushSync } from "react-dom";
 
 import Container from "@mui/material/Container";
 
 import "./App.css";
 
-import filtersList from "./filters.json";
 import pokemonsList from "./pokemons.json";
+import filtersList from "./filters.json";
 
 import HeaderTitles from "./components/HeaderTitles";
 import SelectedContent from "./components/SelectedContent";
 import Selectable from "./components/Selectable";
 import Modals from "./components/Modals";
+
 const PokemonsCards = lazy(() => import("./components/PokemonsCards"));
 
 const secretPokemonIndex = Math.floor((Math.random() * (pokemonsList.length - 1)));
 const secretPokemon = Object.entries(pokemonsList[secretPokemonIndex]);
 const secretPokemonId = pokemonsList[secretPokemonIndex].id;
-
-let isOnList = false;
-let isOnListHolder = false;
 
 const headerTitlesHeight = "5vh";
 const headerContentHeight = "17.5vh";
@@ -34,29 +33,79 @@ export default class App extends Component {
     this.state = {
       pokemons: pokemonsList,
       filtrados: [],
+      filters: filtersList,
       pokemonEscolhido: pokemonsList.map((p) => p)[0].id,
       modalConfirmState: false,
       endOfGame: false,
-      isOnList: false
+      isOnList: false,
+      selectedFiltersCounter: 0
     };
   }
 
-  propsHandler(args) {
+  propsHandler(args, putIn) {
     if (args.filtrados) {
-      this.setState({
-        ...this.state,
-        filtrados: [{
-          selecionado: args.filtrados[0].selecionado,
-          isOnList: args.filtrados[0].isOnList
-        }, ...this.state.filtrados]
-      });
+      if (putIn) {
+        //console.log("args filtrados putIn", args);
+        this.setState({
+          ...this.state,
+          filtrados: [{
+            selecionado: args.filtrados[0].selecionado,
+            isOnList: args.filtrados[0].isOnList,
+            filterListName: args.filtrados[0].filterListName
+          }, ...this.state.filtrados]
+        });
+        //console.log("state filtrados putIn", this.state.filtrados);
+
+      } else { //putOut
+        //--logs
+        /* console.log("args filtrados putOut", args, "\n\nbelow: filtrados com filtro removido");
+        console.log({
+          ...this.state,
+          filtrados: this.state.filtrados.filter(
+            (filter) => filter.selecionado !== args.filtrados[0].selecionado
+          )
+        }); */
+
+        //--action
+        //---remove filter from filtrado
+        flushSync(() => this.setState({
+          ...this.state,
+          filtrados: this.state.filtrados.filter(
+            (filter) => filter.selecionado !== args.filtrados[0].selecionado
+          )
+        }));
+
+        const indexOfPutOut = this.state.filters.findIndex((e2) => {
+          return Object.getOwnPropertyNames(e2)[0] === args.filtrados[0].filterListName
+        });
+
+        //---insert filter in filters
+        this.setState({
+          ...this.state,
+          filters: this.state.filters.map((filterList, indexOfFilterList) => {
+            if (indexOfPutOut === indexOfFilterList) {
+              return {
+                [Object.getOwnPropertyNames(filterList)[0]]: [
+                  ...Object.entries(filterList)[0][1],
+                  args.filtrados[0].selecionado
+                ]
+              };
+            }
+            return filterList;
+          })
+        });
+
+        //console.log("state filtrados putOut", this.state.filtrados);
+        //console.log("state filtros putOut", this.state.filters);
+      }
 
     } else {
+      //console.log("args not filtrados", args);
       this.setState({
         ...this.state,
         ...args
       });
-
+      //console.log("state not filtrados", this.state);
     }
   }
 
@@ -64,19 +113,15 @@ export default class App extends Component {
     secretPokemon.forEach((attr) => attr.forEach((value) => {
       if (typeof value !== "object") {
         if (value === selecionado) {
-          isOnList = true;
-          this.setState({ isOnList: isOnList });
-          isOnListHolder = true;
+          flushSync(() => this.setState({ isOnList: true }));
           return;
         }
       } else if (value.includes(selecionado)) {
-        isOnList = true;
-        this.setState({ isOnList: isOnList });
-        isOnListHolder = true;
+        flushSync(() => this.setState({ isOnList: true }));
+      } else {
+        flushSync(() => this.setState({ isOnList: false }));
       }
     }));
-
-    this.setState({ isOnList: isOnList });
 
     const pokemonsAsArray = this.state.pokemons.map(
       pokemon => Object.entries(pokemon)
@@ -98,17 +143,17 @@ export default class App extends Component {
       })
     ));
 
-    this.setState({
+    flushSync(() => this.setState({
       ...this.state,
       pokemons: this.state.pokemons.filter((_, pokemonIndex) => {
         for (const value of filteredPokemonIndex) {
           if (value === pokemonIndex) {
-            return isOnList;
+            return this.state.isOnList;
           }
         }
-        return !isOnList;
+        return !this.state.isOnList;
       })
-    });
+    }));
 
     return filtersState.map((actualFilterList) => {
       const filterListAsArray = Object.entries(actualFilterList);
@@ -121,11 +166,6 @@ export default class App extends Component {
   }
 
   render() {
-    if (isOnListHolder) {
-      isOnListHolder = false;
-    } else {
-      isOnList = false;
-    }
 
     return (
       <Suspense fallback={<>
@@ -148,12 +188,17 @@ export default class App extends Component {
             pl: 1,
           }}
         >
-          <SelectedContent filtrados={this.state.filtrados} />
+          <SelectedContent
+            filtrados={this.state.filtrados}
+            propsHandler={this.propsHandler.bind(this)}
+            selectedFiltersCounter={this.state.selectedFiltersCounter}
+          />
           <Selectable
-            filtersList={filtersList}
             propsHandler={this.propsHandler.bind(this)}
             handleSelectChange={this.handleSelectChange.bind(this)}
-            isOnList={isOnList}
+            isOnList={this.state.isOnList}
+            filters={this.state.filters}
+            selectedFiltersCounter={this.state.selectedFiltersCounter}
           />
         </Container>
 

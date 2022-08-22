@@ -7,52 +7,34 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 
-import filtersList from "../filters.json";
-
-let activeElement = true;
+//import filtersList from "../filters.json";
 
 export default class Selectable extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      filters: filtersList,
-      selectState: filtersList.map(() => false),
+      selectState: this.props.filters.map(() => false),
       close: false,
       changing: false
     };
   }
 
-  shouldComponentUpdate(_nextProps, nextState) {
-
-    /* const a = this.state.selectState.some(
-      (state, index) => state !== nextState.selectState[index]
-    );
-
-    const b = this.state.filters.some((filters, filtersIndex) =>
-      Object.entries(filters)[0][1].length
-      !==
-      Object.entries(nextState.filters[filtersIndex])[0][1].length
-    ); */
+  shouldComponentUpdate(nextProps, nextState) {
 
     return (
       this.state.selectState.some(
         (state, index) => state !== nextState.selectState[index]
       )
-      ||
-      this.state.filters.some((filters, filtersIndex) =>
+      ||true
+      /* this.props.filters.some((filters, filtersIndex) =>
         Object.entries(filters)[0][1].length
         !==
-        Object.entries(nextState.filters[filtersIndex])[0][1].length
-      )
+        Object.entries(nextProps.filters[filtersIndex])[0][1].length
+      ) */
     );
   }
 
   render() {
-    if (document.activeElement.classList[0] === "MuiPaper-root") {
-      activeElement = !activeElement;
-    } else {
-      activeElement = true;
-    }
 
     return (
       <Grid container spacing={1}
@@ -73,7 +55,7 @@ export default class Selectable extends Component {
           pl: 1,
         }}
       >
-        {this.state.filters.map((filterList, filtersIdx) => (
+        {this.props.filters.map((filterList, filtersIdx) => (
           <FormControl
             key={filtersIdx}
             sx={{
@@ -117,18 +99,16 @@ export default class Selectable extends Component {
                 fontSize: ".75em"
               }}
 
-              open={
-                this.state.selectState[filtersIdx] && !this.state.close/* activeElement */
-              }
+              open={this.state.selectState[filtersIdx] && !this.state.close}
 
               onClick={() => {
                 if (!this.state.close) {
-                  flushSync(()=> this.setState({
-                    selectState: filtersList.map((_, idx) => filtersIdx === idx)
+                  flushSync(() => this.setState({
+                    selectState: this.props.filters.map((_, idx) => filtersIdx === idx)
                   }));
                 } else {
-                  flushSync(()=> this.setState({
-                    selectState: filtersList.map(() => false),
+                  flushSync(() => this.setState({
+                    selectState: this.props.filters.map(() => false),
                     close: false
                   }));
                 }
@@ -136,31 +116,51 @@ export default class Selectable extends Component {
 
               onClose={() => {
                 if (!this.state.changing) {
-                  flushSync(()=> this.setState({
-                    selectState: filtersList.map(() => false),
+                  flushSync(() => this.setState({
+                    selectState: this.props.filters.map(() => false),
                     close: true
                   }));
                 } else {
-                  flushSync(()=> this.setState({
+                  flushSync(() => this.setState({
                     changing: false
                   }));
                 }
               }}
 
               onChange={async (e) => {
-                await flushSync(()=> this.setState(() => ({
-                  filters: this.props.handleSelectChange(
-                    this.state.filters, e.target.value
-                  ),
-                  changing: true
-                })));
+                console.log(this.props.selectedFiltersCounter)
+                if (this.props.selectedFiltersCounter < 12) {
 
-                this.props.propsHandler({
-                  filtrados: [{
-                    selecionado: e.target.value,
-                    isOnList: this.props.isOnList
-                  }/* , ...this.props.filtrados */]
-                });
+                  flushSync(() => this.setState({
+                    changing: true
+                  }));
+
+                  await flushSync(() => this.props.propsHandler({
+                    selectedFiltersCounter: this.props.selectedFiltersCounter + 1
+                  }));
+
+                  await this.props.propsHandler({
+                    filters: this.props.handleSelectChange(
+                      this.props.filters, e.target.value
+                    )
+                  });
+
+                  this.props.propsHandler({
+                    filtrados: [{
+                      selecionado: e.target.value,
+                      isOnList: this.props.isOnList,
+                      filterListName: Object.getOwnPropertyNames(filterList)[0]
+                    }],
+                  }, true);
+
+                  if (this.props.selectedFiltersCounter === 11) {
+                    alert("Você só pode escolher mais 1 filtro!");
+                  } else if (this.props.selectedFiltersCounter === 12) {
+                    alert("Você não pode escolher mais nenhum filtro.");
+                  }
+                } else {
+                  alert("Você já escolheu todos os 12 filtros...");
+                }
               }}
             >
               {Object.entries(filterList)[0][1].map((filterOption, filterOptionIndex) => (
