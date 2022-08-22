@@ -31,7 +31,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pokemons: pokemonsList,
+      renderedPokemons: pokemonsList,
+      removedPokemons: [],
       filtrados: [],
       filters: filtersList,
       pokemonEscolhido: pokemonsList.map((p) => p)[0].id,
@@ -42,10 +43,19 @@ export default class App extends Component {
     };
   }
 
+  sorter(onePokemon, anotherPokemon){
+    if (onePokemon.id > anotherPokemon.id) {
+      return 1;
+    }
+    if (onePokemon.id < anotherPokemon.id) {
+      return -1;
+    }
+    return 0;
+  }
+
   propsHandler(args, putIn) {
     if (args.filtrados) {
       if (putIn) {
-        //console.log("args filtrados putIn", args);
         this.setState({
           ...this.state,
           filtrados: [{
@@ -54,20 +64,8 @@ export default class App extends Component {
             filterListName: args.filtrados[0].filterListName
           }, ...this.state.filtrados]
         });
-        //console.log("state filtrados putIn", this.state.filtrados);
 
-      } else { //putOut
-        //--logs
-        /* console.log("args filtrados putOut", args, "\n\nbelow: filtrados com filtro removido");
-        console.log({
-          ...this.state,
-          filtrados: this.state.filtrados.filter(
-            (filter) => filter.selecionado !== args.filtrados[0].selecionado
-          )
-        }); */
-
-        //--action
-        //---remove filter from filtrado
+      } else {
         flushSync(() => this.setState({
           ...this.state,
           filtrados: this.state.filtrados.filter(
@@ -79,7 +77,6 @@ export default class App extends Component {
           return Object.getOwnPropertyNames(e2)[0] === args.filtrados[0].filterListName
         });
 
-        //---insert filter in filters
         this.setState({
           ...this.state,
           filters: this.state.filters.map((filterList, indexOfFilterList) => {
@@ -94,22 +91,17 @@ export default class App extends Component {
             return filterList;
           })
         });
-
-        //console.log("state filtrados putOut", this.state.filtrados);
-        //console.log("state filtros putOut", this.state.filters);
       }
 
     } else {
-      //console.log("args not filtrados", args);
       this.setState({
         ...this.state,
         ...args
       });
-      //console.log("state not filtrados", this.state);
     }
   }
 
-  handleSelectChange(filtersState, selecionado) {
+  handleSelectChange(filtersState, selecionado, isRemoving) {
     secretPokemon.forEach((attr) => attr.forEach((value) => {
       if (typeof value !== "object") {
         if (value === selecionado) {
@@ -123,37 +115,89 @@ export default class App extends Component {
       }
     }));
 
-    const pokemonsAsArray = this.state.pokemons.map(
+    const renderedPokemonsAsArray = this.state.renderedPokemons.map(
       pokemon => Object.entries(pokemon)
     );
-    let filteredPokemonIndex = [];
 
-    pokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
-      (rootAttribute) => rootAttribute.forEach((attribute) => {
-        if (attribute !== selecionado) {
-          if (typeof attribute === "object") {
-            if (attribute.includes(selecionado)) {
-              filteredPokemonIndex.push(pokemonIdx);
+    const removedPokemonsAsArray = this.state.removedPokemons.map(
+      pokemon => Object.entries(pokemon)
+    );
+
+    let filteredPokemonIndex = [];
+    if (isRemoving) {
+      renderedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
+        (rootAttribute) => rootAttribute.forEach((attribute) => {
+          if (attribute !== selecionado) {
+            if (typeof attribute === "object") {
+              if (attribute.includes(selecionado)) {
+                filteredPokemonIndex.push(pokemonIdx);
+              }
+            }
+          } else {
+            filteredPokemonIndex.push(pokemonIdx);
+          }
+          return undefined;
+        })
+      ));
+    } else {
+      removedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
+        (rootAttribute) => rootAttribute.forEach((attribute) => {
+          if (attribute !== selecionado) {
+            if (typeof attribute === "object") {
+              if (attribute.includes(selecionado)) {
+                filteredPokemonIndex.push(pokemonIdx);
+              }
+            }
+          } else {
+            filteredPokemonIndex.push(pokemonIdx);
+          }
+          return undefined;
+        })
+      ));
+    }
+
+    if (isRemoving) {
+      flushSync(() => this.setState({
+        ...this.state,
+        renderedPokemons: this.state.renderedPokemons.filter((_, pokemonIndex) => {
+          for (const value of filteredPokemonIndex) {
+            if (value === pokemonIndex) {
+              return this.state.isOnList;
             }
           }
-        } else {
-          filteredPokemonIndex.push(pokemonIdx);
-        }
-        return undefined;
-      })
-    ));
-
-    flushSync(() => this.setState({
-      ...this.state,
-      pokemons: this.state.pokemons.filter((_, pokemonIndex) => {
-        for (const value of filteredPokemonIndex) {
-          if (value === pokemonIndex) {
-            return this.state.isOnList;
+          return !this.state.isOnList;
+        }).sort(this.sorter),
+        removedPokemons: [...this.state.renderedPokemons.filter((_, pokemonIndex) => {
+          for (const value of filteredPokemonIndex) {
+            if (value === pokemonIndex) {
+              return !this.state.isOnList;
+            }
           }
-        }
-        return !this.state.isOnList;
-      })
-    }));
+          return this.state.isOnList;
+        }), ...this.state.removedPokemons].sort(this.sorter)
+      }));
+    } else {
+      flushSync(() => this.setState({
+        ...this.state,
+        renderedPokemons: [...this.state.removedPokemons.filter((_, pokemonIndex) => {
+          for (const value of filteredPokemonIndex) {
+            if (value === pokemonIndex) {
+              return !this.state.isOnList;
+            }
+          }
+          return this.state.isOnList;
+        }), ...this.state.renderedPokemons].sort(this.sorter),
+        removedPokemons: this.state.removedPokemons.filter((_, pokemonIndex) => {
+          for (const value of filteredPokemonIndex) {
+            if (value === pokemonIndex) {
+              return this.state.isOnList;
+            }
+          }
+          return !this.state.isOnList;
+        }).sort(this.sorter)
+      }));
+    }
+    console.log(this.state);
 
     return filtersState.map((actualFilterList) => {
       const filterListAsArray = Object.entries(actualFilterList);
@@ -189,8 +233,10 @@ export default class App extends Component {
           }}
         >
           <SelectedContent
+            filters={this.state.filters}
             filtrados={this.state.filtrados}
             propsHandler={this.propsHandler.bind(this)}
+            handleSelectChange={this.handleSelectChange.bind(this)}
             selectedFiltersCounter={this.state.selectedFiltersCounter}
           />
           <Selectable
@@ -206,7 +252,7 @@ export default class App extends Component {
         <PokemonsCards
           headerHeight={headerHeight}
           mainHeightCalc={mainHeightCalc}
-          pokemons={this.state.pokemons}
+          pokemons={this.state.renderedPokemons}
           propsHandler={this.propsHandler.bind(this)}
         />
 
@@ -215,7 +261,7 @@ export default class App extends Component {
           secretPokemonId={secretPokemonId}
           endOfGame={this.state.endOfGame}
           modalConfirmState={this.state.modalConfirmState}
-          pokemons={this.state.pokemons}
+          pokemons={this.state.renderedPokemons}
           pokemonEscolhido={this.state.pokemonEscolhido}
           propsHandler={this.propsHandler.bind(this)}
         />

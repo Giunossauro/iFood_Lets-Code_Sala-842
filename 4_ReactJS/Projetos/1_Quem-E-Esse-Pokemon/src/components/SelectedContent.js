@@ -14,7 +14,6 @@ const Item = styled(Paper)(() => ({
 export default class SelectedContent extends Component {
 
   shouldComponentUpdate(nextProps, _nextState) {
-    //console.log(this.props.filtrados, " - ", nextProps.filtrados);
     return this.props.filtrados.length !== nextProps.filtrados.length/*  || true */;
   }
 
@@ -32,7 +31,6 @@ export default class SelectedContent extends Component {
         justifyContent: "space-around",
       }}>
         {this.props.filtrados.map((filtrado, index) => {
-          //console.log(filtrado);
           const color = filtrado.isOnList ? "#4DAD5B" : "#D62F50";
 
           return (
@@ -57,14 +55,36 @@ export default class SelectedContent extends Component {
                     margin: "0px -4px -5px -6px",
                     cursor: "pointer"
                   }}
-                  onClick={()=>{
-                    this.props.propsHandler({
+                  onClick={async ()=>{
+                    await this.props.propsHandler({
                       filtrados: [filtrado]
                     }, false);
 
                     this.props.propsHandler({
-                      selectedFiltersCounter: this.props.selectedFiltersCounter -1
+                      selectedFiltersCounter: this.props.selectedFiltersCounter - 1
                     })
+
+                    const indexOfPutOut = this.props.filters.findIndex((e2) =>
+                      Object.getOwnPropertyNames(e2)[0]
+                      ===
+                      filtrado.filterListName.filterListName
+                    );
+            
+                    let x = this.props.filters.map((filterList, indexOfFilterList) => {
+                      if (indexOfPutOut === indexOfFilterList) {
+                        return {
+                          [filtrado.filterListName]: [
+                            ...Object.entries(filterList)[0][1],
+                            filtrado.selecionado
+                          ]
+                        };
+                      }
+                      return filterList;
+                    });
+
+                    this.props.handleSelectChange(
+                      x, filtrado.selecionado, false
+                    )
                   }}
                 />
               </Item>

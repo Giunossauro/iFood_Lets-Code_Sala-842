@@ -14,7 +14,7 @@ Tema do jogo fica a critério do grupo escolher.
 
 ### Regras do jogo:  
  
-- [x] No inicio do jogo deve ser possível ver lista completa de elementos;  
+- [x] No início do jogo deve ser possível ver lista completa de elementos;  
 
 - [x] Um dos elementos tem que ser escolhido pela aplicação sem que o usuário saiba qual. O objetivo do usuario é descobrir qual o elemento selecionado pela aplicacao;  
 
@@ -30,23 +30,23 @@ Tema do jogo fica a critério do grupo escolher.
 
 - [x] O usuário deve conseguir reiniciar o jogo a qualquer momento;  
 
-- [x] Não é necessario estar bonito.  
+- [x] Não é necessário estar bonito.  
 
-#### Bonus:  
+#### Bônus:  
 
 - [x] Limitar escolha de filtros quando sobrar apenas X elementos para que usuário seja obrigado a escolher um;  
 
-- [ ] Criar uma pontuação baseado no tempo que o usuário levou desde o inicio do jogo até o fim E/OU na quantidade de filtros que utilizou;  
+- [ ] Criar uma pontuação baseada no tempo que o usuário levou desde o inicio do jogo até o fim E/OU na quantidade de filtros que utilizou;  
 
-- [x] Permitir que usuario remova um dos filtros selecionados anteriormente;
+- [x] Permitir que usuário remova um dos filtros selecionados anteriormente;
 
-- [ ] Adicionar algum audio para as acoes.  
+- [ ] Adicionar algum áudio para as ações.  
 
 #### Help
 
 Eu fiz um scriptzinho em node q talvez ajude voces tbm!  
 
-Fiz 150 chamadas pra API do pokemon e montei 2 JSONs, um deles com pokemons e suas caracteristicas e outro com caracteristicas unicas pra montar os filtros.  
+Fiz 150 chamadas pra API do pokemon e montei 2 JSONs, um deles com pokemons e suas características e outro com características únicas pra montar os filtros.  
 [Fetch Pokemon do Professor](./fetch-pkm-do-professor/)
 
 E segue os 2 JSONs tbm:  

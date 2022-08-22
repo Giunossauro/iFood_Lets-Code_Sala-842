@@ -7,8 +7,6 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 
-//import filtersList from "../filters.json";
-
 export default class Selectable extends Component {
   constructor(props) {
     super(props);
@@ -141,7 +139,7 @@ export default class Selectable extends Component {
 
                   await this.props.propsHandler({
                     filters: this.props.handleSelectChange(
-                      this.props.filters, e.target.value
+                      this.props.filters, e.target.value, true
                     )
                   });
 
