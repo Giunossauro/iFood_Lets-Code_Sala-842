@@ -59,6 +59,13 @@ export default class HeaderTitles extends PureComponent {
           alignSelf: "center",
         }}>
           Selecione Filtros
+          <span style={{ width: "100%" }}>
+            <button
+              onClick={this.props.toggleBackgroundAudio}
+            >
+              {this.props.isBackgroundAudioPlaying ? 'Pause' : 'Play'}
+            </button>
+          </span>
         </div>
         <div style={{
           width: 0,

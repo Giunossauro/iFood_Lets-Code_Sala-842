@@ -8,10 +8,20 @@ import Zoom from "@mui/material/Zoom";
 
 export default class PokemonsCards extends Component {
 
+  constructor(props) {
+    super(props);
+    this.props.propsHandler({
+      startTime: (new Date()).getTime()
+    });
+  }
+
   shouldComponentUpdate(nextProps, _nextState) {
     return this.props.pokemons.length !== nextProps.pokemons.length;
   }
 
+  /* componentDidMount() {
+  }
+ */
   render() {
     return (
       <ImageList
@@ -40,6 +50,7 @@ export default class PokemonsCards extends Component {
             }}
             aria-label={`info about ${pokemon.Nome} `}
             onClick={() => {
+              this.props.toggleClickAudio();
               this.props.propsHandler({
                 pokemonEscolhido: pokemon.id,
                 modalConfirmState: true

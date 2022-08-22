@@ -36,11 +36,11 @@ Tema do jogo fica a critério do grupo escolher.
 
 - [x] Limitar escolha de filtros quando sobrar apenas X elementos para que usuário seja obrigado a escolher um;  
 
-- [ ] Criar uma pontuação baseada no tempo que o usuário levou desde o inicio do jogo até o fim E/OU na quantidade de filtros que utilizou;  
+- [x] Criar uma pontuação baseada no tempo que o usuário levou desde o inicio do jogo até o fim E/OU na quantidade de filtros que utilizou;  
 
 - [x] Permitir que usuário remova um dos filtros selecionados anteriormente;
 
-- [ ] Adicionar algum áudio para as ações.  
+- [x] Adicionar algum áudio para as ações.  
 
 #### Help
 

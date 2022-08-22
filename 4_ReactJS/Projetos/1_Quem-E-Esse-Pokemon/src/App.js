@@ -39,11 +39,44 @@ export default class App extends Component {
       modalConfirmState: false,
       endOfGame: false,
       isOnList: false,
-      selectedFiltersCounter: 0
+      selectedFiltersCounter: 0,
+      selectedFiltersPointsModifier: 1,
+      startTime: 0,
+      isBackgroundAudioPlaying: false
     };
+
+    this.backgroundAudio = new Audio("./audio/OST.mp3");
+    this.clickAudio = new Audio("./audio/click.mp3");
   }
 
-  sorter(onePokemon, anotherPokemon){
+  componentDidMount() {
+    this.backgroundAudio.addEventListener(
+      "ended", () => this.setState({ isBackgroundAudioPlaying: false })
+    );
+  }
+
+  componentWillUnmount() {
+    this.backgroundAudio.removeEventListener(
+      "ended", () => this.setState({ isBackgroundAudioPlaying: false })
+    );
+  }
+
+  toggleBackgroundAudio = () => {
+    flushSync(() => this.setState(
+      { isBackgroundAudioPlaying: !this.state.isBackgroundAudioPlaying },
+      () => {
+        this.state.isBackgroundAudioPlaying ?
+          this.backgroundAudio.play()
+        : this.backgroundAudio.pause();
+      }
+    ));
+  }
+
+  toggleClickAudio = () => {
+    this.clickAudio.play();
+  }
+
+  sorter(onePokemon, anotherPokemon) {
     if (onePokemon.id > anotherPokemon.id) {
       return 1;
     }
@@ -101,7 +134,7 @@ export default class App extends Component {
     }
   }
 
-  handleSelectChange(filtersState, selecionado, isRemoving) {
+  handleSelectChange(filtersState, selecionado, isRemovingSelectedFilter) {
     secretPokemon.forEach((attr) => attr.forEach((value) => {
       if (typeof value !== "object") {
         if (value === selecionado) {
@@ -124,7 +157,7 @@ export default class App extends Component {
     );
 
     let filteredPokemonIndex = [];
-    if (isRemoving) {
+    if (isRemovingSelectedFilter) {
       renderedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
         (rootAttribute) => rootAttribute.forEach((attribute) => {
           if (attribute !== selecionado) {
@@ -156,7 +189,7 @@ export default class App extends Component {
       ));
     }
 
-    if (isRemoving) {
+    if (isRemovingSelectedFilter) {
       flushSync(() => this.setState({
         ...this.state,
         renderedPokemons: this.state.renderedPokemons.filter((_, pokemonIndex) => {
@@ -174,7 +207,8 @@ export default class App extends Component {
             }
           }
           return this.state.isOnList;
-        }), ...this.state.removedPokemons].sort(this.sorter)
+        }), ...this.state.removedPokemons].sort(this.sorter),
+        selectedFiltersPointsModifier: this.state.selectedFiltersPointsModifier + 0.1
       }));
     } else {
       flushSync(() => this.setState({
@@ -216,7 +250,11 @@ export default class App extends Component {
         <div id="loadingAnimation"></div>
         <div id="loadingBackground"></div>
       </>}>
-        <HeaderTitles headerTitlesHeight={headerTitlesHeight} />
+        <HeaderTitles
+          headerTitlesHeight={headerTitlesHeight}
+          toggleBackgroundAudio={this.toggleBackgroundAudio}
+          isBackgroundAudioPlaying={this.state.isBackgroundAudioPlaying}
+        />
         <Container
           maxWidth={false}
           disableGutters={true}
@@ -235,11 +273,13 @@ export default class App extends Component {
           <SelectedContent
             filters={this.state.filters}
             filtrados={this.state.filtrados}
+            toggleClickAudio={this.toggleClickAudio}
             propsHandler={this.propsHandler.bind(this)}
             handleSelectChange={this.handleSelectChange.bind(this)}
             selectedFiltersCounter={this.state.selectedFiltersCounter}
           />
           <Selectable
+            toggleClickAudio={this.toggleClickAudio}
             propsHandler={this.propsHandler.bind(this)}
             handleSelectChange={this.handleSelectChange.bind(this)}
             isOnList={this.state.isOnList}
@@ -253,6 +293,7 @@ export default class App extends Component {
           headerHeight={headerHeight}
           mainHeightCalc={mainHeightCalc}
           pokemons={this.state.renderedPokemons}
+          toggleClickAudio={this.toggleClickAudio}
           propsHandler={this.propsHandler.bind(this)}
         />
 
@@ -263,7 +304,10 @@ export default class App extends Component {
           modalConfirmState={this.state.modalConfirmState}
           pokemons={this.state.renderedPokemons}
           pokemonEscolhido={this.state.pokemonEscolhido}
+          toggleClickAudio={this.toggleClickAudio}
           propsHandler={this.propsHandler.bind(this)}
+          selectedFiltersPointsModifier={this.state.selectedFiltersPointsModifier}
+          startTime={this.state.startTime}
         />
       </Suspense>
     );

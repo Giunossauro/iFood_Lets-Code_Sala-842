@@ -126,7 +126,7 @@ export default class Selectable extends Component {
               }}
 
               onChange={async (e) => {
-                console.log(this.props.selectedFiltersCounter)
+                this.props.toggleClickAudio();
                 if (this.props.selectedFiltersCounter < 12) {
 
                   flushSync(() => this.setState({

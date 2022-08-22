@@ -1,4 +1,4 @@
-import { Component , createRef } from "react";
+import { Component, createRef } from "react";
 
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
@@ -12,9 +12,8 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 
 import Draggable from "react-draggable";
 
-const filter = `blur(calc(10px + ${
-  window.screen.width / document.getElementById("dpi").offsetWidth
-}px)) grayscale(100%)`;
+const filter = `blur(calc(10px + ${window.screen.width / document.getElementById("dpi").offsetWidth
+  }px)) grayscale(100%)`;
 
 const modalStyle = {
   transform: "translate(-50%, -50%)",
@@ -31,8 +30,8 @@ const modalStyle = {
 
 const modalButtonStyle = { mt: 2, width: "100%", border: "1px solid gray" };
 
-export default class Modals extends Component{
-  constructor(props){
+export default class Modals extends Component {
+  constructor(props) {
     super(props);
     this.state = {
       modalWelcomeState: true,
@@ -73,7 +72,7 @@ export default class Modals extends Component{
       pokemon.id === this.props.secretPokemonId
     ).Nome;
   }
-  
+
   render() {
     return (<>
       <Draggable
@@ -141,21 +140,21 @@ export default class Modals extends Component{
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                    "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 srcSet={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                    "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 alt={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.nomeDoPokemonSecreto()
                     :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                    "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 style={{
                   borderRadius: "0.5vmin",
@@ -165,6 +164,7 @@ export default class Modals extends Component{
               <Button
                 sx={modalButtonStyle}
                 onClick={() => {
+                  this.props.toggleClickAudio();
                   this.setState({ ...this.state, modalResultState: true });
                   this.props.propsHandler({ endOfGame: true });
                 }}
@@ -179,7 +179,7 @@ export default class Modals extends Component{
                   timeout: 500,
                 }}
                 open={this.state.modalResultState}
-                onClose={() => 
+                onClose={() =>
                   this.setState({ ...this.state, modalResultState: false })
                 }
                 aria-labelledby="modal-result-title"
@@ -205,24 +205,28 @@ export default class Modals extends Component{
                   >{
                       this.props.secretPokemonId === this.props.pokemonEscolhido
                         ?
-                        `O ${
-                          this.props.pokemons.find(
-                            (pokemon) => pokemon.id === this.props.pokemonEscolhido
-                          ).Nome.toUpperCase()
-                        } é o pokemon escolhido!`
+                        `O ${this.props.pokemons.find(
+                          (pokemon) => pokemon.id === this.props.pokemonEscolhido
+                        ).Nome.toUpperCase()
+                        } é o pokemon escolhido! Você conseguiu ${1_000_000 - (
+                          (new Date()).getTime() - this.props.startTime
+                        ) * 2 * (this.props.selectedFiltersPointsModifier)
+                        } pontos.`
                         :
-                        `O ${
-                          String(this.nomeDoPokemonSecreto()).toUpperCase()
-                        } era o pokemon secreto.`
+                        `O ${String(this.nomeDoPokemonSecreto()).toUpperCase()
+                        } era o pokemon secreto. Você conseguiu 0 pontos.`
                     }</Typography>
                   <Button
                     sx={modalButtonStyle}
-                    onClick={() => this.setState({
-                      ...this.state, modalResultState: false
-                    })}
+                    onClick={() => {
+                      this.props.toggleClickAudio();
+                      this.setState({
+                        ...this.state, modalResultState: false
+                      });
+                    }}
                   >
                     {this.props.secretPokemonId === this.props.pokemonEscolhido ?
-                    "Beleza!!" : "Ok..."}
+                      "Beleza!!" : "Ok..."}
                   </Button>
                 </Box>
               </Modal>
@@ -280,21 +284,21 @@ export default class Modals extends Component{
                   ?
                   this.spriteDoPokemonSecreto()
                   :
-                "ERRO AO BUSCAR O NOME DO POKEMON"
+                  "ERRO AO BUSCAR O NOME DO POKEMON"
               }
               srcSet={
                 this.oPokemonSecretoEstaNaLista()
                   ?
                   this.spriteDoPokemonSecreto()
                   :
-                "ERRO AO BUSCAR O NOME DO POKEMON".sprite
+                  "ERRO AO BUSCAR O NOME DO POKEMON".sprite
               }
               alt={
                 this.oPokemonSecretoEstaNaLista()
                   ?
                   this.nomeDoPokemonSecreto()
                   :
-                "ERRO AO BUSCAR O NOME DO POKEMON"
+                  "ERRO AO BUSCAR O NOME DO POKEMON"
               }
               style={{
                 borderRadius: "0.5vmin",
@@ -316,7 +320,10 @@ export default class Modals extends Component{
             </Typography>
             <Button
               sx={modalButtonStyle}
-              onClick={() => this.setState({ ...this.state, modalWelcomeState: false })}
+              onClick={() => {
+                this.props.toggleClickAudio();
+                this.setState({ ...this.state, modalWelcomeState: false });
+              }}
             >
               Boa sorte!!!
             </Button>
@@ -375,21 +382,21 @@ export default class Modals extends Component{
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                    "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 srcSet={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                  "ERRO AO BUSCAR O NOME DO POKEMON".sprite
+                    "ERRO AO BUSCAR O NOME DO POKEMON".sprite
                 }
                 alt={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.nomeDoPokemonSecreto()
                     :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                    "ERRO AO BUSCAR O NOME DO POKEMON"
                 }
                 style={{
                   borderRadius: "0.5vmin",
@@ -398,7 +405,10 @@ export default class Modals extends Component{
               ></img></span>
               <Button
                 sx={modalButtonStyle}
-                onClick={() => this.setState({ ...this.state, modalSombraState: false })}
+                onClick={() => {
+                  this.props.toggleClickAudio();
+                  this.setState({ ...this.state, modalSombraState: false });
+                }}
               >
                 Ok?
               </Button>
@@ -415,7 +425,10 @@ export default class Modals extends Component{
           top: `calc(${window.innerHeight}px - 6rem - 2vh)`,
           left: `calc(${window.innerWidth}px - 10rem - 2vw)`,
         }}
-        onClick={() => this.setState({ ...this.state, modalSombraState: true })}
+        onClick={() => {
+          this.props.toggleClickAudio();
+          this.setState({ ...this.state, modalSombraState: true });
+        }}
       >
         <NavigationIcon sx={{ mr: 1 }} />
         VER SOMBRA

@@ -56,6 +56,7 @@ export default class SelectedContent extends Component {
                     cursor: "pointer"
                   }}
                   onClick={async ()=>{
+                    this.props.toggleClickAudio();
                     await this.props.propsHandler({
                       filtrados: [filtrado]
                     }, false);
