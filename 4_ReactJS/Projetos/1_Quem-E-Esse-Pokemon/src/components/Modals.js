@@ -9,6 +9,7 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 
 import NavigationIcon from "@mui/icons-material/Navigation";
+import CloseIcon from '@mui/icons-material/Close';
 
 import Draggable from "react-draggable";
 
@@ -25,7 +26,7 @@ const modalStyle = {
   boxShadow: 24,
   top: "50%",
   left: "50%",
-  p: 4,
+  p: 2,
 };
 
 const modalButtonStyle = { mt: 2, width: "100%", border: "1px solid gray" };
@@ -41,6 +42,7 @@ export default class Modals extends Component {
     this.sombraRef = createRef();
     this.confirmRef = createRef();
     this.resultRef = createRef();
+    this.fontSize = window.innerWidth > 600 && window.innerHeight > 600 ? "large" : "medium";
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -115,7 +117,18 @@ export default class Modals extends Component {
                 component="h2"
                 sx={{ textAlign: "center" }}
               >
-                Tem certeza que {
+                <CloseIcon
+                  sx={{
+                    ml: "95%",
+                    cursor: "pointer",
+
+                  }}
+                  onClick={() => {
+                    this.props.propsHandler({ modalConfirmState: false });
+                    this.props.toggleClickAudio();
+                  }}
+                />
+                {
                   this.props.pokemons.some(
                     (pokemon) => pokemon.id === this.props.pokemonEscolhido
                   )
@@ -125,7 +138,7 @@ export default class Modals extends Component {
                     ).Nome.toUpperCase()
                     :
                     "ERRO AO BUSCAR O NOME DO POKEMON"
-                } é o pokemon?
+                } é o pokemon? (arrastável)
               </Typography>
               <Typography
                 sx={{ mt: 2, textAlign: "center" }}
@@ -165,7 +178,7 @@ export default class Modals extends Component {
                 sx={modalButtonStyle}
                 onClick={() => {
                   this.props.toggleClickAudio();
-                  this.setState({ ...this.state, modalResultState: true });
+                  this.setState({ modalResultState: true });
                   this.props.propsHandler({ endOfGame: true });
                 }}
               >
@@ -180,7 +193,7 @@ export default class Modals extends Component {
                 }}
                 open={this.state.modalResultState}
                 onClose={() =>
-                  this.setState({ ...this.state, modalResultState: false })
+                  this.setState({ modalResultState: false })
                 }
                 aria-labelledby="modal-result-title"
                 aria-describedby="modal-result-description"
@@ -191,7 +204,18 @@ export default class Modals extends Component {
                     variant="h6"
                     component="h2"
                     sx={{ textAlign: "center" }}
-                  >{
+                  >
+                    <CloseIcon
+                      sx={{
+                        ml: "95%",
+                        cursor: "pointer",
+
+                      }}
+                      onClick={() => {
+                        this.props.toggleClickAudio();
+                        this.setState({ modalResultState: false });
+                      }}
+                    />{
                       this.props.secretPokemonId === this.props.pokemonEscolhido
                         ?
                         "Parabéns!!!"
@@ -208,10 +232,11 @@ export default class Modals extends Component {
                         `O ${this.props.pokemons.find(
                           (pokemon) => pokemon.id === this.props.pokemonEscolhido
                         ).Nome.toUpperCase()
-                        } é o pokemon escolhido! Você conseguiu ${1_000_000 - (
-                          (new Date()).getTime() - this.props.startTime
-                        ) * 2 * (this.props.selectedFiltersPointsModifier)
-                        } pontos.`
+                        } é o pokemon escolhido! Você conseguiu ${Math.abs(
+                          Math.round(1_000_000 - (
+                            (new Date()).getTime() - this.props.startTime
+                          ) * 2 * (this.props.selectedFiltersPointsModifier))
+                        )} pontos.`
                         :
                         `O ${String(this.nomeDoPokemonSecreto()).toUpperCase()
                         } era o pokemon secreto. Você conseguiu 0 pontos.`
@@ -220,9 +245,7 @@ export default class Modals extends Component {
                     sx={modalButtonStyle}
                     onClick={() => {
                       this.props.toggleClickAudio();
-                      this.setState({
-                        ...this.state, modalResultState: false
-                      });
+                      this.setState({ modalResultState: false });
                     }}
                   >
                     {this.props.secretPokemonId === this.props.pokemonEscolhido ?
@@ -262,13 +285,24 @@ export default class Modals extends Component {
         }}
         aria-labelledby="modal-welcome-title"
         aria-describedby={"modal-welcome-description"}
-        onClose={() => this.setState({ ...this.state, modalWelcomeState: false })}
+        onClose={() => this.setState({ modalWelcomeState: false })}
       >
         <Fade in={this.state.modalWelcomeState}>
           <Box sx={{
             ...modalStyle,
-            overflow: "scroll"
+            overflow: "hidden"
           }}>
+            <CloseIcon
+              sx={{
+                ml: "95%",
+                cursor: "pointer",
+
+              }}
+              onClick={() => {
+                this.setState({ modalWelcomeState: false });
+                this.props.toggleClickAudio();
+              }}
+            />
             <Typography
               id="modal-welcome-title"
               variant="h6"
@@ -322,7 +356,7 @@ export default class Modals extends Component {
               sx={modalButtonStyle}
               onClick={() => {
                 this.props.toggleClickAudio();
-                this.setState({ ...this.state, modalWelcomeState: false });
+                this.setState({ modalWelcomeState: false });
               }}
             >
               Boa sorte!!!
@@ -333,7 +367,7 @@ export default class Modals extends Component {
       <Draggable
         handle="#modal-sombra"
         open={this.state.modalSombraState}
-        onClose={() => this.setState({ ...this.state, modalSombraState: false })}
+        onClose={() => this.setState({ modalSombraState: false })}
         nodeRef={this.sombraRef}
       >
         <Modal
@@ -360,20 +394,31 @@ export default class Modals extends Component {
           }}
           aria-labelledby="modal-sombra-title"
           aria-describedby={"modal-sombra-description"}
-          onClose={() => this.setState({ ...this.state, modalSombraState: false })}
+          onClose={() => this.setState({ modalSombraState: false })}
         >
           <Fade in={this.state.modalSombraState}>
             <Box sx={{
               ...modalStyle,
               overflow: "hidden"
             }}>
+              <CloseIcon
+                sx={{
+                  ml: "95%",
+                  cursor: "pointer",
+
+                }}
+                onClick={() => {
+                  this.props.toggleClickAudio();
+                  this.setState({ modalSombraState: false });
+                }}
+              />
               <Typography
                 id="modal-sombra-title"
                 variant="h6"
                 component="h2"
                 sx={{ textAlign: "center" }}
               >
-                Quem é esse pokemon???
+                Quem é esse pokemon? (arrastável)
               </Typography>
               <span style={{ display: "flex", justifyContent: "center" }}><img
                 width={"100%"}
@@ -407,7 +452,7 @@ export default class Modals extends Component {
                 sx={modalButtonStyle}
                 onClick={() => {
                   this.props.toggleClickAudio();
-                  this.setState({ ...this.state, modalSombraState: false });
+                  this.setState({ modalSombraState: false });
                 }}
               >
                 Ok?
@@ -427,7 +472,7 @@ export default class Modals extends Component {
         }}
         onClick={() => {
           this.props.toggleClickAudio();
-          this.setState({ ...this.state, modalSombraState: true });
+          this.setState({ modalSombraState: true });
         }}
       >
         <NavigationIcon sx={{ mr: 1 }} />

@@ -252,6 +252,7 @@ export default class App extends Component {
       </>}>
         <HeaderTitles
           headerTitlesHeight={headerTitlesHeight}
+          toggleClickAudio={this.toggleClickAudio}
           toggleBackgroundAudio={this.toggleBackgroundAudio}
           isBackgroundAudioPlaying={this.state.isBackgroundAudioPlaying}
         />

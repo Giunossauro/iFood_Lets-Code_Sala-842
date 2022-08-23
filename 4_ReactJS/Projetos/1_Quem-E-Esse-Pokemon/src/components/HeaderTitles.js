@@ -6,14 +6,19 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Fade from "@mui/material/Fade";
 import Modal from "@mui/material/Modal";
+import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
+import Zoom from "@mui/material/Zoom";
 
 import RestartAlt from "@mui/icons-material/RestartAlt";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import StopIcon from '@mui/icons-material/Stop';
 
 export default class HeaderTitles extends PureComponent {
   constructor(props) {
     super(props);
     this.state = { modalRestartState: false };
+    this.fontSize = window.innerWidth > 600 && window.innerHeight > 600 ? "large" : "medium";
   }
 
   render() {
@@ -52,20 +57,13 @@ export default class HeaderTitles extends PureComponent {
           borderLeft: "2px solid black",
         }} />
         <div style={{
-          minWidth: "calc(100% - 45vw - 2px)",
+          minWidth: "calc(100% - 50vw - 2px)",
           margin: 0,
           textAlign: "center",
           fontWeight: "bold",
           alignSelf: "center",
         }}>
           Selecione Filtros
-          <span style={{ width: "100%" }}>
-            <button
-              onClick={this.props.toggleBackgroundAudio}
-            >
-              {this.props.isBackgroundAudioPlaying ? 'Pause' : 'Play'}
-            </button>
-          </span>
         </div>
         <div style={{
           width: 0,
@@ -76,28 +74,83 @@ export default class HeaderTitles extends PureComponent {
           borderRigth: "1px solid black",
           borderLeft: "1px solid black",
         }} />
+        <div
+          style={{
+            minWidth: "calc(100% - 92.5vw - 2px)",
+            margin: 0,
+            textAlign: "center",
+            fontWeight: "bold",
+            alignSelf: "center",
+            borderRigth: "2px solid black",
+            display: "flex",
+            justifyContent: "center",
+            paddingBottom: ".2vh",
+            cursor: "pointer"
+          }}
+          onClick={() => {
+            this.props.toggleClickAudio();
+            this.props.toggleBackgroundAudio();
+          }}
+        >
+          {this.props.isBackgroundAudioPlaying ?
+            <Tooltip
+              TransitionComponent={Zoom}
+              TransitionProps={{ timeout: 800 }}
+              followCursor={true}
+              placement="bottom-start"
+              title={"Stop"}
+            ><StopIcon
+              fontSize={this.fontSize}
+            /></Tooltip> : <Tooltip
+              TransitionComponent={Zoom}
+              TransitionProps={{ timeout: 800 }}
+              followCursor={true}
+              placement="bottom-start"
+              title={"Let's play Pokemon!"}
+            ><PlayArrowIcon
+              fontSize={this.fontSize}
+            /></Tooltip>
+          }
+        </div>
         <div style={{
-          minWidth: "calc(100% - 90vw - 2px)",
+          width: 0,
+          minWidth: 0,
+          maxWidth: 0,
           margin: 0,
-          textAlign: "center",
-          fontWeight: "bold",
-          alignSelf: "center",
-          borderRigth: "2px solid black",
-          display: "flex",
-          justifyContent: "center",
-          paddingBottom: ".2vh",
-        }}>
-          <RestartAlt
-            fontSize={
-              window.innerWidth > 600 && window.innerHeight > 600 ? "large" : "medium"
-            }
-            sx={{ cursor: "pointer" }}
-            onClick={() => this.setState({ modalRestartState: true })}
-          />
+          padding: 0,
+          borderRigth: "1px solid black",
+          borderLeft: "1px solid black",
+        }} />
+        <div
+          style={{
+            minWidth: "calc(100% - 92.5vw - 2px)",
+            margin: 0,
+            textAlign: "center",
+            fontWeight: "bold",
+            alignSelf: "center",
+            borderRigth: "2px solid black",
+            display: "flex",
+            justifyContent: "center",
+            paddingBottom: ".2vh",
+            cursor: "pointer"
+          }}
+          onClick={() => {
+            this.props.toggleClickAudio();
+            this.setState({ modalRestartState: true });
+          }}
+        >
+        <Tooltip
+          TransitionComponent={Zoom}
+          TransitionProps={{ timeout: 800 }}
+          followCursor={true}
+          placement="top-start"
+          title={"Restart"}
+        ><RestartAlt
+            fontSize={this.fontSize}
+          /></Tooltip>
         </div>
         <Modal
           keepMounted
-          //ref={nodeRef}
           id="modal-restart"
           hideBackdrop={false}
           open={this.state.modalRestartState}
@@ -156,6 +209,7 @@ export default class HeaderTitles extends PureComponent {
               <Button
                 sx={{ mt: 2, width: "100%", border: "1px solid gray" }}
                 onClick={() => {
+                  this.props.toggleClickAudio();
                   window.location.reload(false);
                   this.setState({ modalRestartState: false });
                 }}
@@ -165,6 +219,7 @@ export default class HeaderTitles extends PureComponent {
               <Button
                 sx={{ mt: 2, width: "100%", border: "1px solid gray" }}
                 onClick={() => {
+                  this.props.toggleClickAudio();
                   this.setState({ modalRestartState: false });
                 }}
               >

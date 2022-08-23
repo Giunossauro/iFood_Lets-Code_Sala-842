@@ -31,7 +31,7 @@ export default class SelectedContent extends Component {
         justifyContent: "space-around",
       }}>
         {this.props.filtrados.map((filtrado, index) => {
-          const color = filtrado.isOnList ? "#4DAD5B" : "#D62F50";
+          const color = filtrado.isOnList ? "#4DAD5B" : "#D66C60";
 
           return (
             <Grid

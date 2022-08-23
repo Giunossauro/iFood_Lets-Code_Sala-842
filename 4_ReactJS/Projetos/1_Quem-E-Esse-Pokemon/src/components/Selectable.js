@@ -66,6 +66,7 @@ export default class Selectable extends Component {
               p: 0,
             }}
             size="small"
+            onClick={() => this.props.toggleClickAudio()}
           >
             <InputLabel
               id={Object.getOwnPropertyNames(filterList)}
