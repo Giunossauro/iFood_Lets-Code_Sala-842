@@ -520,7 +520,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração I",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 40,
@@ -534,7 +534,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração I",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 41,
@@ -590,7 +590,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 45,
@@ -604,7 +604,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 46,
@@ -646,7 +646,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração I",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 49,
@@ -816,7 +816,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Águas",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 62,
@@ -830,7 +830,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Águas",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 63,
@@ -869,7 +869,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 66,
@@ -895,7 +895,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 68,
@@ -908,7 +908,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 69,
@@ -922,7 +922,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 70,
@@ -1006,7 +1006,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 76,
@@ -1020,7 +1020,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração I",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 77,
@@ -1293,7 +1293,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração I",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 97,
@@ -1306,7 +1306,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração I",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 98,
@@ -1425,7 +1425,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração I",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 107,
@@ -1438,7 +1438,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração I",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 108,
@@ -1637,7 +1637,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração I",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 123,
@@ -1665,7 +1665,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração I",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 125,
@@ -1704,7 +1704,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração I",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 128,
@@ -1919,7 +1919,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração I",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 144,
@@ -2079,7 +2079,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração II",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 156,
@@ -2336,7 +2336,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração II",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 175,
@@ -2349,7 +2349,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração II",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 176,
@@ -2363,7 +2363,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração II",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 177,
@@ -2443,7 +2443,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração II",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 183,
@@ -2484,7 +2484,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração II",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 186,
@@ -2497,7 +2497,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração II",
     "Lar": "Águas",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 187,
@@ -2578,7 +2578,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração II",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 193,
@@ -2808,7 +2808,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração II",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 210,
@@ -2877,7 +2877,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração II",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 215,
@@ -3174,7 +3174,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração II",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 237,
@@ -3201,7 +3201,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração II",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 239,
@@ -3214,7 +3214,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração II",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 240,
@@ -3253,7 +3253,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração II",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 243,
@@ -3376,7 +3376,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração II",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 252,
@@ -3644,7 +3644,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Águas",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 272,
@@ -3658,7 +3658,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Águas",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 273,
@@ -3685,7 +3685,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 275,
@@ -3699,7 +3699,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 276,
@@ -3769,7 +3769,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 281,
@@ -3783,7 +3783,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 282,
@@ -3797,7 +3797,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Urbano",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 283,
@@ -3891,7 +3891,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 290,
@@ -3985,7 +3985,7 @@
     "EvoSpeed": "Decrescente",
     "Geracao": "Geração III",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 297,
@@ -3998,7 +3998,7 @@
     "EvoSpeed": "Decrescente",
     "Geracao": "Geração III",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 298,
@@ -4025,7 +4025,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração III",
     "Lar": "Caverna",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 300,
@@ -4065,7 +4065,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Caverna",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 303,
@@ -4079,7 +4079,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração III",
     "Lar": "Caverna",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 304,
@@ -4135,7 +4135,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração III",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 308,
@@ -4149,7 +4149,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração III",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 309,
@@ -4227,7 +4227,7 @@
     "EvoSpeed": "Decrescente",
     "Geracao": "Geração III",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 315,
@@ -4241,7 +4241,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Campo",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 316,
@@ -4455,7 +4455,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Terreno Desigual",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 332,
@@ -4469,7 +4469,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração III",
     "Lar": "Terreno Desigual",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 333,
@@ -4794,7 +4794,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração III",
     "Lar": "Floresta",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 357,
@@ -4860,7 +4860,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração III",
     "Lar": "Caverna",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 362,
@@ -4994,7 +4994,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Terreno Desigual",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 372,
@@ -5076,7 +5076,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Caverna",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 378,
@@ -5089,7 +5089,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Caverna",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 379,
@@ -5102,7 +5102,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Caverna",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 380,
@@ -5184,7 +5184,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Montanha",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 386,
@@ -5197,7 +5197,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração III",
     "Lar": "Raro",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 387,
@@ -5291,7 +5291,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 394,
@@ -5400,7 +5400,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 402,
@@ -5466,7 +5466,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 407,
@@ -5480,7 +5480,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 408,
@@ -5828,7 +5828,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 434,
@@ -5911,7 +5911,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 440,
@@ -5924,7 +5924,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 441,
@@ -6007,7 +6007,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 447,
@@ -6102,7 +6102,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 454,
@@ -6116,7 +6116,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 455,
@@ -6238,7 +6238,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 464,
@@ -6265,7 +6265,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 466,
@@ -6400,7 +6400,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 476,
@@ -6549,7 +6549,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 487,
@@ -6602,7 +6602,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 491,
@@ -6615,7 +6615,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração IV",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 492,
@@ -6655,7 +6655,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 495,
@@ -6969,7 +6969,7 @@
     "EvoSpeed": "Rápida",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 519,
@@ -7131,7 +7131,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 531,
@@ -7157,7 +7157,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 533,
@@ -7170,7 +7170,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 534,
@@ -7183,7 +7183,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 535,
@@ -7224,7 +7224,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 538,
@@ -7237,7 +7237,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 539,
@@ -7250,7 +7250,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 540,
@@ -7292,7 +7292,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 543,
@@ -7362,7 +7362,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 548,
@@ -7456,7 +7456,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 555,
@@ -7647,7 +7647,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 569,
@@ -7660,7 +7660,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 570,
@@ -7725,7 +7725,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 575,
@@ -7738,7 +7738,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 576,
@@ -7751,7 +7751,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 577,
@@ -7912,7 +7912,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 589,
@@ -8155,7 +8155,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 607,
@@ -8368,7 +8368,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 623,
@@ -8382,7 +8382,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 624,
@@ -8396,7 +8396,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 625,
@@ -8410,7 +8410,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 626,
@@ -8729,7 +8729,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 649,
@@ -8743,7 +8743,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração V",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 650,
@@ -8849,7 +8849,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração VI",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 658,
@@ -8863,7 +8863,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração VI",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 659,
@@ -9092,7 +9092,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VI",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 676,
@@ -9199,7 +9199,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VI",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 684,
@@ -9225,7 +9225,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VI",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 686,
@@ -9446,7 +9446,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VI",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 702,
@@ -10167,7 +10167,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 755,
@@ -10195,7 +10195,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 757,
@@ -10277,7 +10277,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 763,
@@ -10290,7 +10290,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 764,
@@ -10317,7 +10317,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 766,
@@ -10358,7 +10358,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 769,
@@ -10452,7 +10452,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 776,
@@ -10729,7 +10729,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 796,
@@ -10756,7 +10756,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 798,
@@ -10770,7 +10770,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 799,
@@ -10811,7 +10811,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 802,
@@ -10825,7 +10825,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 803,
@@ -10880,7 +10880,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 807,
@@ -10893,7 +10893,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 808,
@@ -10958,7 +10958,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 813,
@@ -11315,7 +11315,7 @@
     "EvoSpeed": "Meio Lenta",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 840,
@@ -11557,7 +11557,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 858,
@@ -11585,7 +11585,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 860,
@@ -11599,7 +11599,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 861,
@@ -11613,7 +11613,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 862,
@@ -11680,7 +11680,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 867,
@@ -11828,7 +11828,7 @@
     "EvoSpeed": "Moderada",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 878,
@@ -12033,7 +12033,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 893,
@@ -12060,7 +12060,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 895,
@@ -12073,7 +12073,7 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   },
   {
     "id": 896,
@@ -12113,6 +12113,6 @@
     "EvoSpeed": "Lenta",
     "Geracao": "Geração VIII",
     "Lar": "Desconhecido",
-    "Formato": "humanoid"
+    "Formato": "Humanoide"
   }
 ]

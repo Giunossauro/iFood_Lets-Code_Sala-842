@@ -134,7 +134,7 @@ export default class App extends Component {
     }
   }
 
-  handleSelectChange(filtersState, selecionado, isRemovingSelectedFilter) {
+  handleSelectChange(filtersState, selecionado, isActivatingFilter) {
     secretPokemon.forEach((attr) => attr.forEach((value) => {
       if (typeof value !== "object") {
         if (value === selecionado) {
@@ -158,7 +158,7 @@ export default class App extends Component {
 
     let filteredPokemonIndex = [];
 
-    if (isRemovingSelectedFilter) {
+    if (isActivatingFilter) {
       renderedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
         (rootAttribute) => rootAttribute.forEach((attribute) => {
           if (attribute !== selecionado) {
@@ -173,42 +173,80 @@ export default class App extends Component {
           return undefined;
         })
       ));
-    } else {
-      removedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
-        (attributeNode) => {
-          if (attributeNode[1] !== selecionado) {
-            if (typeof attributeNode[1] === "object") {
-              if (attributeNode[1].includes(selecionado)) {
-                if (!pokemon.find((nestedAttributeNode) => {
-                  if (typeof nestedAttributeNode[1] === "object") {
+    } else { // para o verde, checar o isOnList
+      /* const isOnList = this.state.filtrados.find((filtrado) =>
+        filtrado.selecionado === selecionado && filtrado.isOnList
+      );
+      if (!isOnList) { */
+        removedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
+          (attributeNode) => {
+            if (attributeNode[1] !== selecionado) {
+              if (typeof attributeNode[1] === "object") {
+                if (attributeNode[1].includes(selecionado)) {
+                  if (!pokemon.find((nestedAttributeNode) => {
+                    if (typeof nestedAttributeNode[1] === "object") {
+                      return this.state.filtrados.map(
+                        (filtrado) => filtrado.selecionado
+                      ).find((filter) => nestedAttributeNode[1].includes(filter))
+                    }
                     return this.state.filtrados.map(
                       (filtrado) => filtrado.selecionado
-                    ).find((filter) => nestedAttributeNode[1].includes(filter))
-                  }
+                    ).includes(nestedAttributeNode[1]);
+                  })) filteredPokemonIndex.push(pokemonIdx);
+                }
+              }
+            } else {
+              if (!pokemon.find((nestedAttributeNode) => {
+                if (typeof nestedAttributeNode[1] === "object") {
                   return this.state.filtrados.map(
                     (filtrado) => filtrado.selecionado
-                  ).includes(nestedAttributeNode[1]);
-                })) filteredPokemonIndex.push(pokemonIdx);
-              }
-            }
-          } else {
-            if (!pokemon.find((nestedAttributeNode) => {
-              if (typeof nestedAttributeNode[1] === "object") {
+                  ).find((filter) => nestedAttributeNode[1].includes(filter))
+                }
                 return this.state.filtrados.map(
                   (filtrado) => filtrado.selecionado
-                ).find((filter) => nestedAttributeNode[1].includes(filter))
+                ).includes(nestedAttributeNode[1]);
+              })) filteredPokemonIndex.push(pokemonIdx);
+            }
+            return undefined;
+          })
+        );
+      /* } else {
+        removedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
+          (attributeNode) => {
+            if (attributeNode[1] !== selecionado) {
+              if (typeof attributeNode[1] === "object") {
+                if (!attributeNode[1].includes(selecionado)) {
+                  if (!pokemon.find((nestedAttributeNode) => {
+                    if (typeof nestedAttributeNode[1] === "object") {
+                      return this.state.filtrados.map(
+                        (filtrado) => filtrado.selecionado
+                      ).find((filter) => nestedAttributeNode[1].includes(filter))
+                    }
+                    return this.state.filtrados.map(
+                      (filtrado) => filtrado.selecionado
+                    ).includes(nestedAttributeNode[1]);
+                  })) filteredPokemonIndex.push(pokemonIdx);
+                }
               }
-              return this.state.filtrados.map(
-                (filtrado) => filtrado.selecionado
-              ).includes(nestedAttributeNode[1]);
-            })) filteredPokemonIndex.push(pokemonIdx);
-          }
-          return undefined;
-        })
-      );
+            } else {
+              if (pokemon.find((nestedAttributeNode) => {
+                if (typeof nestedAttributeNode[1] === "object") {
+                  return this.state.filtrados.map(
+                    (filtrado) => filtrado.selecionado
+                  ).find((filter) => nestedAttributeNode[1].includes(filter))
+                }
+                return this.state.filtrados.map(
+                  (filtrado) => filtrado.selecionado
+                ).includes(nestedAttributeNode[1]);
+              })) filteredPokemonIndex.push(pokemonIdx);
+            }
+            return undefined;
+          })
+        );
+      } */
     }
 
-    if (isRemovingSelectedFilter) {
+    if (isActivatingFilter) {
       flushSync(() => this.setState({
         ...this.state,
         renderedPokemons: this.state.renderedPokemons.filter((_, pokemonIndex) => {
