@@ -65,6 +65,5 @@ Enviar grupos aqui:
 
 ###### Prazo: 09/04/2022 ~ 15/04/2022, prorrogado para todos os grupos até 20/04/2022  
 
-###### Known issues:  
-- Os filtros retirados retornam todos pokemons para lista, até aqueles removidos por outros filtros;  
+###### Known issues:   
 - Remover um filtro verde (que o pokemon secreto possui) faz todos pokemons voltarem pra lista.

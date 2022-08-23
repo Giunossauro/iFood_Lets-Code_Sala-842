@@ -32,7 +32,7 @@ export default class PokemonsCards extends Component {
           maxWidth: "100%", minWidth: "100%", width: "100%",
           gridTemplateRows: "repeat(5, 1fr)",
           borderTop: "2px solid black",
-          height: `${this.props.mainHeightCalc} `,
+          height: `calc(${this.props.mainHeightCalc.toString()} - 1.5vh)`,
           top: `${this.props.headerHeight} `,
           m: 0, pt: 1, px: 0, pb: 0,
           backgroundColor: "#4DAD5B",

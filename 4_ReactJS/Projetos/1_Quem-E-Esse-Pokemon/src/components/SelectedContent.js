@@ -86,6 +86,14 @@ export default class SelectedContent extends Component {
                     this.props.handleSelectChange(
                       x, filtrado.selecionado, false
                     )
+                    if (filtrado.isOnList) {
+                      alert(
+                        `Poxa, você removeu um filtro verde, que deixava ${''
+                        }só os iguais. Nem terminei de programar esta parte, ${''
+                        }está com bug, agora todos os pokemons vão voltar pra ${''
+                        }lista, bugou tudo, tem q reiniciar...`
+                      );
+                    }
                   }}
                 />
               </Item>

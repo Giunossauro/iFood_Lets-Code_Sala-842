@@ -57,7 +57,7 @@ export default class HeaderTitles extends PureComponent {
           borderLeft: "2px solid black",
         }} />
         <div style={{
-          minWidth: "calc(100% - 50vw - 2px)",
+          minWidth: "calc(100% - 55vw - 2px)",
           margin: 0,
           textAlign: "center",
           fontWeight: "bold",
@@ -76,7 +76,7 @@ export default class HeaderTitles extends PureComponent {
         }} />
         <div
           style={{
-            minWidth: "calc(100% - 92.5vw - 2px)",
+            minWidth: "calc(100% - 90vw - 2px)",
             margin: 0,
             textAlign: "center",
             fontWeight: "bold",
@@ -123,7 +123,7 @@ export default class HeaderTitles extends PureComponent {
         }} />
         <div
           style={{
-            minWidth: "calc(100% - 92.5vw - 2px)",
+            minWidth: "calc(100% - 90vw - 2px)",
             margin: 0,
             textAlign: "center",
             fontWeight: "bold",

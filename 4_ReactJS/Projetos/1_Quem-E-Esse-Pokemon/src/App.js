@@ -67,7 +67,7 @@ export default class App extends Component {
       () => {
         this.state.isBackgroundAudioPlaying ?
           this.backgroundAudio.play()
-        : this.backgroundAudio.pause();
+          : this.backgroundAudio.pause();
       }
     ));
   }
@@ -157,6 +157,7 @@ export default class App extends Component {
     );
 
     let filteredPokemonIndex = [];
+
     if (isRemovingSelectedFilter) {
       renderedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
         (rootAttribute) => rootAttribute.forEach((attribute) => {
@@ -174,19 +175,37 @@ export default class App extends Component {
       ));
     } else {
       removedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
-        (rootAttribute) => rootAttribute.forEach((attribute) => {
-          if (attribute !== selecionado) {
-            if (typeof attribute === "object") {
-              if (attribute.includes(selecionado)) {
-                filteredPokemonIndex.push(pokemonIdx);
+        (attributeNode) => {
+          if (attributeNode[1] !== selecionado) {
+            if (typeof attributeNode[1] === "object") {
+              if (attributeNode[1].includes(selecionado)) {
+                if (!pokemon.find((nestedAttributeNode) => {
+                  if (typeof nestedAttributeNode[1] === "object") {
+                    return this.state.filtrados.map(
+                      (filtrado) => filtrado.selecionado
+                    ).find((filter) => nestedAttributeNode[1].includes(filter))
+                  }
+                  return this.state.filtrados.map(
+                    (filtrado) => filtrado.selecionado
+                  ).includes(nestedAttributeNode[1]);
+                })) filteredPokemonIndex.push(pokemonIdx);
               }
             }
           } else {
-            filteredPokemonIndex.push(pokemonIdx);
+            if (!pokemon.find((nestedAttributeNode) => {
+              if (typeof nestedAttributeNode[1] === "object") {
+                return this.state.filtrados.map(
+                  (filtrado) => filtrado.selecionado
+                ).find((filter) => nestedAttributeNode[1].includes(filter))
+              }
+              return this.state.filtrados.map(
+                (filtrado) => filtrado.selecionado
+              ).includes(nestedAttributeNode[1]);
+            })) filteredPokemonIndex.push(pokemonIdx);
           }
           return undefined;
         })
-      ));
+      );
     }
 
     if (isRemovingSelectedFilter) {
@@ -231,7 +250,6 @@ export default class App extends Component {
         }).sort(this.sorter)
       }));
     }
-    console.log(this.state);
 
     return filtersState.map((actualFilterList) => {
       const filterListAsArray = Object.entries(actualFilterList);
