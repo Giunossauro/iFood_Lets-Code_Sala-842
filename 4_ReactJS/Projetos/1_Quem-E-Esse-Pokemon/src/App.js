@@ -134,7 +134,7 @@ export default class App extends Component {
     }
   }
 
-  handleSelectChange(filtersState, selecionado, isActivatingFilter) {
+  handleSelectChange(filtersState, selecionado, isActivatingFilter, isOnList) {
     secretPokemon.forEach((attr) => attr.forEach((value) => {
       if (typeof value !== "object") {
         if (value === selecionado) {
@@ -173,11 +173,8 @@ export default class App extends Component {
           return undefined;
         })
       ));
-    } else { // para o verde, checar o isOnList
-      /* const isOnList = this.state.filtrados.find((filtrado) =>
-        filtrado.selecionado === selecionado && filtrado.isOnList
-      );
-      if (!isOnList) { */
+    } else {
+      if (!isOnList) {
         removedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
           (attributeNode) => {
             if (attributeNode[1] !== selecionado) {
@@ -210,13 +207,13 @@ export default class App extends Component {
             return undefined;
           })
         );
-      /* } else {
+      } else {
         removedPokemonsAsArray.forEach((pokemon, pokemonIdx) => pokemon.forEach(
           (attributeNode) => {
             if (attributeNode[1] !== selecionado) {
               if (typeof attributeNode[1] === "object") {
                 if (!attributeNode[1].includes(selecionado)) {
-                  if (!pokemon.find((nestedAttributeNode) => {
+                  if (pokemon.find((nestedAttributeNode) => {
                     if (typeof nestedAttributeNode[1] === "object") {
                       return this.state.filtrados.map(
                         (filtrado) => filtrado.selecionado
@@ -229,7 +226,7 @@ export default class App extends Component {
                 }
               }
             } else {
-              if (pokemon.find((nestedAttributeNode) => {
+              if (!pokemon.find((nestedAttributeNode) => {
                 if (typeof nestedAttributeNode[1] === "object") {
                   return this.state.filtrados.map(
                     (filtrado) => filtrado.selecionado
@@ -243,7 +240,7 @@ export default class App extends Component {
             return undefined;
           })
         );
-      } */
+      }
     }
 
     if (isActivatingFilter) {

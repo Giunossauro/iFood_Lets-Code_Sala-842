@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run build && serve -s build",
-    "commentLikeStartScriptForHeroku": "npm run build && serve -s build",
+    "start": "react-scripts start",
+    "startScriptForDevAsComment": "react-scripts start",
+    "startScriptForHerokuAsComment": "npm run build && serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

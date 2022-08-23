@@ -84,7 +84,7 @@ export default class SelectedContent extends Component {
                     });
 
                     this.props.handleSelectChange(
-                      x, filtrado.selecionado, false
+                      x, filtrado.selecionado, false, filtrado.isOnList
                     )
                     if (filtrado.isOnList) {
                       alert(
