@@ -12,9 +12,11 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 import CloseIcon from '@mui/icons-material/Close';
 
 import Draggable from "react-draggable";
+import { flushSync } from "react-dom";
 
-const filter = `blur(calc(10px + ${window.screen.width / document.getElementById("dpi").offsetWidth
-  }px)) grayscale(100%)`;
+const filter = `blur(calc(10px + ${
+  window.screen.width / document.getElementById("dpi").offsetWidth
+}px)) grayscale(100%)`;
 
 const modalStyle = {
   transform: "translate(-50%, -50%)",
@@ -37,7 +39,8 @@ export default class Modals extends Component {
     this.state = {
       modalWelcomeState: true,
       modalSombraState: false,
-      modalResultState: false
+      modalResultState: false,
+      resultado: 0
     }
     this.sombraRef = createRef();
     this.confirmRef = createRef();
@@ -177,6 +180,15 @@ export default class Modals extends Component {
               <Button
                 sx={modalButtonStyle}
                 onClick={() => {
+                  if (!this.props.endOfGame) {
+                    flushSync(()=>this.setState({
+                      resultado: Math.abs(
+                        Math.round(1_000_000 - (
+                          (new Date()).getTime() - this.props.startTime
+                        ) * 2 * (this.props.selectedFiltersPointsModifier))
+                      )
+                    }));
+                  }
                   this.props.toggleClickAudio();
                   this.setState({ modalResultState: true });
                   this.props.propsHandler({ endOfGame: true });
@@ -232,11 +244,9 @@ export default class Modals extends Component {
                         `O ${this.props.pokemons.find(
                           (pokemon) => pokemon.id === this.props.pokemonEscolhido
                         ).Nome.toUpperCase()
-                        } é o pokemon escolhido! Você conseguiu ${Math.abs(
-                          Math.round(1_000_000 - (
-                            (new Date()).getTime() - this.props.startTime
-                          ) * 2 * (this.props.selectedFiltersPointsModifier))
-                        )} pontos.`
+                        } é o pokemon escolhido! Você conseguiu ${
+                          this.state.resultado
+                        } pontos.`
                         :
                         `O ${String(this.nomeDoPokemonSecreto()).toUpperCase()
                         } era o pokemon secreto. Você conseguiu 0 pontos.`

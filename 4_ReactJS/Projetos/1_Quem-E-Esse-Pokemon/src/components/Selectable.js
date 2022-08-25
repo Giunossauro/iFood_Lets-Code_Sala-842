@@ -1,6 +1,8 @@
 import { Component } from "react";
 import { flushSync } from "react-dom";
 
+import { isMobile } from 'react-device-detect';
+
 import FormControl from "@mui/material/FormControl";
 import Grid from "@mui/material/Grid";
 import InputLabel from "@mui/material/InputLabel";
@@ -23,7 +25,7 @@ export default class Selectable extends Component {
       this.state.selectState.some(
         (state, index) => state !== nextState.selectState[index]
       )
-      ||true
+      || true
       /* this.props.filters.some((filters, filtersIndex) =>
         Object.entries(filters)[0][1].length
         !==
@@ -76,8 +78,8 @@ export default class Selectable extends Component {
                 fontSize: "1.7vmax",
                 textAlign: "center",
                 fontWeight: "bold",
-                top: "-2px",
-                left: "-10px",
+                top: isMobile ? "4px" : "-2px",
+                left: isMobile ? "-3px" : "-10px",
                 pr: 0,
                 pl: 0,
               }}>
@@ -88,6 +90,7 @@ export default class Selectable extends Component {
               }
             </InputLabel>
             <Select
+              native={isMobile}
               value={''}
               IconComponent={() => null}
               labelId={`${Object.getOwnPropertyNames(filterList)}`}
@@ -163,12 +166,15 @@ export default class Selectable extends Component {
               }}
             >
               {Object.entries(filterList)[0][1].map((filterOption, filterOptionIndex) => (
-                <MenuItem
-                  value={filterOption}
-                  key={filterOptionIndex}
-                >
-                  {filterOption}
-                </MenuItem>
+                isMobile ? (
+                  <option value={filterOption} key={filterOptionIndex}>
+                    {filterOption}
+                  </option>
+                ) : (
+                  <MenuItem value={filterOption} key={filterOptionIndex}>
+                    {filterOption}
+                  </MenuItem>
+                )
               ))}
             </Select>
           </FormControl>
