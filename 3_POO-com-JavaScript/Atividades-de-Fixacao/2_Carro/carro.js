@@ -1,4 +1,4 @@
-class Carro {
+class Nave {
     constructor(proprietario, placa, marca, modelo, ano, cor, metragem = 0){
         this.proprietario = proprietario;
         this.placa = placa;
@@ -24,7 +24,7 @@ class Carro {
     }
 }
 
-const carro = new Carro("Fulano", "ABC-0123","Ford","KA",2000,"azul");
+const carro = new Nave("Fulano", "ABC-0123","Ford","KA",2000,"azul");
 
 function sleep(ms){
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -103,7 +103,7 @@ botaoDados.addEventListener("click", function(){
     carro.movendo = false;
 });
 
-console.log("Dados do carro: \n");
+console.log("Dados da nave: \n");
 
 Object.entries(carro).forEach(parDeValores => {
     console.log(`${parDeValores[0]}: ${parDeValores[1]}.`)
