@@ -37,9 +37,25 @@
     <button type="button" onclick="request('post','/address')">POST</button>
     <button type="button" onclick="request('put','/address')">PUT</button>
     <button type="button" onclick="request('delete','/address')">DELETE</button>
-
+    <button type="button" onclick="window.location.href = '/credit_card_data'">Próximo...</button>
   </form>
- <div id="visualizarJson"></div>
+  <table>
+    <thead>
+      <tr><th colspan="7">Dados</th></tr>
+      <tr>
+        <th>Id</th>
+        <th>Rua</th>
+        <th>Número</th>
+        <th>Bairro</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>País</th>
+      </tr>
+    </thead>
+    <tbody id="visualizarJson">
+
+    </tbody>
+  </table>
   
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
@@ -51,8 +67,8 @@
         data: 
           {
             street: enderecoLogradouro.value,
-            district: enderecoBairro.value,
             number: enderecoNumero.value,
+            district: enderecoBairro.value,
             city: enderecoCidade.value,
             state: enderecoUF.value,
             country: enderecoPais.value,
@@ -60,16 +76,41 @@
           }
         }
       )
-      .then(function(response) {
-        document.getElementById("visualizarJson").innerText = response.data;
-        if(response.status == 200){
-          window.location.href = "/credit_card_data";
+      .then(function(res) {
+        if(res.status == 200){
+          updateRender();
+        } else {
+          console.log(res)
         }
       })
       .catch(function(error) {
         console.error("adsadas",error);
       });
     }
+    
+    function updateRender () {
+      axios({
+        method: "post",
+        url: "/success"
+      })
+      .then(res => {
+        visualizarJson.innerHTML = res.data.address.data.map((e) => {
+          return `<tr>
+            <td>${e.id}</td>
+            <td>${e.street}</td>
+            <td>${e.number}</td>
+            <td>${e.district}</td>
+            <td>${e.city}</td>
+            <td>${e.state}</td>
+            <td>${e.country}</td>
+          </tr>`;
+        });
+        visualizarJson.innerHTML = visualizarJson.innerHTML.replaceAll(",","");
+      })
+      .catch(err => console.log(err));
+    }
+
+    updateRender();
   </script>   
     
 </body>

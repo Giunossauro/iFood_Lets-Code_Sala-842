@@ -31,10 +31,23 @@
     <button type="button" onclick="request('post','/credit_card_data')">POST</button>
     <button type="button" onclick="request('put','/credit_card_data')">PUT</button>
     <button type="button" onclick="request('delete','/credit_card_data')">DELETE</button>
-
+    <button type="button" onclick="window.location.href = '/success'">Próximo...</button>
   </form>
-  <div id="visualizarJson"></div>
-  
+  <table>
+    <thead>
+      <tr><th colspan="5">Dados</th></tr>
+      <tr>
+        <th>Id</th>
+        <th>Número do cartão</th>
+        <th>Nome impresso no cartão</th>
+        <th>Validade</th>
+        <th>CCV</th>
+      </tr>
+    </thead>
+    <tbody id="visualizarJson">
+
+    </tbody>
+  </table>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
 
@@ -53,20 +66,39 @@
           }
         }
       )
-      .then(function(response) {
-        document.getElementById("visualizarJson").innerText = response.data;
-        console.log(response)
-        if(response.status == 200){
-          window.location.href = "/success";
+      .then(function(res) {
+        if(res.status == 200){
+          updateRender();
+        } else {
+          console.log(res)
         }
       })
       .catch(function(error) {
         console.error("adsadas",error);
       });
     }
-
+    
+    function updateRender () {
+      axios({
+        method: "post",
+        url: "/success"
+      })
+      .then(res => {
+        visualizarJson.innerHTML = res.data.credit_card.data.map((e) => {
+          return `<tr>
+            <td>${e.id}</td>
+            <td>${e.card_number}</td>
+            <td>${e.card_name}</td>
+            <td>${e.validate}</td>
+            <td>${e.ccv}</td>
+          </tr>`;
+        });
+        visualizarJson.innerHTML = visualizarJson.innerHTML.replaceAll(",","");
+      })
+      .catch(err => console.log(err));
+    }
+    
+    updateRender();
   </script>
-  
 </body>
-
 </html>

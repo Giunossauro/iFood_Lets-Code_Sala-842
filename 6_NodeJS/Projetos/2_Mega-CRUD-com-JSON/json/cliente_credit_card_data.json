@@ -1,18 +1,1 @@
-{
-  "data": [
-    {
-      "id": 1,
-      "card_number": 5678456797683451,
-      "card_name": "RODRIGO R RANGEL",
-      "validate": "09/27",
-      "ccv": 998
-    },
-    {
-      "id": 2,
-      "card_number": 2222222222222222,
-      "card_name": "AAAAAAA",
-      "validate": "09/27",
-      "ccv": 998
-    }
-  ]
-}
+{"data":[{"id":1,"card_number":5678456797683451,"card_name":"RODRIGO R RANGEL","validate":"09/27","ccv":998},{"id":2,"card_number":2222222222222222,"card_name":"AAAAAAA","validate":"09/27","ccv":998}]}

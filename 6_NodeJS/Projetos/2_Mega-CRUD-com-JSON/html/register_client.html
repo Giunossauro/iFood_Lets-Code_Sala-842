@@ -10,19 +10,9 @@
 </head>
 
 <body>
-  
-<!-- obs html só tem get ou post, e tem q por post senão o form faz um get por padrão -->
-
   <form id="registro" method="post">
-    <h1>login / registro</h1>
-    <!-- "id":
-          "name":
-          "last_name":
-          "cpf":
-          "bth_date":
-          "phone": -->
-    
-    <label for="registroId">ID:</label><br />
+    <h1>Registro</h1>
+    <label for="registroId">ID: <small>novo n.º para criar, existente para alterer ou deletar</small></label><br />
     <input type="number" id="registroId" name="registroId" /><br /><br />
 
     <label for="registroNome">Nome:</label><br />
@@ -41,16 +31,32 @@
     <input type="text" id="registroTelefone" name="registroTelefone" /><br /><br />
 
     <div>Prosseguir com: </div>
-    <!--button formmethod="post" type="submit">123</button-->
     <button type="button" onclick="request('post','/registration')">POST</button>
     <button type="button" onclick="request('put','/registration')">PUT</button>
     <button type="button" onclick="request('delete','/registration')">DELETE</button>
-    <!--button type="button" onclick="request('view','/registration')">VIEW</button-->
+    <button type="button" onclick="window.location.href = '/address'">Próximo...</button>
+    <br /><br />O que são estes botões?
+    <br />POST: cria um novo dado
+    <br />PUT: altera um dado existente
+    <br />DELETE: hmm... deleta!
   </form>
 
-  <br />
+  <table>
+    <thead>
+      <tr><th colspan="6">Dados (usando JSON Server)</th></tr>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>CPF</th>
+        <th>Nascimento</th>
+        <th>Telefone</th>
+      </tr>
+    </thead>
+    <tbody id="visualizarJson">
 
-  <div id="visualizarJson"></div>
+    </tbody>
+  </table>
   
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!--script src="http://localhost/js/client.js"></script-->
@@ -76,28 +82,40 @@
         }
       )
       .then(function(response) {
-        // visualizarJson.innerText = Object.entries(response.data);
-        // console.log("postado:");
-        // console.log(Object.entries(response.data))//printa o json
         if(response.status == 200 || response.status == 201){
-          window.location.href = "/address";
+          //window.location.href = "/address";
+          updateRender();
+        } else {
+          console.log(res)
         }
       })
       .catch(function(error) {
         console.error("adsadas",error);
       });
     }
+    
+    function updateRender () {
+      axios({
+        method: "get",
+        url: "https://json-server-do-mega-crud.herokuapp.com/data/"
+      })
+      .then(res => {
+        visualizarJson.innerHTML = res.data.map((e) => {
+          return `<tr>
+            <td>${e.id}</td>
+            <td>${e.name}</td>
+            <td>${e.last_name}</td>
+            <td>${e.cpf}</td>
+            <td>${e.bth_date}</td>
+            <td>${e.phone}</td>
+          </tr>`;
+        });
+        visualizarJson.innerHTML = visualizarJson.innerHTML.replaceAll(",","");
+      })
+      .catch(err => console.log(err));
+    }
 
-    // esta requisicao axios serve pra renderizar os dados na tela a primeira vez
-    axios({
-      method: "get",
-      url: "/registration"
-    })
-    .then(res => {
-      visualizarJson.innerText = res.data.map(e => `<p>${JSON.stringify(e)}</p>`);
-    })
-    .catch(err => console.log(err)
-    );
+    updateRender();
   </script>
 </body>
 

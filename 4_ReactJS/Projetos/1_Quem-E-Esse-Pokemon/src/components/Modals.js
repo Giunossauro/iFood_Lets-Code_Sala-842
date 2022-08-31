@@ -113,7 +113,7 @@ export default class Modals extends Component {
           onClose={() => this.props.propsHandler({ modalConfirmState: false })}
         >
           <Fade in={this.props.modalConfirmState}>
-            <Box sx={modalStyle}>
+            <Box sx={{...modalStyle, cursor: "grab"}}>
               <Typography
                 id="modal-confirm-title"
                 variant="h6"
@@ -141,7 +141,7 @@ export default class Modals extends Component {
                     ).Nome.toUpperCase()
                     :
                     "ERRO AO BUSCAR O NOME DO POKEMON"
-                } é o pokemon? (arrastável)
+                } é o pokemon?
               </Typography>
               <Typography
                 sx={{ mt: 2, textAlign: "center" }}
@@ -409,13 +409,13 @@ export default class Modals extends Component {
           <Fade in={this.state.modalSombraState}>
             <Box sx={{
               ...modalStyle,
-              overflow: "hidden"
+              overflow: "hidden",
+              cursor: "grab"
             }}>
               <CloseIcon
                 sx={{
                   ml: "95%",
-                  cursor: "pointer",
-
+                  cursor: "pointer"
                 }}
                 onClick={() => {
                   this.props.toggleClickAudio();
@@ -428,7 +428,7 @@ export default class Modals extends Component {
                 component="h2"
                 sx={{ textAlign: "center" }}
               >
-                Quem é esse pokemon? (arrastável)
+                Quem é esse pokemon?
               </Typography>
               <span style={{ display: "flex", justifyContent: "center" }}><img
                 width={"100%"}

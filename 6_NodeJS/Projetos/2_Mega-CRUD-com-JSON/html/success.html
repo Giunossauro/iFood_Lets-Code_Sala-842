@@ -16,12 +16,60 @@
   </style>
   <title>SUCESSO</title>
 </head>
-<body>
+<body  style="display: flex; flex-direction: column;">
   <h1>SUCESSO!!!</h1>
-  <h2>Veja os registros: (depois <a href="https://mega-crud-com-json.herokuapp.com/upar-imagem">CLIQUE AQUI</a> para testar o upload de imagem)</h2>
-  <div id="register"></div>
-  <div id="address"></div>
-  <div id="credit_card_data"></div>
+  <h2>Veja os registros: (depois <a href="/upar-imagem">CLIQUE AQUI</a> para testar o upload de imagem)</h2>
+  
+  <table>
+    <thead>
+      <tr><th colspan="6">Dados iniciais (JSON Server)</th></tr>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>CPF</th>
+        <th>Nascimento</th>
+        <th>Telefone</th>
+      </tr>
+    </thead>
+    <tbody id="register">
+
+    </tbody>
+  </table>
+  <hr><hr><hr>
+  <table>
+    <thead>
+      <tr><th colspan="7">Endereço</th></tr>
+      <tr>
+        <th>Id</th>
+        <th>Rua</th>
+        <th>Número</th>
+        <th>Bairro</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>País</th>
+      </tr>
+    </thead>
+    <tbody id="address">
+
+    </tbody>
+  </table>
+  <hr><hr><hr>
+  <table>
+    <thead>
+      <tr><th colspan="5">Cartão de Crédito</th></tr>
+      <tr>
+        <th>Id</th>
+        <th>Número do cartão</th>
+        <th>Nome impresso no cartão</th>
+        <th>Validade</th>
+        <th>CCV</th>
+      </tr>
+    </thead>
+    <tbody id="credit_card_data">
+
+    </tbody>
+  </table>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script>
@@ -32,42 +80,40 @@
     .then(async (res) => {
       const jsonserver = await (await fetch("https://json-server-do-mega-crud.herokuapp.com/data/")).json();
       register.innerHTML = jsonserver.map((e,i) => {
-        return `
-          ${i == 0 ? '<h3>client_register.json</h3>' : ''}
-          <p>id: ${e.id}</p>
-          <p>name: ${e.name}</p>
-          <p>last_name: ${e.last_name}</p>
-          <p>cpf: ${e.cpf}</p>
-          <p>bth_date: ${e.bth_date}</p>
-          <p>phone: ${e.phone}</p>
-          <hr />
-        `;
+        return `<tr>
+          <td>${e.id}</td>
+          <td>${e.name}</td>
+          <td>${e.last_name}</td>
+          <td>${e.cpf}</td>
+          <td>${e.bth_date}</td>
+          <td>${e.phone}</td>
+        </tr>`;
       });
+      register.innerHTML = register.innerHTML.replaceAll(",","");
       
       address.innerHTML = res.data.address.data.map((e,i) => {
-        return `
-          ${i == 0 ? '<h3>client_address.json</h3>' : ''}
-          <p>id: ${e.id}</p>
-          <p>street: ${e.street}</p>
-          <p>number: ${e.number}</p>
-          <p>city: ${e.city}</p>
-          <p>state: ${e.state}</p>
-          <p>country: ${e.country}</p>
-          <hr />
-        `;
+        return `<tr>
+          <td>${e.id}</td>
+          <td>${e.street}</td>
+          <td>${e.number}</td>
+          <td>${e.district}</td>
+          <td>${e.city}</td>
+          <td>${e.state}</td>
+          <td>${e.country}</td>
+        </tr>`;
       });
+      address.innerHTML = address.innerHTML.replaceAll(",","");
       
       credit_card_data.innerHTML = res.data.credit_card.data.map((e,i) => {
-        return `
-          ${i == 0 ? '<h3>cliente_credit_card_data.json</h3>' : ''}
-          <p>id: ${e.id}</p>
-          <p>card_number: ${e.card_number}</p>
-          <p>card_name: ${e.card_name}</p>
-          <p>validate: ${e.validate}</p>
-          <p>ccv: ${e.ccv}</p>
-          <hr />
-        `;
+        return `<tr>
+          <td>${e.id}</td>
+          <td>${e.card_number}</td>
+          <td>${e.card_name}</td>
+          <td>${e.validate}</td>
+          <td>${e.ccv}</td>
+        </tr>`; 
       });
+      credit_card_data.innerHTML = credit_card_data.innerHTML.replaceAll(",","");
     })
     .catch((error) => {
       console.log("_________",error,"________");

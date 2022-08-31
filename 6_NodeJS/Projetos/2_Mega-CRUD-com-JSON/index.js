@@ -67,14 +67,25 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(200);
       res.end((await fs.promises.readFile('./html/index.html')).toString());
       return;
-    } 
-    /* if (method == "POST"){
+    }
+  }
+
+  if (url == "/style.css") {
+    if (method == "GET") {
+      res.setHeader('content-type', 'text/css;charset=utf-8');
       res.writeHead(200);
-      res.setHeader('content-type', 'application/json;charset=utf-8');
-      res.end((await fs.promises.readFile('./html/index.html')).toString());
+      res.end((await fs.promises.readFile('./html/style.css')).toString());
       return;
-    } */
-    return;
+    }
+  }
+
+  if (url == "/favicon.ico") {
+    if (method == "GET") {
+      res.setHeader('content-type', 'image/x-icon');
+      res.writeHead(200);
+      res.end((await fs.promises.readFile('./html/favicon.ico')));
+      return;
+    }
   }
   
   else if (url == "/registration") {
@@ -167,7 +178,6 @@ const server = http.createServer(async (req, res) => {
       for await (const chunk of req) {
         newImage += chunk;
       }
-      console.log("oiafhoiasjfdçlahfçluiashndfçklahjnfklahnfçal")
       try {
         await fs.promises.writeFile('./img/imagem.png',newImage,'latin1');
       } catch (e) {

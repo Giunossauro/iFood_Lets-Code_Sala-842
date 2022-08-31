@@ -3,15 +3,33 @@
   background-color: black;
 }
 
-/*
-body{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
+body {
+  display: flex;
+  justify-content: center;
 }
-form{
-  border: 1px solid black;
-  padding: 0.2em 1em 1em 1em;
+
+h1, h2 {
+  text-align: center;
 }
-*/
+
+form {
+  margin-right: 10vw;
+}
+
+table {
+  border-collapse: collapse;
+  max-height: 35vh;
+  align-self: center;
+}
+
+thead, tbody {
+  border: 1px solid white;
+}
+
+th, td {
+  padding: .5vw;
+  text-align: center;
+  min-width: 5vw;
+  border: 1px solid white;
+}
 
