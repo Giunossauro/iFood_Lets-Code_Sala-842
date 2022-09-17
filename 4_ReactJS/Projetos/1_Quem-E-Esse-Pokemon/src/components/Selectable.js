@@ -78,8 +78,8 @@ export default class Selectable extends Component {
                 fontSize: "1.7vmax",
                 textAlign: "center",
                 fontWeight: "bold",
-                top: isMobile ? "4px" : "-2px",
-                left: isMobile ? "-3px" : "-10px",
+                top: isMobile ? "4px" : "calc(5% - 1.25rem + 1.5vh)",
+                left: isMobile ? "-3px" : "-.25vw",
                 pr: 0,
                 pl: 0,
               }}>

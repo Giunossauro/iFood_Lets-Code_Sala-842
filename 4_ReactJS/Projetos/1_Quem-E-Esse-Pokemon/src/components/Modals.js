@@ -14,9 +14,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import Draggable from "react-draggable";
 import { flushSync } from "react-dom";
 
-const filter = `blur(calc(10px + ${
-  window.screen.width / document.getElementById("dpi").offsetWidth
-}px)) grayscale(100%)`;
+const imgErrorMsg = "ERRO AO BUSCAR O NOME DO POKEMON - Avise o Giuliano, por favor."
+const filter = `blur(calc(10px + ${window.screen.width / document.getElementById("dpi").offsetWidth
+  }px)) grayscale(100%)`;
 
 const modalStyle = {
   transform: "translate(-50%, -50%)",
@@ -44,8 +44,6 @@ export default class Modals extends Component {
     }
     this.sombraRef = createRef();
     this.confirmRef = createRef();
-    this.resultRef = createRef();
-    this.fontSize = window.innerWidth > 600 && window.innerHeight > 600 ? "large" : "medium";
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -113,7 +111,7 @@ export default class Modals extends Component {
           onClose={() => this.props.propsHandler({ modalConfirmState: false })}
         >
           <Fade in={this.props.modalConfirmState}>
-            <Box sx={{...modalStyle, cursor: "grab"}}>
+            <Box sx={{ ...modalStyle, cursor: "grab" }}>
               <Typography
                 id="modal-confirm-title"
                 variant="h6"
@@ -140,7 +138,7 @@ export default class Modals extends Component {
                       pokemon.id === this.props.pokemonEscolhido
                     ).Nome.toUpperCase()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                    imgErrorMsg
                 } é o pokemon?
               </Typography>
               <Typography
@@ -149,39 +147,44 @@ export default class Modals extends Component {
               >
                 Compare o pokemon com o imagem desfocada:
               </Typography>
-              <span style={{ display: "flex", justifyContent: "center" }}><img
+              <span style={{
+                display: "flex",
+                minWidth: "100%",
+                justifyContent: "center"
+              }}><img
                 width={"100%"}
                 src={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                    imgErrorMsg
                 }
                 srcSet={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                    imgErrorMsg
                 }
                 alt={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.nomeDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                    imgErrorMsg
                 }
                 style={{
                   borderRadius: "0.5vmin",
-                  filter: this.props.endOfGame ? '' : filter
+                  filter: this.props.endOfGame ? '' : filter,
+                  zIndex: "-500"
                 }}
               ></img></span>
               <Button
                 sx={modalButtonStyle}
                 onClick={() => {
                   if (!this.props.endOfGame) {
-                    flushSync(()=>this.setState({
+                    flushSync(() => this.setState({
                       resultado: Math.abs(
                         Math.round(1_000_000 - (
                           (new Date()).getTime() - this.props.startTime
@@ -244,8 +247,7 @@ export default class Modals extends Component {
                         `O ${this.props.pokemons.find(
                           (pokemon) => pokemon.id === this.props.pokemonEscolhido
                         ).Nome.toUpperCase()
-                        } é o pokemon escolhido! Você conseguiu ${
-                          this.state.resultado
+                        } é o pokemon escolhido! Você conseguiu ${this.state.resultado
                         } pontos.`
                         :
                         `O ${String(this.nomeDoPokemonSecreto()).toUpperCase()
@@ -328,21 +330,21 @@ export default class Modals extends Component {
                   ?
                   this.spriteDoPokemonSecreto()
                   :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                  imgErrorMsg
               }
               srcSet={
                 this.oPokemonSecretoEstaNaLista()
                   ?
                   this.spriteDoPokemonSecreto()
                   :
-                  "ERRO AO BUSCAR O NOME DO POKEMON".sprite
+                  imgErrorMsg
               }
               alt={
                 this.oPokemonSecretoEstaNaLista()
                   ?
                   this.nomeDoPokemonSecreto()
                   :
-                  "ERRO AO BUSCAR O NOME DO POKEMON"
+                  imgErrorMsg
               }
               style={{
                 borderRadius: "0.5vmin",
@@ -437,21 +439,21 @@ export default class Modals extends Component {
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                    imgErrorMsg
                 }
                 srcSet={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.spriteDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON".sprite
+                    imgErrorMsg
                 }
                 alt={
                   this.oPokemonSecretoEstaNaLista()
                     ?
                     this.nomeDoPokemonSecreto()
                     :
-                    "ERRO AO BUSCAR O NOME DO POKEMON"
+                    imgErrorMsg
                 }
                 style={{
                   borderRadius: "0.5vmin",
