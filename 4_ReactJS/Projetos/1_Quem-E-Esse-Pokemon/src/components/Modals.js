@@ -457,7 +457,8 @@ export default class Modals extends Component {
                 }
                 style={{
                   borderRadius: "0.5vmin",
-                  filter: filter
+                  filter: filter,
+                  zIndex: "-500"
                 }}
               ></img></span>
               <Button
