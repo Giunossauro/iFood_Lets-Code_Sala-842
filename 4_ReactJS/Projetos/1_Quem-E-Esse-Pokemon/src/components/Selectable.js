@@ -82,7 +82,9 @@ export default class Selectable extends Component {
                 left: isMobile ? "-3px" : "-.25vw",
                 pr: 0,
                 pl: 0,
-              }}>
+              }}
+              focused={false}
+            >
               {
                 filtersIdx === 3 ?
                   ''.concat('*', Object.getOwnPropertyNames(filterList)) :
@@ -90,7 +92,7 @@ export default class Selectable extends Component {
               }
             </InputLabel>
             <Select
-              native={isMobile}
+              /* native={isMobile} */
               value={''}
               IconComponent={() => null}
               labelId={`${Object.getOwnPropertyNames(filterList)}`}
@@ -108,12 +110,32 @@ export default class Selectable extends Component {
                   flushSync(() => this.setState({
                     selectState: this.props.filters.map((_, idx) => filtersIdx === idx)
                   }));
-                } else {
+                } else if (this.state.close) {
                   flushSync(() => this.setState({
                     selectState: this.props.filters.map(() => false),
                     close: false
                   }));
                 }
+              }}
+
+              onFocus={() => {
+                if (!this.state.close) {
+                  flushSync(() => this.setState({
+                    selectState: this.props.filters.map((_, idx) => filtersIdx === idx)
+                  }));
+                } else if (this.state.close) {
+                  flushSync(() => this.setState({
+                    selectState: this.props.filters.map(() => false),
+                    close: false
+                  }));
+                }
+              }}
+
+              onBlur={() => {
+                flushSync(() => this.setState({
+                  selectState: this.props.filters.map(() => false),
+                  close: true
+                }));
               }}
 
               onClose={() => {
@@ -166,11 +188,11 @@ export default class Selectable extends Component {
               }}
             >
               {Object.entries(filterList)[0][1].map((filterOption, filterOptionIndex) => (
-                isMobile ? (
+                /* isMobile ? (
                   <option value={filterOption} key={filterOptionIndex}>
                     {filterOption}
                   </option>
-                ) : (
+                ) :  */(
                   <MenuItem value={filterOption} key={filterOptionIndex}>
                     {filterOption}
                   </MenuItem>
