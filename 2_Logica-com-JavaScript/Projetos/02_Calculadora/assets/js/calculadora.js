@@ -154,7 +154,7 @@ const operator = (symbol) => {
                 break;
         }
 
-        calculationHistory.innerHTML = document.getElementByClass("calcHist")[0] + `
+        calculationHistory.innerHTML = document.getElementByClassName("calcHist")[0] + `
             ${symbolValue}
             ${formatVisor(visorInput)}
             =
