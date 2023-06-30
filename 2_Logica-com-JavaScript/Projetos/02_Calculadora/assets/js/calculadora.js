@@ -130,9 +130,9 @@ const operator = (symbol) => {
         }
     }
     else if(hasTypedValue || symbol == "="){
-        calculationHistory.innerHTML += `
+        const operandHist =  `
             <span class="ps-1">${formatVisor(operandValue)}</span>
-        `;
+        `;// + calculationHistory.innerHTML;
         switch (symbolValue) {
             case "+":
                 operandValue += toNumber(visorInput);
@@ -155,6 +155,7 @@ const operator = (symbol) => {
         }
 
         calculationHistory.innerHTML = `
+            ${operandHist}
             ${symbolValue}
             ${formatVisor(visorInput)}
             =
@@ -169,7 +170,7 @@ const operator = (symbol) => {
         }
 
         if (symbol == "="){
-            operand.innerText = operandValue;
+            operand.innerText = "= " + operandValue;
             operandSymbol.innerText = "";
             hasOperator = false;
             operandValue = 0;
