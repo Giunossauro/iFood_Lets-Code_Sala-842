@@ -154,13 +154,13 @@ const operator = (symbol) => {
                 break;
         }
 
-        calculationHistory.innerHTML = document.getElementByClassName("calcHist")[0] + `
+        calculationHistory.innerHTML = `
             ${symbolValue}
             ${formatVisor(visorInput)}
             =
             <b class="fs-4">${formatVisor(operandValue)}</b>
             <hr class="hr mt-1 mb-1">
-        `;
+        ` + calculationHistory.innerHTML;
 
         visor.innerText = "0";
 
