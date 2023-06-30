@@ -2,7 +2,7 @@
  * Obs.: A calculadora FUNCIONA QUE É UMA BELEZA, mas o código ainda
  * está um pouco feio porque ainda não tinha aprendido a
  * aplicar os conceitos da programação funcional.
- */
+ */ 
 
 const limitAlert = new bootstrap.Popover(
     visor,
